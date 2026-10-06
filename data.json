@@ -1,0 +1,414 @@
+{
+  "meta": {
+    "title": "Growth Dashboard",
+    "timezone": "Europe/Vienna",
+    "lastUpdated": "2026-10-06T19:11:31+02:00",
+    "lastUpdatedBy": "VoT Growth",
+    "weekStart": "2026-09-29",
+    "weekEnd": "2026-10-06",
+    "notes": "Nur echte Zahlen eintragen. UPDATE_ME = noch kein Live-Wert. Niemals schätzen."
+  },
+  "agents": {
+    "vot_growth": {
+      "id": "44289084-0ba3-49ca-9cf8-eb04829a2288",
+      "name": "VoT Growth",
+      "owns": [
+        "instagram"
+      ],
+      "updates": [
+        "platforms.instagram",
+        "ideas (owner=vot_growth)",
+        "plans.instagram",
+        "agentsBoard.vot_growth"
+      ]
+    },
+    "deen_growth": {
+      "id": "ec09842b-ac9c-47b1-9124-453595664e4b",
+      "name": "Deen Growth TT+YT",
+      "owns": [
+        "tiktok",
+        "youtube"
+      ],
+      "updates": [
+        "platforms.tiktok",
+        "platforms.youtube",
+        "ideas (owner=deen_growth)",
+        "plans.tiktok",
+        "plans.youtube",
+        "agentsBoard.deen_growth"
+      ]
+    },
+    "clipper_akh": {
+      "id": "b8f5286c-3168-4aad-ba62-b7f68617ba06",
+      "name": "Clipper AKH",
+      "owns": [
+        "video_production",
+        "dashboard_structure",
+        "weekly_routine"
+      ],
+      "updates": [
+        "ideas (status filming→posted nach Produktion)",
+        "agentsBoard.clipper_akh",
+        "meta (bei Bedarf)"
+      ]
+    }
+  },
+  "overview": {
+    "totalViewsThisWeek": {
+      "value": null,
+      "note": "Summe nur aus bestätigten Plattform-Werten; IG+YT noch UPDATE_ME → Gesamt als TT-only nicht als Gesamt ausgeben",
+      "partial": {
+        "tiktok": 2232,
+        "instagram": "UPDATE_ME",
+        "youtube": "UPDATE_ME"
+      }
+    },
+    "totalFollowers": {
+      "instagram": 12,
+      "tiktok": "UPDATE_ME",
+      "youtube": "UPDATE_ME"
+    },
+    "totalPostsThisWeek": {
+      "instagram": "UPDATE_ME",
+      "tiktok": 6,
+      "youtube": "UPDATE_ME"
+    }
+  },
+  "platforms": {
+    "instagram": {
+      "handle": "@voicesoftawheed",
+      "url": "https://instagram.com/voicesoftawheed",
+      "ownerAgent": "vot_growth",
+      "ownerAgentId": "44289084-0ba3-49ca-9cf8-eb04829a2288",
+      "metrics": {
+        "followers": 12,
+        "viewsThisWeek": "UPDATE_ME",
+        "likesThisWeek": "UPDATE_ME",
+        "commentsThisWeek": "UPDATE_ME",
+        "savesThisWeek": "UPDATE_ME",
+        "sharesThisWeek": "UPDATE_ME",
+        "postsThisWeek": "UPDATE_ME",
+        "reachThisWeek": "UPDATE_ME",
+        "postingStreakDays": "UPDATE_ME"
+      },
+      "topPost": {
+        "title": "Tawheed / Ikhlas (sincerity in worship)",
+        "url": "https://www.instagram.com/p/DdV88M3uin4/",
+        "views": 1059,
+        "likes": 255,
+        "saves": 6,
+        "reach": 823,
+        "comments": 1,
+        "avgWatchSec": 8,
+        "postedAt": "2026-09-16T11:21:58+02:00",
+        "caption": "#allah #tawheed #ikhlas #quran #islam #worship #reminder #muslim #lailahaillallah #faith",
+        "note": "All-time top of 25 reels with Insights. 0.2% of views from followers (mostly non-followers)."
+      },
+      "source": "Instagram Insights via box browser 2026-10-06 (25 reels). Shares=0 on all scraped. Oct 3 reels not in returned grid — week metrics left UPDATE_ME.",
+      "metricsAsOf": "2026-10-06T19:11:31+02:00",
+      "isPlaceholder": true
+    },
+    "tiktok": {
+      "handle": "@deendaily254",
+      "url": "https://tiktok.com/@deendaily254",
+      "ownerAgent": "deen_growth",
+      "ownerAgentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
+      "bufferChannelId": "6ab5b83dea19ca0bdeddf2ff",
+      "bufferOrgId": "6ab57b5c3c182524e1126b2f",
+      "metrics": {
+        "followers": "UPDATE_ME",
+        "viewsThisWeek": 2232,
+        "likesThisWeek": 440,
+        "commentsThisWeek": 2,
+        "savesThisWeek": "UPDATE_ME",
+        "sharesThisWeek": 11,
+        "postsThisWeek": 6,
+        "reachThisWeek": 1908,
+        "engagementRatePct": 20.3,
+        "watchTimeMinutes": 108.23,
+        "avgWatchTimeSec": 2.81,
+        "postingStreakDays": 0,
+        "postingGoalPerWeek": 5,
+        "postingGoalStatus": "AtRisk",
+        "postingGoalSentThisPeriod": 0,
+        "postingGoalPeriod": "2026-10-04 → 2026-10-10 Vienna (Buffer)"
+      },
+      "topPost": {
+        "title": "Salah / Prayer on time reminder",
+        "hashtags": "#allah #salah #prayer #islam #quran #sunnah #reminder #muslim #tawheed #prayontime",
+        "bufferPostId": "6ac0c724713b7277a0b2e1f2",
+        "url": "UPDATE_ME",
+        "views": 855,
+        "likes": 132,
+        "comments": 1,
+        "shares": 0,
+        "reach": 733,
+        "postedAt": "2026-10-03T11:14:53+02:00"
+      },
+      "scheduleVienna": {
+        "mon": [
+          "09:28"
+        ],
+        "tue": [
+          "07:28"
+        ],
+        "wed": [],
+        "thu": [],
+        "fri": [
+          "22:29"
+        ],
+        "sat": [
+          "17:35"
+        ],
+        "sun": [
+          "09:47"
+        ]
+      },
+      "source": "Buffer get_aggregated_post_metrics + list_posts (includeMetrics) + get_channel 2026-09-29 → 2026-10-06 Vienna",
+      "metricsAsOf": "2026-10-06T14:06:26+02:00",
+      "isPlaceholder": false
+    },
+    "youtube": {
+      "handle": "Voices of Tawheed (planned Brand channel; was Hari C private)",
+      "url": "UPDATE_ME",
+      "channelId": "UPDATE_ME",
+      "ownerAgent": "deen_growth",
+      "ownerAgentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
+      "productionOwner": "clipper_akh",
+      "productionOwnerId": "b8f5286c-3168-4aad-ba62-b7f68617ba06",
+      "metrics": {
+        "subscribers": "UPDATE_ME",
+        "viewsThisWeek": "UPDATE_ME",
+        "likesThisWeek": "UPDATE_ME",
+        "commentsThisWeek": "UPDATE_ME",
+        "savesThisWeek": "UPDATE_ME",
+        "sharesThisWeek": "UPDATE_ME",
+        "postsThisWeek": "UPDATE_ME",
+        "watchHours365d": "UPDATE_ME",
+        "shortsViews90d": "UPDATE_ME",
+        "postingStreakDays": "UPDATE_ME"
+      },
+      "topPost": {
+        "title": "UPDATE_ME",
+        "url": "UPDATE_ME",
+        "views": "UPDATE_ME",
+        "likes": "UPDATE_ME",
+        "postedAt": "UPDATE_ME"
+      },
+      "monetization": {
+        "yppStatus": "UPDATE_ME",
+        "fanFundingTier": {
+          "neededSubs": 500,
+          "neededWatchHoursOrShorts": "3000h Longform / 365d ODER 3M Shorts Views / 90d",
+          "uploadsIn90d": "UPDATE_ME",
+          "progressNote": "Fan-Funding-Tier (500 Subs) ist realistisches Near-Term-Ziel. Ad-Revenue YPP steigt ab 1 Feb 2027 auf 8.000h / 20M Shorts."
+        },
+        "adRevenueYpp": {
+          "neededSubs": 1000,
+          "untilFeb2027": "4000h / 365d ODER 10M Shorts / 90d",
+          "fromFeb2027": "8000h / 365d ODER 20M Shorts / 90d"
+        }
+      },
+      "source": "Pending: Hari creates Brand channel „Voices of Tawheed“. TubeAlfred found no clear „Hari C“ Islam channel. Studio/TubeAlfred metrics once channelId known.",
+      "metricsAsOf": null,
+      "isPlaceholder": true
+    }
+  },
+  "ideas": [
+    {
+      "id": "idea-001",
+      "title": "Surah Ad-Duha – Trost wenn du dich verlassen fühlst (DE)",
+      "platform": "all",
+      "pillar": "ayah_meaning",
+      "status": "draft",
+      "ownerAgent": "deen_growth",
+      "ownerAgentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
+      "notes": "Hook: Wenn du dich verlassen fühlst… | 15–35s"
+    },
+    {
+      "id": "idea-002",
+      "title": "Dua für Eltern – Birr al-Walidayn",
+      "platform": "all",
+      "pillar": "dua",
+      "status": "draft",
+      "ownerAgent": "deen_growth",
+      "ownerAgentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
+      "notes": "Benefit-Titel schlägt generische Rezitation"
+    },
+    {
+      "id": "idea-003",
+      "title": "Laylat al-Jumu'ah / Freitag-Reminder (Salawat)",
+      "platform": "tiktok",
+      "pillar": "occasion",
+      "status": "draft",
+      "ownerAgent": "deen_growth",
+      "ownerAgentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
+      "notes": "Do–Fr Fenster; Shares historically stark in Niche"
+    },
+    {
+      "id": "idea-004",
+      "title": "Surah Al-Mulk – Schutz im Grab (DE/BS on-screen)",
+      "platform": "all",
+      "pillar": "ayah_meaning",
+      "status": "draft",
+      "ownerAgent": "deen_growth",
+      "ownerAgentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
+      "notes": "Keyword in Audio + Caption + On-Screen"
+    },
+    {
+      "id": "idea-005",
+      "title": "Tawhid in 30s – Teil 1 (eigene Stimme/Text)",
+      "platform": "all",
+      "pillar": "tawhid_sunnah",
+      "status": "draft",
+      "ownerAgent": "clipper_akh",
+      "ownerAgentId": "b8f5286c-3168-4aad-ba62-b7f68617ba06",
+      "notes": "Originalitäts-Pflicht 2026; Serie nummerieren"
+    },
+    {
+      "id": "idea-006",
+      "title": "Haya – Blick senken (Reminder)",
+      "platform": "tiktok",
+      "pillar": "tawhid_sunnah",
+      "status": "posted",
+      "ownerAgent": "deen_growth",
+      "ownerAgentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
+      "notes": "Buffer 6ac0c7c2… posted 2026-10-03"
+    },
+    {
+      "id": "idea-007",
+      "title": "Morning Adhkar – Start den Tag mit Dhikr",
+      "platform": "tiktok",
+      "pillar": "dua",
+      "status": "posted",
+      "ownerAgent": "deen_growth",
+      "ownerAgentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
+      "notes": "Buffer 6ac0c817… posted 2026-10-03"
+    },
+    {
+      "id": "idea-008",
+      "title": "Salah on time – Bete rechtzeitig",
+      "platform": "tiktok",
+      "pillar": "tawhid_sunnah",
+      "status": "posted",
+      "ownerAgent": "deen_growth",
+      "ownerAgentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
+      "notes": "Top Post diese Woche: 855 Views / 132 Likes"
+    },
+    {
+      "id": "idea-009",
+      "title": "IG Trial Reel: Ad-Duha Hook A/B (2 Varianten)",
+      "platform": "instagram",
+      "pillar": "ayah_meaning",
+      "status": "draft",
+      "ownerAgent": "vot_growth",
+      "ownerAgentId": "44289084-0ba3-49ca-9cf8-eb04829a2288",
+      "notes": "Nur in-app Trial Reels; ≥200 Follower für Pro"
+    },
+    {
+      "id": "idea-010",
+      "title": "IG Carousel: Eine Ayah + DE Übersetzung (3–5 Slides)",
+      "platform": "instagram",
+      "pillar": "ayah_meaning",
+      "status": "draft",
+      "ownerAgent": "vot_growth",
+      "ownerAgentId": "44289084-0ba3-49ca-9cf8-eb04829a2288",
+      "notes": "Carousels stark in Feed; max 5 Hashtags"
+    },
+    {
+      "id": "idea-011",
+      "title": "Longform 8–12 Min: Rezitation + DE Übersetzung + kurzer Tafsir",
+      "platform": "youtube",
+      "pillar": "ayah_meaning",
+      "status": "draft",
+      "ownerAgent": "clipper_akh",
+      "ownerAgentId": "b8f5286c-3168-4aad-ba62-b7f68617ba06",
+      "notes": "Watch-Hours-Pfad Richtung Fan-Funding / YPP"
+    },
+    {
+      "id": "idea-012",
+      "title": "Dua bei Angst / Anxiety (DE + Quelle)",
+      "platform": "all",
+      "pillar": "dua",
+      "status": "draft",
+      "ownerAgent": "deen_growth",
+      "ownerAgentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
+      "notes": "Benefit-first Titel"
+    },
+    {
+      "id": "idea-013",
+      "title": "Al-Kahf Freitag – Hast du heute schon gelesen?",
+      "platform": "all",
+      "pillar": "occasion",
+      "status": "draft",
+      "ownerAgent": "deen_growth",
+      "ownerAgentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
+      "notes": "Fr Morgen; Al-Kahf 18:10; Licht bis nächsten Freitag (al-Hakim)"
+    },
+    {
+      "id": "idea-014",
+      "title": "Ayat al-Kursi nach dem Gebet",
+      "platform": "all",
+      "pillar": "ayah_meaning",
+      "status": "draft",
+      "ownerAgent": "deen_growth",
+      "ownerAgentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
+      "notes": "2:255; Benefit: zwischen dir und Jannah nur noch der Tod (an-Nasa'i)"
+    },
+    {
+      "id": "idea-015",
+      "title": "Quran recite clip (high shares) – Format wiederholen",
+      "platform": "tiktok",
+      "pillar": "ayah_meaning",
+      "status": "posted",
+      "ownerAgent": "deen_growth",
+      "ownerAgentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
+      "notes": "Buffer 6ac0c773… 278 Views / 76 Likes / 10 Shares — höchste Share-Rate der Woche"
+    }
+  ],
+  "plans": {
+    "instagram": {
+      "frequency": "4–7 Posts/Woche (Reels + optional Carousel)",
+      "bestTimesVienna": "Di–Do ca. 12:00–20:00; Buffer-breit: Do 09:00, Wochentags 18:00. Nach 3–4 Wochen Insights überschreiben.",
+      "focus": "Watch time, Likes/Reach, Sends/Reach. Trial Reels testen. Originalität (seit Apr 2026).",
+      "source": "/workspace/growth/research.md §1 Instagram"
+    },
+    "tiktok": {
+      "frequency": "1/Tag (≥5/Woche). Buffer-Queue ≤10.",
+      "bestTimesVienna": "Hauptfenster 18:00–21:30; Weekend Sa 15:00–17:00, So 09:00–13:00. Buffer-Slots am Channel: Mo 09:28, Di 07:28, Fr 22:29, Sa 17:35, So 09:47. Aktuelle Buffer-Woche (ab 4.10.): 0/5 Posts → AtRisk.",
+      "focus": "Completion + Shares. SEO: Keyword in Audio, On-Screen, Caption. 15–35s Default.",
+      "monetization": "Creator Rewards: AT-Verfügbarkeit UNVERIFIED — in-App prüfen. Schwellen: 10k Follower, 100k Views/30d, ≥1 Min Original.",
+      "source": "/workspace/growth/research.md §1 TikTok + Buffer get_channel"
+    },
+    "youtube": {
+      "frequency": "1 Short/Tag + 1 Longform alle 1–2 Wochen (Watch Hours)",
+      "bestTimesVienna": "Timing laut YT wenig relevant — gleiche Fenster wie TT/IG für Konsistenz.",
+      "focus": "„How many chose to view“, Original commentary/editing. Kein Delete+Repost. Neuer Brand-Kanal „Voices of Tawheed“ statt privatem Hari C — Channel-ID noch offen.",
+      "monetization": "Near-term: Fan-Funding (500 Subs). Ad-YPP: bis Feb 2027 4k h / 10M Shorts; ab Feb 2027 8k h / 20M Shorts.",
+      "source": "/workspace/growth/research.md §0–1 YouTube"
+    }
+  },
+  "agentsBoard": {
+    "vot_growth": {
+      "agentId": "44289084-0ba3-49ca-9cf8-eb04829a2288",
+      "name": "VoT Growth",
+      "responsibility": "IG @voicesoftawheed Metrics, Top Post, Streak, IG-Ideen, IG-Plan",
+      "lastUpdated": "2026-10-06T19:11:31+02:00",
+      "status": "followers_and_topPost_live_week_pending_oct_reels"
+    },
+    "deen_growth": {
+      "agentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
+      "name": "Deen Growth TT+YT",
+      "responsibility": "TT Buffer-Metrics wöchentlich; YT Studio/TubeAlfred; TT+YT Ideen & Pläne; Follower-Zahlen",
+      "lastUpdated": "2026-10-06T19:08:45+02:00",
+      "status": "tt_metrics_confirmed_yt_channel_id_needed"
+    },
+    "clipper_akh": {
+      "agentId": "b8f5286c-3168-4aad-ba62-b7f68617ba06",
+      "name": "Clipper AKH",
+      "responsibility": "Video-Produktion; Dashboard-Struktur; Ideas Status filming→posted; Weekly Routine anlegen",
+      "lastUpdated": "2026-10-06T19:06:00+02:00",
+      "status": "dashboard_bootstrapped"
+    }
+  }
+}

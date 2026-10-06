@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>JARVIS · Growth Command Center</title>
+<style>
+  :root {
+    --bg: #020508;
+    --bg2: #050a12;
+    --panel: rgba(8, 18, 32, 0.72);
+    --panel-solid: #081220;
+    --glass: rgba(0, 212, 255, 0.04);
+    --border: rgba(0, 212, 255, 0.22);
+    --border-strong: rgba(0, 212, 255, 0.45);
+    --cyan: #00d4ff;
+    --cyan-dim: #0099bb;
+    --blue: #3b82f6;
+    --gold: #d4af37;
+    --gold-dim: #a88b2a;
+    --text: #e6f7ff;
+    --muted: #7a9bb0;
+    --ok: #00ff9d;
+    --warn: #ffb020;
+    --bad: #ff4d6a;
+    --ig: #ff4d8d;
+    --tt: #00f0ff;
+    --yt: #ff5c5c;
+    --radius: 12px;
+    --font: "Segoe UI", "Din Alternate", system-ui, -apple-system, sans-serif;
+    --mono: "Cascadia Code", "SF Mono", "Consolas", ui-monospace, monospace;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: var(--font);
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.45;
+    overflow-x: hidden;
+  }
+
+  /* —— Ambient HUD background —— */
+  .bg-layer {
+    position: fixed; inset: 0; z-index: 0; pointer-events: none;
+    background:
+      radial-gradient(ellipse 80% 50% at 50% -20%, rgba(0, 80, 120, 0.35), transparent 60%),
+      radial-gradient(ellipse 40% 40% at 90% 80%, rgba(0, 60, 100, 0.2), transparent 50%),
+      radial-gradient(ellipse 35% 35% at 5% 70%, rgba(40, 30, 0, 0.15), transparent 50%),
+      var(--bg);
+  }
+  .grid-overlay {
+    position: fixed; inset: 0; z-index: 0; pointer-events: none;
+    background-image:
+      linear-gradient(rgba(0, 212, 255, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 212, 255, 0.03) 1px, transparent 1px);
+    background-size: 48px 48px;
+    mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, black 20%, transparent 80%);
+    animation: gridDrift 60s linear infinite;
+  }
+  @keyframes gridDrift {
+    from { background-position: 0 0; }
+    to { background-position: 48px 48px; }
+  }
+  .scanlines {
+    position: fixed; inset: 0; z-index: 9999; pointer-events: none;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0, 0, 0, 0.08) 2px,
+      rgba(0, 0, 0, 0.08) 4px
+    );
+    opacity: 0.35;
+  }
+  .particles {
+    position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden;
+  }
+  .particle {
+    position: absolute;
+    width: 2px; height: 2px;
+    background: var(--cyan);
+    border-radius: 50%;
+    opacity: 0;
+    box-shadow: 0 0 6px var(--cyan);
+    animation: floatUp linear infinite;
+  }
+  @keyframes floatUp {
+    0% { transform: translateY(100vh) scale(0); opacity: 0; }
+    10% { opacity: 0.6; }
+    90% { opacity: 0.3; }
+    100% { transform: translateY(-10vh) scale(1); opacity: 0; }
+  }
+
+  .wrap {
+    position: relative; z-index: 1;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 16px 20px 48px;
+  }
+
+  /* —— Entrance —— */
+  @keyframes fadeSlide {
+    from { opacity: 0; transform: translateY(14px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .anim { animation: fadeSlide 0.55s ease-out both; }
+  .d1 { animation-delay: 0.05s; }
+  .d2 { animation-delay: 0.12s; }
+  .d3 { animation-delay: 0.2s; }
+  .d4 { animation-delay: 0.28s; }
+  .d5 { animation-delay: 0.36s; }
+  .d6 { animation-delay: 0.44s; }
+
+  /* —— Hero —— */
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 18px 22px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    backdrop-filter: blur(12px);
+    box-shadow:
+      0 0 0 1px rgba(0, 212, 255, 0.06) inset,
+      0 0 40px rgba(0, 180, 255, 0.08),
+      0 8px 32px rgba(0, 0, 0, 0.4);
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: "";
+    position: absolute; top: 0; left: 0; right: 0; height: 1px;
+    background: linear-gradient(90deg, transparent, var(--cyan), var(--gold), var(--cyan), transparent);
+    opacity: 0.7;
+  }
+  .hero-left { min-width: 0; }
+  .status-line {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px;
+    margin-bottom: 6px;
+  }
+  .sys-badge {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ok);
+    display: inline-flex; align-items: center; gap: 8px;
+    text-shadow: 0 0 12px rgba(0, 255, 157, 0.5);
+  }
+  .sys-badge .pulse {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: var(--ok);
+    box-shadow: 0 0 8px var(--ok);
+    animation: pulseDot 1.6s ease-in-out infinite;
+  }
+  @keyframes pulseDot {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.45; transform: scale(0.85); }
+  }
+  .channels-badge {
+    font-family: var(--mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--cyan);
+    border: 1px solid var(--border);
+    padding: 3px 10px;
+    border-radius: 4px;
+    background: rgba(0, 212, 255, 0.06);
+  }
+  h1 {
+    margin: 0;
+    font-size: clamp(1.35rem, 2.5vw, 1.85rem);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    background: linear-gradient(105deg, #fff 0%, var(--cyan) 45%, var(--gold) 100%);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .sub {
+    color: var(--muted);
+    font-size: 0.82rem;
+    margin-top: 4px;
+  }
+  .clock-panel {
+    text-align: right;
+    font-family: var(--mono);
+    min-width: 160px;
+  }
+  .clock-time {
+    font-size: 1.65rem;
+    font-weight: 600;
+    color: var(--cyan);
+    letter-spacing: 0.06em;
+    text-shadow: 0 0 20px rgba(0, 212, 255, 0.4);
+    line-height: 1.1;
+  }
+  .clock-date {
+    font-size: 0.72rem;
+    color: var(--muted);
+    letter-spacing: 0.08em;
+    margin-top: 4px;
+  }
+  .clock-tz {
+    font-size: 0.65rem;
+    color: var(--gold-dim);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  .meta-bar {
+    display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px;
+  }
+  .chip {
+    font-size: 0.68rem;
+    font-family: var(--mono);
+    color: var(--muted);
+    border: 1px solid var(--border);
+    padding: 3px 8px;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .chip strong { color: var(--cyan-dim); font-weight: 600; }
+
+  /* —— Section shells —— */
+  .sec {
+    margin-bottom: 18px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 0 1px rgba(0, 212, 255, 0.04) inset, 0 6px 24px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+  }
+  .sec-h {
+    display: flex; align-items: center; justify-content: space-between; gap: 10px;
+    padding: 10px 16px;
+    border-bottom: 1px solid var(--border);
+    background: linear-gradient(180deg, rgba(0, 40, 60, 0.35), transparent);
+  }
+  .sec-h h2 {
+    margin: 0;
+    font-size: 0.78rem;
+    font-weight: 650;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--cyan);
+    display: flex; align-items: center; gap: 8px;
+  }
+  .sec-h h2::before {
+    content: "";
+    width: 6px; height: 6px;
+    background: var(--cyan);
+    box-shadow: 0 0 8px var(--cyan);
+    transform: rotate(45deg);
+  }
+  .sec-tag {
+    font-family: var(--mono);
+    font-size: 0.62rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .sec-b { padding: 14px 16px; }
+
+  .grid { display: grid; gap: 12px; }
+  .g3 { grid-template-columns: repeat(3, 1fr); }
+  .g2 { grid-template-columns: repeat(2, 1fr); }
+  .g4 { grid-template-columns: repeat(4, 1fr); }
+  @media (max-width: 960px) {
+    .g3, .g4 { grid-template-columns: 1fr 1fr; }
+    .hero { grid-template-columns: 1fr; }
+    .clock-panel { text-align: left; }
+  }
+  @media (max-width: 640px) {
+    .g3, .g2, .g4 { grid-template-columns: 1fr; }
+    .wrap { padding: 12px 10px 40px; }
+  }
+
+  /* —— Rings / overview —— */
+  .ring-card {
+    display: flex; flex-direction: column; align-items: center; gap: 8px;
+    padding: 14px 10px;
+    background: var(--glass);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    transition: border-color 0.25s, box-shadow 0.25s;
+  }
+  .ring-card:hover {
+    border-color: var(--border-strong);
+    box-shadow: 0 0 24px rgba(0, 212, 255, 0.12);
+  }
+  .ring-wrap {
+    position: relative;
+    width: 110px; height: 110px;
+  }
+  .ring-wrap svg { width: 100%; height: 100%; transform: rotate(-90deg); }
+  .ring-bg { fill: none; stroke: rgba(0, 212, 255, 0.12); stroke-width: 6; }
+  .ring-fg {
+    fill: none; stroke-width: 6; stroke-linecap: round;
+    stroke: var(--cyan);
+    filter: drop-shadow(0 0 4px rgba(0, 212, 255, 0.6));
+    transition: stroke-dashoffset 0.9s ease-out;
+  }
+  .ring-fg.gold { stroke: var(--gold); filter: drop-shadow(0 0 4px rgba(212, 175, 55, 0.55)); }
+  .ring-fg.warn { stroke: var(--warn); filter: drop-shadow(0 0 4px rgba(255, 176, 32, 0.5)); }
+  .ring-fg.ok { stroke: var(--ok); filter: drop-shadow(0 0 4px rgba(0, 255, 157, 0.5)); }
+  .ring-center {
+    position: absolute; inset: 0;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    transform: rotate(0);
+  }
+  .ring-val {
+    font-family: var(--mono);
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1;
+  }
+  .ring-unit { font-size: 0.58rem; color: var(--muted); letter-spacing: 0.08em; margin-top: 3px; text-transform: uppercase; }
+  .ring-lbl {
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-align: center;
+  }
+  .ring-hint { font-size: 0.68rem; color: var(--muted); text-align: center; max-width: 160px; }
+
+  .stat-mini {
+    background: var(--glass);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 14px;
+  }
+  .stat-mini .lbl {
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .stat-mini .val {
+    font-family: var(--mono);
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--cyan);
+    margin-top: 4px;
+    text-shadow: 0 0 16px rgba(0, 212, 255, 0.25);
+  }
+  .stat-mini .hint { font-size: 0.72rem; color: var(--muted); margin-top: 3px; }
+
+  /* —— SIGNAL WEAK badge —— */
+  .signal-weak {
+    display: inline-flex; align-items: center; gap: 5px;
+    font-family: var(--mono);
+    font-size: 0.62rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--warn);
+    background: rgba(255, 176, 32, 0.1);
+    border: 1px solid rgba(255, 176, 32, 0.4);
+    padding: 2px 7px;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(255, 176, 32, 0.15);
+    white-space: nowrap;
+  }
+  .signal-weak::before {
+    content: "";
+    width: 5px; height: 5px; border-radius: 50%;
+    background: var(--warn);
+    animation: pulseDot 1.2s ease-in-out infinite;
+  }
+  .live-tag {
+    display: inline-flex; align-items: center; gap: 5px;
+    font-family: var(--mono);
+    font-size: 0.62rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ok);
+    background: rgba(0, 255, 157, 0.08);
+    border: 1px solid rgba(0, 255, 157, 0.35);
+    padding: 2px 7px;
+    border-radius: 3px;
+  }
+  .live-tag::before {
+    content: "";
+    width: 5px; height: 5px; border-radius: 50%;
+    background: var(--ok);
+    box-shadow: 0 0 6px var(--ok);
+  }
+
+  /* —— Platform holo cards —— */
+  .plat {
+    position: relative;
+    background: linear-gradient(165deg, rgba(0, 30, 50, 0.6), rgba(5, 10, 18, 0.85));
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 14px;
+    transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s;
+    overflow: hidden;
+  }
+  .plat::after {
+    content: "";
+    position: absolute; top: -50%; left: -50%;
+    width: 200%; height: 200%;
+    background: linear-gradient(45deg, transparent 40%, rgba(0, 212, 255, 0.03) 50%, transparent 60%);
+    pointer-events: none;
+    transition: opacity 0.3s;
+    opacity: 0;
+  }
+  .plat:hover {
+    border-color: var(--border-strong);
+    box-shadow: 0 0 32px rgba(0, 212, 255, 0.18), 0 0 0 1px rgba(0, 212, 255, 0.15) inset;
+    transform: translateY(-2px);
+  }
+  .plat:hover::after { opacity: 1; }
+  .plat.ig:hover { box-shadow: 0 0 32px rgba(255, 77, 141, 0.2); border-color: rgba(255, 77, 141, 0.45); }
+  .plat.tt:hover { box-shadow: 0 0 32px rgba(0, 240, 255, 0.22); border-color: rgba(0, 240, 255, 0.5); }
+  .plat.yt:hover { box-shadow: 0 0 32px rgba(255, 92, 92, 0.2); border-color: rgba(255, 92, 92, 0.45); }
+
+  .plat-top {
+    display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;
+    margin-bottom: 12px;
+  }
+  .plat h3 {
+    margin: 0;
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+  }
+  .plat.ig h3 { color: var(--ig); text-shadow: 0 0 12px rgba(255, 77, 141, 0.35); }
+  .plat.tt h3 { color: var(--tt); text-shadow: 0 0 12px rgba(0, 240, 255, 0.35); }
+  .plat.yt h3 { color: var(--yt); text-shadow: 0 0 12px rgba(255, 92, 92, 0.35); }
+  .plat .handle { font-size: 0.75rem; color: var(--muted); margin-top: 2px; font-family: var(--mono); }
+  .plat .owner { font-size: 0.68rem; color: var(--gold-dim); margin-top: 2px; }
+
+  .metrics {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(88px, 1fr));
+    gap: 6px;
+  }
+  .m {
+    background: rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(0, 212, 255, 0.1);
+    border-radius: 6px;
+    padding: 7px 8px;
+  }
+  .m .k {
+    font-size: 0.58rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .m .v {
+    font-family: var(--mono);
+    font-size: 0.88rem;
+    font-weight: 650;
+    margin-top: 2px;
+    color: var(--text);
+  }
+  .top-post {
+    margin-top: 12px;
+    padding-top: 10px;
+    border-top: 1px dashed rgba(0, 212, 255, 0.15);
+    font-size: 0.82rem;
+  }
+  .top-post .tp-lbl {
+    font-size: 0.6rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 3px;
+  }
+
+  /* —— Mission board (ideas) —— */
+  .mission-board {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding-left: 18px;
+  }
+  .mission-board::before {
+    content: "";
+    position: absolute;
+    left: 5px; top: 8px; bottom: 8px;
+    width: 2px;
+    background: linear-gradient(180deg, var(--cyan), rgba(0, 212, 255, 0.1));
+    border-radius: 2px;
+  }
+  .mission {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 12px;
+    align-items: start;
+    padding: 10px 12px;
+    margin-bottom: 6px;
+    background: rgba(0, 0, 0, 0.28);
+    border: 1px solid rgba(0, 212, 255, 0.12);
+    border-radius: 8px;
+    transition: border-color 0.2s, background 0.2s;
+  }
+  .mission:hover {
+    border-color: var(--border-strong);
+    background: rgba(0, 30, 50, 0.4);
+  }
+  .mission::before {
+    content: "";
+    position: absolute;
+    left: -16px; top: 16px;
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--cyan);
+    box-shadow: 0 0 8px var(--cyan);
+    border: 2px solid var(--bg);
+  }
+  .mission.st-posted::before { background: var(--ok); box-shadow: 0 0 8px var(--ok); }
+  .mission.st-filming::before { background: var(--warn); box-shadow: 0 0 8px var(--warn); }
+  .mission.st-approved::before { background: var(--blue); box-shadow: 0 0 8px var(--blue); }
+  .mission.st-draft::before { background: var(--muted); box-shadow: none; }
+
+  .st {
+    font-family: var(--mono);
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 4px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+  }
+  .st-draft { background: rgba(122, 155, 176, 0.15); color: #a0b8c8; border: 1px solid rgba(122, 155, 176, 0.3); }
+  .st-approved { background: rgba(59, 130, 246, 0.15); color: #7eb6ff; border: 1px solid rgba(59, 130, 246, 0.35); }
+  .st-filming { background: rgba(255, 176, 32, 0.12); color: var(--warn); border: 1px solid rgba(255, 176, 32, 0.35); }
+  .st-posted { background: rgba(0, 255, 157, 0.1); color: var(--ok); border: 1px solid rgba(0, 255, 157, 0.3); }
+
+  .mission .t { font-weight: 600; font-size: 0.9rem; }
+  .mission .meta { font-size: 0.72rem; color: var(--muted); margin-top: 2px; }
+  .mission .crew {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    color: var(--gold);
+    white-space: nowrap;
+    text-align: right;
+  }
+  @media (max-width: 600px) {
+    .mission { grid-template-columns: 1fr; }
+    .mission .crew { text-align: left; }
+  }
+
+  /* —— Plans —— */
+  .plan-card {
+    background: var(--glass);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 14px;
+    transition: border-color 0.25s, box-shadow 0.25s;
+  }
+  .plan-card:hover {
+    border-color: var(--border-strong);
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.1);
+  }
+  .plan-card h4 {
+    margin: 0 0 8px;
+    font-size: 0.95rem;
+    letter-spacing: 0.04em;
+  }
+  .plan-card.ig h4 { color: var(--ig); }
+  .plan-card.tt h4 { color: var(--tt); }
+  .plan-card.yt h4 { color: var(--yt); }
+  .plan-card p {
+    margin: 0 0 6px;
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  .plan-card strong { color: var(--text); font-weight: 600; }
+
+  /* —— Crew panels —— */
+  .crew-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+  @media (max-width: 800px) { .crew-grid { grid-template-columns: 1fr; } }
+  .crew-panel {
+    position: relative;
+    background: linear-gradient(160deg, rgba(0, 40, 60, 0.4), rgba(0, 0, 0, 0.4));
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px;
+    transition: border-color 0.25s, box-shadow 0.25s;
+  }
+  .crew-panel:hover {
+    border-color: var(--border-strong);
+    box-shadow: 0 0 24px rgba(0, 212, 255, 0.12);
+  }
+  .crew-top {
+    display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;
+    margin-bottom: 8px;
+  }
+  .crew-name {
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--text);
+  }
+  .crew-id {
+    font-family: var(--mono);
+    font-size: 0.58rem;
+    color: var(--muted);
+    margin-top: 2px;
+    word-break: break-all;
+  }
+  .crew-resp {
+    font-size: 0.78rem;
+    color: var(--muted);
+    margin-bottom: 10px;
+    min-height: 2.4em;
+  }
+  .crew-foot {
+    display: flex; justify-content: space-between; align-items: center; gap: 8px;
+    flex-wrap: wrap;
+    padding-top: 8px;
+    border-top: 1px solid rgba(0, 212, 255, 0.1);
+  }
+  .crew-ts {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    color: var(--muted);
+  }
+  .crew-ts.fresh {
+    color: var(--ok);
+  }
+  .crew-ts.fresh::before {
+    content: "";
+    display: inline-block;
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--ok);
+    box-shadow: 0 0 8px var(--ok);
+    margin-right: 5px;
+    animation: pulseDot 1.8s ease-in-out infinite;
+    vertical-align: middle;
+  }
+  .status-chip {
+    font-family: var(--mono);
+    font-size: 0.58rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--cyan);
+    border: 1px solid var(--border);
+    padding: 2px 6px;
+    border-radius: 3px;
+    max-width: 160px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.7rem;
+    margin-top: 12px;
+    font-family: var(--mono);
+    letter-spacing: 0.04em;
+  }
+  footer code {
+    color: var(--cyan-dim);
+    background: rgba(0, 212, 255, 0.06);
+    padding: 1px 5px;
+    border-radius: 3px;
+  }
+  a { color: var(--cyan); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .err {
+    background: rgba(80, 10, 20, 0.6);
+    border: 1px solid rgba(255, 77, 106, 0.4);
+    color: #ffb4b4;
+    padding: 16px;
+    border-radius: 10px;
+    margin: 16px 0;
+  }
+
+  /* Sound toggle */
+  .sound-toggle {
+    position: fixed;
+    bottom: 14px; right: 14px;
+    z-index: 100;
+    font-family: var(--mono);
+    font-size: 0.62rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    background: var(--panel-solid);
+    border: 1px solid var(--border);
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.2s, border-color 0.2s;
+  }
+  .sound-toggle:hover { opacity: 1; border-color: var(--border-strong); }
+  .sound-toggle.on { color: var(--cyan); border-color: var(--cyan); }
+
+  @media (prefers-reduced-motion: reduce) {
+    .anim, .particle, .grid-overlay, .pulse, .sys-badge .pulse,
+    .signal-weak::before, .live-tag::before, .crew-ts.fresh::before { animation: none !important; }
+    .plat:hover { transform: none; }
+  }
+</style>
+</head>
+<body>
+<div class="bg-layer" aria-hidden="true"></div>
+<div class="grid-overlay" aria-hidden="true"></div>
+<div class="particles" id="particles" aria-hidden="true"></div>
+<div class="scanlines" aria-hidden="true"></div>
+
+<div class="wrap">
+  <header class="hero anim d1">
+    <div class="hero-left">
+      <div class="status-line">
+        <span class="sys-badge"><span class="pulse"></span> SYSTEM ONLINE</span>
+        <span class="channels-badge" id="channelsActive">KANÄLE AKTIV —</span>
+      </div>
+      <h1>GROWTH COMMAND CENTER</h1>
+      <div class="sub">Islamische Kanäle · Instagram · TikTok · YouTube · Wien</div>
+      <div class="meta-bar">
+        <span class="chip" id="weekChip">Woche: —</span>
+        <span class="chip" id="updatedChip">Stand: lädt…</span>
+      </div>
+    </div>
+    <div class="clock-panel">
+      <div class="clock-time" id="clockTime">--:--:--</div>
+      <div class="clock-date" id="clockDate">—</div>
+      <div class="clock-tz">Europe / Vienna</div>
+    </div>
+  </header>
+
+  <div id="error" class="err" hidden></div>
+  <div id="app" hidden>
+
+    <section class="sec anim d2">
+      <div class="sec-h">
+        <h2>Mission Status</h2>
+        <span class="sec-tag">Wochenziele · Ringe</span>
+      </div>
+      <div class="sec-b">
+        <div class="grid g4" id="rings"></div>
+        <div class="grid g3" id="overview" style="margin-top:12px"></div>
+      </div>
+    </section>
+
+    <section class="sec anim d3">
+      <div class="sec-h">
+        <h2>Plattform-Sensoren</h2>
+        <span class="sec-tag">Holografische Panels</span>
+      </div>
+      <div class="sec-b grid g3" id="platforms"></div>
+    </section>
+
+    <section class="sec anim d4">
+      <div class="sec-h">
+        <h2>Missions-Board</h2>
+        <span class="sec-tag">Ideen-Queue · Timeline</span>
+      </div>
+      <div class="sec-b">
+        <div class="mission-board" id="ideas"></div>
+      </div>
+    </section>
+
+    <section class="sec anim d5">
+      <div class="sec-h">
+        <h2>Einsatzpläne</h2>
+        <span class="sec-tag">aus research.md</span>
+      </div>
+      <div class="sec-b grid g3" id="plans"></div>
+    </section>
+
+    <section class="sec anim d6">
+      <div class="sec-h">
+        <h2>Crew-Status</h2>
+        <span class="sec-tag">Agent-Verantwortung</span>
+      </div>
+      <div class="sec-b">
+        <div class="crew-grid" id="board"></div>
+      </div>
+    </section>
+
+  </div>
+  <footer>Daten: <code>data.json</code> · Regeln: <code>AGENTS.md</code> · Niemals Zahlen erfinden · UI-Sounds: aus</footer>
+</div>
+
+<button type="button" class="sound-toggle" id="soundToggle" title="UI-Sounds (standard: aus)" aria-pressed="false">🔊 SOUND OFF</button>
+
+<script>
+/* Optional UI sound hooks — OFF by default */
+const Sound = {
+  enabled: false,
+  ctx: null,
+  init() {
+    if (!this.ctx) {
+      try { this.ctx = new (window.AudioContext || window.webkitAudioContext)(); } catch (_) {}
+    }
+  },
+  beep(freq = 880, dur = 0.04, type = 'sine', gain = 0.03) {
+    if (!this.enabled || !this.ctx) return;
+    const o = this.ctx.createOscillator();
+    const g = this.ctx.createGain();
+    o.type = type;
+    o.frequency.value = freq;
+    g.gain.value = gain;
+    o.connect(g); g.connect(this.ctx.destination);
+    o.start();
+    g.gain.exponentialRampToValueAtTime(0.001, this.ctx.currentTime + dur);
+    o.stop(this.ctx.currentTime + dur);
+  },
+  hover() { this.beep(1200, 0.03, 'sine', 0.02); },
+  click() { this.beep(660, 0.05, 'triangle', 0.025); }
+};
+
+document.getElementById('soundToggle').addEventListener('click', function () {
+  Sound.enabled = !Sound.enabled;
+  if (Sound.enabled) { Sound.init(); Sound.click(); }
+  this.classList.toggle('on', Sound.enabled);
+  this.setAttribute('aria-pressed', Sound.enabled ? 'true' : 'false');
+  this.textContent = Sound.enabled ? '🔊 SOUND ON' : '🔊 SOUND OFF';
+});
+
+/* Ambient particles (lightweight, CSS-animated) */
+(function spawnParticles() {
+  const box = document.getElementById('particles');
+  const n = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 18;
+  for (let i = 0; i < n; i++) {
+    const p = document.createElement('span');
+    p.className = 'particle';
+    p.style.left = (Math.random() * 100) + '%';
+    p.style.animationDuration = (12 + Math.random() * 20) + 's';
+    p.style.animationDelay = (Math.random() * 15) + 's';
+    p.style.width = p.style.height = (1 + Math.random() * 2) + 'px';
+    box.appendChild(p);
+  }
+})();
+
+/* Live clock — Europe/Vienna */
+function tickClock() {
+  const now = new Date();
+  const time = new Intl.DateTimeFormat('de-AT', {
+    timeZone: 'Europe/Vienna', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false
+  }).format(now);
+  const date = new Intl.DateTimeFormat('de-AT', {
+    timeZone: 'Europe/Vienna', weekday: 'short', day: '2-digit', month: 'short', year: 'numeric'
+  }).format(now);
+  document.getElementById('clockTime').textContent = time;
+  document.getElementById('clockDate').textContent = date;
+}
+tickClock();
+setInterval(tickClock, 1000);
+
+const isEmpty = (v) => v === null || v === undefined || v === '' || v === 'UPDATE_ME';
+const fmt = (v) => {
+  if (isEmpty(v)) return '<span class="signal-weak">SIGNAL WEAK</span>';
+  if (typeof v === 'number') return v.toLocaleString('de-AT');
+  return escapeHtml(String(v));
+};
+const fmtPlain = (v) => {
+  if (isEmpty(v)) return null;
+  if (typeof v === 'number') return v.toLocaleString('de-AT');
+  return String(v);
+};
+const numOrNull = (v) => (typeof v === 'number' ? v : null);
+const escapeHtml = (s) => String(s)
+  .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+
+function ringSVG(pct, cls) {
+  const r = 42;
+  const c = 2 * Math.PI * r;
+  const p = Math.max(0, Math.min(100, pct == null ? 0 : pct));
+  const off = c - (p / 100) * c;
+  const strokeCls = cls || 'ring-fg';
+  return `<svg viewBox="0 0 100 100" aria-hidden="true">
+    <circle class="ring-bg" cx="50" cy="50" r="${r}"></circle>
+    <circle class="${strokeCls}" cx="50" cy="50" r="${r}"
+      stroke-dasharray="${c.toFixed(2)}" stroke-dashoffset="${off.toFixed(2)}"></circle>
+  </svg>`;
+}
+
+function fmtVienna(iso) {
+  if (isEmpty(iso)) return null;
+  try {
+    const d = new Date(iso);
+    if (isNaN(d)) return String(iso);
+    return new Intl.DateTimeFormat('de-AT', {
+      timeZone: 'Europe/Vienna',
+      day: '2-digit', month: '2-digit', year: 'numeric',
+      hour: '2-digit', minute: '2-digit'
+    }).format(d);
+  } catch (_) { return String(iso); }
+}
+
+async function load() {
+  try {
+    const res = await fetch('./data.json?t=' + Date.now());
+    if (!res.ok) throw new Error('data.json HTTP ' + res.status);
+    const d = await res.json();
+    render(d);
+  } catch (e) {
+    document.getElementById('error').hidden = false;
+    document.getElementById('error').innerHTML =
+      '<strong>data.json nicht geladen.</strong> Lokal per HTTP öffnen, z.B.<br>' +
+      '<code>cd /workspace/growth/dashboard && python3 -m http.server 8765</code><br>' +
+      'dann <code>http://localhost:8765/dashboard.html</code><br><small>' + escapeHtml(e.message) + '</small>';
+  }
+}
+
+function render(d) {
+  document.getElementById('app').hidden = false;
+  const m = d.meta || {};
+  const plats = d.platforms || {};
+  const ov = d.overview || {};
+
+  const liveCount = ['instagram', 'tiktok', 'youtube']
+    .filter(k => plats[k] && !plats[k].isPlaceholder).length;
+  document.getElementById('channelsActive').textContent =
+    'KANÄLE AKTIV ' + liveCount + '/3';
+
+  document.getElementById('weekChip').innerHTML =
+    'Woche: <strong>' + escapeHtml(m.weekStart || '—') + '</strong> → <strong>' + escapeHtml(m.weekEnd || '—') + '</strong>';
+  document.getElementById('updatedChip').innerHTML =
+    'Stand: <strong>' + escapeHtml(fmtVienna(m.lastUpdated) || m.lastUpdated || '—') + '</strong>' +
+    (m.lastUpdatedBy ? ' · ' + escapeHtml(m.lastUpdatedBy) : '');
+
+  /* —— Progress rings (only from real numbers) —— */
+  const ttMet = (plats.tiktok && plats.tiktok.metrics) || {};
+  const postsTT = numOrNull(ttMet.postsThisWeek);
+  const goalTT = numOrNull(ttMet.postingGoalPerWeek);
+  const viewsTT = numOrNull(ttMet.viewsThisWeek);
+  const engTT = numOrNull(ttMet.engagementRatePct);
+
+  let ringPostsPct = null, ringPostsLabel = '—', ringPostsCls = 'ring-fg';
+  if (postsTT !== null && goalTT !== null && goalTT > 0) {
+    ringPostsPct = Math.min(100, (postsTT / goalTT) * 100);
+    ringPostsLabel = postsTT + '/' + goalTT;
+    ringPostsCls = postsTT >= goalTT ? 'ring-fg ok' : (ttMet.postingGoalStatus === 'AtRisk' ? 'ring-fg warn' : 'ring-fg');
+  }
+
+  /* Live-channel ratio as "system integrity" */
+  const livePct = (liveCount / 3) * 100;
+
+  /* Engagement ring — only if we have a real % */
+  let engPct = engTT;
+  let engLabel = engTT !== null ? engTT.toLocaleString('de-AT', { maximumFractionDigits: 1 }) + '%' : null;
+
+  /* Views ring — decorative scale vs soft weekly target visual only when we have TT views;
+     show absolute value, pct capped for ring fill using a neutral visual scale of 5k (display only, NOT a invented KPI claim) */
+  let viewsPct = null, viewsLabel = null;
+  if (viewsTT !== null) {
+    viewsLabel = viewsTT.toLocaleString('de-AT');
+    viewsPct = Math.min(100, (viewsTT / 5000) * 100);
+  }
+
+  const rings = [
+    {
+      title: 'TT Posts / Ziel',
+      pct: ringPostsPct,
+      label: ringPostsLabel,
+      cls: ringPostsCls,
+      hint: goalTT !== null ? 'Wochenziel ' + goalTT + ' Posts' : 'Ziel unbekannt',
+      weak: ringPostsPct === null
+    },
+    {
+      title: 'TT Engagement',
+      pct: engPct,
+      label: engLabel || '—',
+      cls: engPct != null && engPct >= 10 ? 'ring-fg ok' : 'ring-fg',
+      hint: 'aus Buffer-Metriken',
+      weak: engPct === null
+    },
+    {
+      title: 'TT Views (Wo)',
+      pct: viewsPct,
+      label: viewsLabel || '—',
+      cls: 'ring-fg gold',
+      hint: viewsTT !== null ? 'Live aus Buffer' : 'kein Wert',
+      weak: viewsPct === null
+    },
+    {
+      title: 'Sensoren Live',
+      pct: livePct,
+      label: liveCount + '/3',
+      cls: liveCount === 3 ? 'ring-fg ok' : (liveCount >= 1 ? 'ring-fg' : 'ring-fg warn'),
+      hint: 'Plattformen mit echten Daten',
+      weak: false
+    }
+  ];
+
+  document.getElementById('rings').innerHTML = rings.map(r => `
+    <div class="ring-card">
+      <div class="ring-wrap">
+        ${r.weak ? ringSVG(0, 'ring-fg warn') : ringSVG(r.pct, r.cls)}
+        <div class="ring-center">
+          <div class="ring-val">${r.weak ? '—' : escapeHtml(String(r.label))}</div>
+          <div class="ring-unit">${r.weak ? 'WEAK' : ''}</div>
+        </div>
+      </div>
+      <div class="ring-lbl">${escapeHtml(r.title)}</div>
+      <div class="ring-hint">${r.weak ? '<span class="signal-weak">SIGNAL WEAK</span>' : escapeHtml(r.hint)}</div>
+    </div>
+  `).join('');
+
+  /* Overview stats */
+  const ttV = numOrNull(ov.totalViewsThisWeek?.partial?.tiktok);
+  const igV = ov.totalViewsThisWeek?.partial?.instagram;
+  const ytV = ov.totalViewsThisWeek?.partial?.youtube;
+  const postsTTo = numOrNull(ov.totalPostsThisWeek?.tiktok);
+  const postsIG = ov.totalPostsThisWeek?.instagram;
+  const postsYT = ov.totalPostsThisWeek?.youtube;
+
+  document.getElementById('overview').innerHTML = `
+    <div class="stat-mini">
+      <div class="lbl">Views diese Woche</div>
+      <div class="val">${ttV !== null ? fmt(ttV) + '<span style="font-size:.65rem;color:var(--muted);margin-left:4px">TT</span>' : fmt('UPDATE_ME')}</div>
+      <div class="hint">IG ${isEmpty(igV) ? '<span class="signal-weak">SIGNAL WEAK</span>' : fmt(igV)} · YT ${isEmpty(ytV) ? '<span class="signal-weak">SIGNAL WEAK</span>' : fmt(ytV)}</div>
+    </div>
+    <div class="stat-mini">
+      <div class="lbl">Follower / Subs</div>
+      <div class="val" style="font-size:0.95rem;line-height:1.55">
+        IG ${fmt(ov.totalFollowers?.instagram)}<br>
+        TT ${fmt(ov.totalFollowers?.tiktok)}<br>
+        YT ${fmt(ov.totalFollowers?.youtube)}
+      </div>
+    </div>
+    <div class="stat-mini">
+      <div class="lbl">Posts diese Woche</div>
+      <div class="val">${[postsIG, postsTTo, postsYT].every(x => typeof x === 'number')
+        ? fmt(postsIG + postsTTo + postsYT)
+        : (postsTTo !== null ? fmt(postsTTo) + '<span style="font-size:.65rem;color:var(--muted);margin-left:4px">TT</span>' : fmt('UPDATE_ME'))}</div>
+      <div class="hint">IG ${isEmpty(postsIG) ? '<span class="signal-weak">SIGNAL WEAK</span>' : fmt(postsIG)} · TT ${fmt(postsTTo)} · YT ${isEmpty(postsYT) ? '<span class="signal-weak">SIGNAL WEAK</span>' : fmt(postsYT)}</div>
+    </div>`;
+
+  /* Platforms */
+  const order = ['instagram', 'tiktok', 'youtube'];
+  const labels = { instagram: 'INSTAGRAM', tiktok: 'TIKTOK', youtube: 'YOUTUBE' };
+  const clsMap = { instagram: 'ig', tiktok: 'tt', youtube: 'yt' };
+
+  document.getElementById('platforms').innerHTML = order.map(key => {
+    const p = plats[key] || {};
+    const met = p.metrics || {};
+    const top = p.topPost || {};
+    const live = !p.isPlaceholder;
+    const followers = key === 'youtube' ? met.subscribers : met.followers;
+    const extra = [];
+    if (key === 'tiktok') {
+      if (!isEmpty(met.reachThisWeek)) extra.push(['Reach', met.reachThisWeek]);
+      if (!isEmpty(met.engagementRatePct)) extra.push(['Eng. %', met.engagementRatePct]);
+      if (!isEmpty(met.avgWatchTimeSec)) extra.push(['Ø Watch s', met.avgWatchTimeSec]);
+    }
+    if (key === 'youtube' && p.monetization) {
+      const ff = p.monetization.fanFundingTier || {};
+      if (!isEmpty(ff.neededSubs)) extra.push(['Fan-Fund Subs', ff.neededSubs]);
+    }
+    return `<div class="plat ${clsMap[key]}" data-sound-hover>
+      <div class="plat-top">
+        <div>
+          <h3>${labels[key]}</h3>
+          <div class="handle">${escapeHtml(p.handle || '')}</div>
+          <div class="owner">Owner: ${escapeHtml((d.agents?.[p.ownerAgent]?.name) || p.ownerAgent || '—')}</div>
+        </div>
+        ${live ? '<span class="live-tag">LIVE</span>' : '<span class="signal-weak">SIGNAL WEAK</span>'}
+      </div>
+      <div class="metrics">
+        <div class="m"><div class="k">${key === 'youtube' ? 'Subs' : 'Follower'}</div><div class="v">${fmt(followers)}</div></div>
+        <div class="m"><div class="k">Views</div><div class="v">${fmt(met.viewsThisWeek)}</div></div>
+        <div class="m"><div class="k">Likes</div><div class="v">${fmt(met.likesThisWeek)}</div></div>
+        <div class="m"><div class="k">Kommentare</div><div class="v">${fmt(met.commentsThisWeek)}</div></div>
+        <div class="m"><div class="k">Shares</div><div class="v">${fmt(met.sharesThisWeek)}</div></div>
+        <div class="m"><div class="k">Saves</div><div class="v">${fmt(met.savesThisWeek)}</div></div>
+        <div class="m"><div class="k">Posts</div><div class="v">${fmt(met.postsThisWeek)}</div></div>
+        <div class="m"><div class="k">Streak</div><div class="v">${fmt(met.postingStreakDays)}</div></div>
+        ${extra.map(([k, v]) => `<div class="m"><div class="k">${escapeHtml(k)}</div><div class="v">${fmt(v)}</div></div>`).join('')}
+      </div>
+      <div class="top-post">
+        <div class="tp-lbl">◆ Top Transmission</div>
+        <strong>${fmt(top.title)}</strong><br>
+        <span style="font-size:0.75rem;color:var(--muted)">${fmt(top.views)} Views · ${fmt(top.likes)} Likes · ${isEmpty(top.postedAt) ? '<span class="signal-weak">SIGNAL WEAK</span>' : escapeHtml(fmtVienna(top.postedAt) || top.postedAt)}</span>
+      </div>
+    </div>`;
+  }).join('');
+
+  /* Ideas mission board */
+  const statusDE = { draft: 'ENTWURF', approved: 'FREIGEGEBEN', filming: 'DREH', posted: 'GEPOSTET' };
+  const ideas = (d.ideas || []).slice(0, 14);
+  document.getElementById('ideas').innerHTML = ideas.map(i => {
+    const agentName = d.agents?.[i.ownerAgent]?.name || i.ownerAgent || '—';
+    const st = i.status || 'draft';
+    return `<div class="mission st-${escapeHtml(st)}" data-sound-hover>
+      <span class="st st-${escapeHtml(st)}">${statusDE[st] || st}</span>
+      <div>
+        <div class="t">${escapeHtml(i.title || '')}</div>
+        <div class="meta">${escapeHtml(i.platform || '')} · ${escapeHtml(i.pillar || '')}${i.notes ? ' · ' + escapeHtml(i.notes) : ''}</div>
+      </div>
+      <div class="crew">${escapeHtml(agentName)}</div>
+    </div>`;
+  }).join('') || '<div style="color:var(--muted)">Keine Missionen</div>';
+
+  /* Plans */
+  const plans = d.plans || {};
+  document.getElementById('plans').innerHTML = order.map(key => {
+    const pl = plans[key] || {};
+    return `<div class="plan-card ${clsMap[key]}" data-sound-hover>
+      <h4>${labels[key]}</h4>
+      <p><strong>Frequenz:</strong> ${escapeHtml(pl.frequency || '—')}</p>
+      <p><strong>Beste Zeiten (Wien):</strong> ${escapeHtml(pl.bestTimesVienna || '—')}</p>
+      <p><strong>Fokus:</strong> ${escapeHtml(pl.focus || '—')}</p>
+      ${pl.monetization ? `<p><strong>Monetarisierung:</strong> ${escapeHtml(pl.monetization)}</p>` : ''}
+    </div>`;
+  }).join('');
+
+  /* Crew board */
+  const board = d.agentsBoard || {};
+  const boardOrder = ['vot_growth', 'deen_growth', 'clipper_akh'];
+  document.getElementById('board').innerHTML = boardOrder.map(k => {
+    const a = board[k] || {};
+    const hasUpdate = !isEmpty(a.lastUpdated);
+    return `<div class="crew-panel" data-sound-hover>
+      <div class="crew-top">
+        <div>
+          <div class="crew-name">${escapeHtml(a.name || k)}</div>
+          <div class="crew-id">${escapeHtml(a.agentId || '')}</div>
+        </div>
+        ${hasUpdate ? '<span class="live-tag">AKTIV</span>' : '<span class="signal-weak">SIGNAL WEAK</span>'}
+      </div>
+      <div class="crew-resp">${escapeHtml(a.responsibility || '')}</div>
+      <div class="crew-foot">
+        <div class="crew-ts ${hasUpdate ? 'fresh' : ''}">${hasUpdate ? escapeHtml(fmtVienna(a.lastUpdated) || a.lastUpdated) : 'noch nie aktualisiert'}</div>
+        ${a.status ? `<span class="status-chip" title="${escapeHtml(a.status)}">${escapeHtml(a.status)}</span>` : ''}
+      </div>
+    </div>`;
+  }).join('');
+
+  /* Sound hooks on hover (only if enabled) */
+  document.querySelectorAll('[data-sound-hover]').forEach(el => {
+    el.addEventListener('mouseenter', () => Sound.hover());
+  });
+}
+
+load();
+</script>
+</body>
+</html>
