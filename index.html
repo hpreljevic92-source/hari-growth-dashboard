@@ -684,10 +684,10 @@
   }
   .wait-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 12px;
   }
-  @media (max-width: 800px) { .wait-grid { grid-template-columns: 1fr; } }
+  @media (min-width: 801px) { .wait-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   .wait-col h3 {
     margin: 0 0 10px;
     font-size: 0.72rem;
@@ -698,6 +698,7 @@
   }
   .wait-item {
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-start;
     gap: 10px;
     padding: 12px 14px;
@@ -720,8 +721,23 @@
     box-shadow: 0 0 18px rgba(0, 212, 255, 0.12);
   }
   .wait-item .wi-body { flex: 1; min-width: 0; }
-  .wait-item .wi-title { font-weight: 650; font-size: 0.9rem; }
+  .wait-item .wi-title { font-weight: 650; font-size: 0.9rem; overflow-wrap: anywhere; }
   .wait-item .wi-meta { font-size: 0.74rem; color: var(--muted); margin-top: 3px; }
+  .wait-item .wi-meta, .hari-change { overflow-wrap: anywhere; }
+  .wait-actions, .hari-toolbar { display: flex; flex-wrap: wrap; gap: 8px; }
+  .wait-actions { flex-basis: 100%; }
+  .hari-wait .wait-actions .btn { flex: 1; min-height: var(--tap); }
+  .hari-wait .sec-h { flex-wrap: wrap; }
+  .hari-wait button:disabled { opacity: 0.55; cursor: wait; }
+  .hari-changes { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--border); }
+  .hari-changes h3 { color: var(--gold); font-size: 0.85rem; margin: 0; }
+  .hari-changes .wi-meta { font-size: 0.74rem; color: var(--muted); }
+  .hari-changes ul { padding: 0; list-style: none; }
+  .hari-change { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 8px; }
+  .hari-change span { flex: 1; min-width: 0; }
+  .hari-change .btn { width: auto; min-height: var(--tap); }
+  .hari-feedback { font-size: 0.82rem; color: var(--gold); overflow-wrap: anywhere; }
+  .hari-help { display: inline-flex; align-items: center; min-height: var(--tap); font-size: 0.82rem; }
   .wait-empty {
     color: var(--muted);
     font-size: 0.84rem;
@@ -946,13 +962,13 @@
   <div id="error" class="err" hidden></div>
   <div id="app" hidden>
 
-    <section class="sec hari-wait anim d2">
+    <section class="sec hari-wait anim d2" id="hariQueue" aria-labelledby="hariHeading">
       <div class="sec-h">
-        <h2>Wartet auf Hari</h2>
-        <span class="sec-tag">Freigabe · Chat / Astra</span>
+        <h2 id="hariHeading">Wartet auf Hari</h2>
+        <span class="sec-tag">Freigabe · data.json</span>
       </div>
       <div class="sec-b">
-        <div class="wait-note">Hari gibt im Chat frei (später Astra). Keine Auto-Writes — nur visuelle Queue.</div>
+        <div class="wait-note">Klicks erzeugen eine ungespeicherte Vorschau für diese Sitzung. Danach <strong>data.json herunterladen</strong> und im Repository committen. Erst der Commit speichert deine Freigabe.</div>
         <div class="wait-grid">
           <div class="wait-col">
             <h3>Tasks</h3>
@@ -963,6 +979,17 @@
             <div id="waitDrafts"></div>
           </div>
         </div>
+        <div class="hari-changes" id="hariChangesBox" hidden>
+          <h3>Deine Auswahl · noch nicht gespeichert</h3>
+          <ul id="hariChanges"></ul>
+          <div class="hari-toolbar">
+            <button type="button" class="btn btn-primary" id="hariDownload">data.json herunterladen</button>
+            <button type="button" class="btn btn-ghost" id="hariReset">Auswahl verwerfen</button>
+          </div>
+          <p class="wi-meta">Vor dem Ersetzen mit der aktuellen GitHub-Datei vergleichen. Bei neuen Agent-Updates nur die ausgewählten Statusänderungen oder Löschungen übertragen.</p>
+        </div>
+        <p class="hari-feedback" id="hariFeedback" role="status" aria-live="polite" tabindex="-1"></p>
+        <a class="hari-help" href="https://github.com/hpreljevic92-source/hari-growth-dashboard/edit/main/data.json" target="_blank" rel="noopener noreferrer">Direkt in JSON: Idee → approved / Entwurf entfernen · Task → done</a>
       </div>
     </section>
 
@@ -1124,18 +1151,158 @@ function fmtVienna(iso) {
   } catch (_) { return String(iso); }
 }
 
+async function readData() {
+  const res = await fetch('./data.json?t=' + Date.now(), { cache: 'no-store' });
+  if (!res.ok) throw new Error('data.json HTTP ' + res.status);
+  return res.json();
+}
+
+/* Hari selections are an in-memory preview; data.json remains authoritative. */
+let hariSource = null;
+let hariBusy = false;
+const hariSelections = new Map();
+const taskTypes = { google_identity: 'Google-Identität', upload_ok: 'Upload-Freigabe', other: 'Sonstiges' };
+
+function safeTaskLink(value) {
+  if (typeof value !== 'string' || !/^https?:\/\/\S+$/i.test(value)) return '';
+  try {
+    const url = new URL(value);
+    return ['https:', 'http:'].includes(url.protocol) && url.hostname ? url.href : '';
+  } catch (_) { return ''; }
+}
+
+function hariKey(kind, item) {
+  if (typeof item.id === 'string' && item.id.trim()) return kind + ':id:' + item.id;
+  const identity = kind === 'tasks' ? [item.type, item.title, item.link || ''] : [item.title, item.platform, item.pillar, item.ownerAgent];
+  return kind + ':fields:' + JSON.stringify(identity);
+}
+
+function canSelectHari(kind, item, source) {
+  const key = hariKey(kind, item);
+  const items = Array.isArray(source[kind]) ? source[kind] : [];
+  const validTask = kind !== 'tasks' || (
+    Object.hasOwn(taskTypes, item.type) && typeof item.title === 'string' && item.title.trim() &&
+    (item.id === undefined || (typeof item.id === 'string' && item.id.trim())) &&
+    (item.link === undefined || safeTaskLink(item.link))
+  );
+  return key && validTask && items.filter(candidate => hariKey(kind, candidate) === key).length === 1;
+}
+
+function applyHariSelections(source) {
+  const preview = JSON.parse(JSON.stringify(source));
+  for (const [key, change] of hariSelections) {
+    const items = Array.isArray(preview[change.kind]) ? preview[change.kind] : [];
+    const matches = items.map((item, index) => ({ item, index })).filter(entry => hariKey(change.kind, entry.item) === key);
+    const match = matches[0];
+    const expectedStatus = change.kind === 'ideas' ? 'draft' : 'pending';
+    if (matches.length !== 1 || match.item.status !== expectedStatus ||
+        JSON.stringify(match.item) !== JSON.stringify(change.item)) {
+      throw new Error('„' + change.item.title + '“ wurde inzwischen geändert. Bitte neu laden und erneut auswählen.');
+    }
+    if (change.action === 'reject') items.splice(match.index, 1);
+    else match.item.status = change.kind === 'ideas' ? 'approved' : 'done';
+  }
+  return preview;
+}
+
+function hariMessage(message, focus = false) {
+  const feedback = document.getElementById('hariFeedback');
+  feedback.textContent = message;
+  if (focus) feedback.focus({ preventScroll: true });
+}
+
+function renderHariQueue(source) {
+  hariSource = source;
+  const preview = applyHariSelections(source);
+  for (const kind of ['tasks', 'ideas']) {
+    const items = Array.isArray(source[kind]) ? source[kind] : [];
+    const visible = (Array.isArray(preview[kind]) ? preview[kind] : [])
+      .filter(item => item.status === (kind === 'ideas' ? 'draft' : 'pending'));
+    const target = document.getElementById(kind === 'ideas' ? 'waitDrafts' : 'waitTasks');
+    target.innerHTML = visible.map(item => {
+      const index = items.findIndex(candidate => hariKey(kind, candidate) === hariKey(kind, item));
+      const selectable = canSelectHari(kind, item, source);
+      const agentName = source.agents?.[item.ownerAgent]?.name || item.ownerAgent || '—';
+      const link = kind === 'tasks' ? safeTaskLink(item.link) : '';
+      const actions = kind === 'ideas'
+        ? `<button type="button" class="btn btn-primary" data-hari-action="approve" data-kind="ideas" data-index="${index}" aria-label="Freigeben: ${escapeHtml(item.title || '')}">Freigeben</button>
+           <button type="button" class="btn btn-danger" data-hari-action="reject" data-kind="ideas" data-index="${index}" aria-label="Ablehnen: ${escapeHtml(item.title || '')}">Ablehnen</button>`
+        : `<button type="button" class="btn btn-secondary" data-hari-action="done" data-kind="tasks" data-index="${index}" aria-label="Als erledigt markieren: ${escapeHtml(item.title || '')}">Erledigt</button>`;
+      return `<div class="wait-item ${kind === 'ideas' ? 'draft-cand' : ''}" data-sound-hover>
+        <span class="${kind === 'ideas' ? 'st st-draft' : 'type-pill'}">${kind === 'ideas' ? 'ENTWURF' : escapeHtml(taskTypes[item.type] || item.type || 'Task')}</span>
+        <div class="wi-body">
+          <div class="wi-title">${escapeHtml(item.title || '')}</div>
+          <div class="wi-meta">${kind === 'ideas' ? escapeHtml((item.platform || '—') + ' · ' + agentName) : 'pending'}${link ? ' · <a href="' + escapeHtml(link) + '" target="_blank" rel="noopener noreferrer">Öffnen</a>' : ''}</div>
+          ${kind === 'ideas' && item.notes ? '<div class="wi-meta">' + escapeHtml(item.notes) + '</div>' : ''}
+        </div>
+        <div class="wait-actions">${selectable ? actions : '<span class="wi-meta">Eindeutige ID / Task-Felder in data.json prüfen.</span>'}</div>
+      </div>`;
+    }).join('') || '<div class="wait-empty">' + (kind === 'ideas' ? 'Keine draft-Ideen offen' : 'Keine pending-Tasks offen') + '</div>';
+  }
+  document.getElementById('hariChangesBox').hidden = hariSelections.size === 0;
+  document.getElementById('hariChanges').innerHTML = Array.from(hariSelections.values()).map((change, index) => {
+    const label = { approve: 'Freigeben → approved', reject: 'Ablehnen → entfernen', done: 'Erledigt → done' }[change.action];
+    return `<li class="hari-change"><span>${escapeHtml(label + ': ' + change.item.title)}</span>
+      <button type="button" class="btn btn-ghost" data-hari-undo="${index}" aria-label="Zurücknehmen: ${escapeHtml(change.item.title)}">Zurücknehmen</button></li>`;
+  }).join('');
+  document.querySelectorAll('#hariQueue button').forEach(button => { button.disabled = hariBusy; });
+}
+
+document.getElementById('hariQueue').addEventListener('click', event => {
+  const button = event.target.closest('button');
+  if (!button || hariBusy || !hariSource) return;
+  if (button.dataset.hariUndo !== undefined) {
+    const key = Array.from(hariSelections.keys())[Number(button.dataset.hariUndo)];
+    hariSelections.delete(key);
+  } else if (button.id === 'hariReset') {
+    hariSelections.clear();
+  } else if (button.dataset.hariAction) {
+    const kind = button.dataset.kind;
+    const item = hariSource[kind]?.[Number(button.dataset.index)];
+    if (!item || !canSelectHari(kind, item, hariSource)) return;
+    hariSelections.set(hariKey(kind, item), { kind, action: button.dataset.hariAction, item });
+  } else return;
+  renderHariQueue(hariSource);
+  hariMessage(hariSelections.size ? 'Auswahl vorgemerkt · noch nicht gespeichert. Zum Speichern herunterladen und committen.' : 'Auswahl verworfen. Angezeigt wird data.json.', true);
+});
+
+document.getElementById('hariDownload').addEventListener('click', async () => {
+  if (hariBusy || !hariSelections.size) return;
+  hariBusy = true;
+  renderHariQueue(hariSource);
+  hariMessage('Aktuelle data.json wird geladen und deine Auswahl geprüft…');
+  try {
+    const fresh = await readData();
+    const updated = applyHariSelections(fresh);
+    const blob = new Blob([JSON.stringify(updated, null, 2) + '\n'], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const download = document.createElement('a');
+    download.href = url;
+    download.download = 'data.json';
+    document.body.appendChild(download);
+    download.click();
+    download.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+    render(fresh);
+    hariMessage('data.json heruntergeladen · noch nicht gespeichert. Mit der aktuellen GitHub-Datei vergleichen und committen.', true);
+  } catch (error) {
+    hariMessage('Kein Download: ' + error.message + ' Deine Auswahl bleibt erhalten.', true);
+  } finally {
+    hariBusy = false;
+    renderHariQueue(hariSource);
+  }
+});
+
 async function load() {
   try {
-    const res = await fetch('./data.json?t=' + Date.now());
-    if (!res.ok) throw new Error('data.json HTTP ' + res.status);
-    const d = await res.json();
+    const d = await readData();
     render(d);
   } catch (e) {
     document.getElementById('error').hidden = false;
     document.getElementById('error').innerHTML =
       '<strong>data.json nicht geladen.</strong> Lokal per HTTP öffnen, z.B.<br>' +
       '<code>cd /workspace/growth/dashboard && python3 -m http.server 8765</code><br>' +
-      'dann <code>http://localhost:8765/dashboard.html</code><br><small>' + escapeHtml(e.message) + '</small>';
+      'dann <code>http://localhost:8765/</code><br><small>' + escapeHtml(e.message) + '</small>';
   }
 }
 
@@ -1325,33 +1492,7 @@ function render(d) {
     </div>`;
   }).join('') || '<div style="color:var(--muted)">Keine Missionen</div>';
 
-  /* Wartet auf Hari — tasks + draft freigabe candidates */
-  const tasks = Array.isArray(d.tasks) ? d.tasks : [];
-  const openTasks = tasks.filter(t => (t.status || 'waiting') !== 'done');
-  document.getElementById('waitTasks').innerHTML = openTasks.length
-    ? openTasks.map(t => `
-      <div class="wait-item" data-sound-hover>
-        <span class="type-pill">${escapeHtml(t.type || 'task')}</span>
-        <div class="wi-body">
-          <div class="wi-title">${escapeHtml(t.title || t.id || 'Task')}</div>
-          <div class="wi-meta">${escapeHtml(t.status || 'waiting')}${t.link ? ' · <a href="' + escapeHtml(t.link) + '" target="_blank" rel="noopener">Link</a>' : ''}</div>
-        </div>
-      </div>`).join('')
-    : '<div class="wait-empty">Keine offenen Tasks — Queue leer</div>';
-
-  const drafts = (d.ideas || []).filter(i => (i.status || 'draft') === 'draft').slice(0, 10);
-  document.getElementById('waitDrafts').innerHTML = drafts.length
-    ? drafts.map(i => {
-        const agentName = d.agents?.[i.ownerAgent]?.name || i.ownerAgent || '—';
-        return `<div class="wait-item draft-cand" data-sound-hover>
-          <span class="st st-draft">${statusDE.draft}</span>
-          <div class="wi-body">
-            <div class="wi-title">${escapeHtml(i.title || '')}</div>
-            <div class="wi-meta">${escapeHtml(i.platform || '')} · ${escapeHtml(agentName)}</div>
-          </div>
-        </div>`;
-      }).join('')
-    : '<div class="wait-empty">Keine draft-Ideen</div>';
+  renderHariQueue(d);
 
   /* Plans */
   const plans = d.plans || {};
