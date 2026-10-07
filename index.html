@@ -729,6 +729,7 @@
   .hari-wait .wait-actions .btn { flex: 1; min-height: var(--tap); }
   .hari-wait .sec-h { flex-wrap: wrap; }
   .hari-wait button:disabled { opacity: 0.55; cursor: wait; }
+  .hari-wait button[hidden] { display: none; }
   .hari-changes { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--border); }
   .hari-changes h3 { color: var(--gold); font-size: 0.85rem; margin: 0; }
   .hari-changes .wi-meta { font-size: 0.74rem; color: var(--muted); }
@@ -977,6 +978,7 @@
           <div class="wait-col">
             <h3>Ideen · Freigabe-Kandidaten (draft)</h3>
             <div id="waitDrafts"></div>
+            <button type="button" class="btn btn-secondary" id="hariMore" aria-controls="waitDrafts" hidden>Mehr anzeigen</button>
           </div>
         </div>
         <div class="hari-changes" id="hariChangesBox" hidden>
@@ -1160,6 +1162,7 @@ async function readData() {
 /* Hari selections are an in-memory preview; data.json remains authoritative. */
 let hariSource = null;
 let hariBusy = false;
+let hariDraftLimit = 10;
 const hariSelections = new Map();
 const taskTypes = { google_identity: 'Google-Identität', upload_ok: 'Upload-Freigabe', other: 'Sonstiges' };
 
@@ -1195,7 +1198,7 @@ function applyHariSelections(source) {
     const matches = items.map((item, index) => ({ item, index })).filter(entry => hariKey(change.kind, entry.item) === key);
     const match = matches[0];
     const expectedStatus = change.kind === 'ideas' ? 'draft' : 'pending';
-    if (matches.length !== 1 || match.item.status !== expectedStatus ||
+    if (matches.length !== 1 || (change.kind === 'ideas' ? (match.item.status || 'draft') : match.item.status) !== expectedStatus ||
         JSON.stringify(match.item) !== JSON.stringify(change.item)) {
       throw new Error('„' + change.item.title + '“ wurde inzwischen geändert. Bitte neu laden und erneut auswählen.');
     }
@@ -1217,9 +1220,11 @@ function renderHariQueue(source) {
   for (const kind of ['tasks', 'ideas']) {
     const items = Array.isArray(source[kind]) ? source[kind] : [];
     const visible = (Array.isArray(preview[kind]) ? preview[kind] : [])
-      .filter(item => item.status === (kind === 'ideas' ? 'draft' : 'pending'));
+      .filter(item => kind === 'ideas' ? (item.status || 'draft') === 'draft' : item.status === 'pending');
+    const displayed = kind === 'ideas' ? visible.slice(0, hariDraftLimit) : visible;
+    if (kind === 'ideas') document.getElementById('hariMore').hidden = visible.length <= hariDraftLimit;
     const target = document.getElementById(kind === 'ideas' ? 'waitDrafts' : 'waitTasks');
-    target.innerHTML = visible.map(item => {
+    target.innerHTML = displayed.map(item => {
       const index = items.findIndex(candidate => hariKey(kind, candidate) === hariKey(kind, item));
       const selectable = canSelectHari(kind, item, source);
       const agentName = source.agents?.[item.ownerAgent]?.name || item.ownerAgent || '—';
@@ -1251,6 +1256,12 @@ function renderHariQueue(source) {
 document.getElementById('hariQueue').addEventListener('click', event => {
   const button = event.target.closest('button');
   if (!button || hariBusy || !hariSource) return;
+  if (button.id === 'hariMore') {
+    hariDraftLimit += 10;
+    renderHariQueue(hariSource);
+    hariMessage('Weitere Entwürfe angezeigt.', true);
+    return;
+  }
   if (button.dataset.hariUndo !== undefined) {
     const key = Array.from(hariSelections.keys())[Number(button.dataset.hariUndo)];
     hariSelections.delete(key);
@@ -1283,6 +1294,7 @@ document.getElementById('hariDownload').addEventListener('click', async () => {
     download.click();
     download.remove();
     setTimeout(() => URL.revokeObjectURL(url), 1000);
+    document.getElementById('hariReset').textContent = 'Auswahl leeren';
     render(fresh);
     hariMessage('data.json heruntergeladen · noch nicht gespeichert. Mit der aktuellen GitHub-Datei vergleichen und committen.', true);
   } catch (error) {
@@ -1492,7 +1504,13 @@ function render(d) {
     </div>`;
   }).join('') || '<div style="color:var(--muted)">Keine Missionen</div>';
 
-  renderHariQueue(d);
+  try {
+    renderHariQueue(d);
+  } catch (error) {
+    hariSelections.clear();
+    renderHariQueue(d);
+    hariMessage('Auswahl wegen eines Konflikts geleert. ' + error.message);
+  }
 
   /* Plans */
   const plans = d.plans || {};
