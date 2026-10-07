@@ -2,8 +2,8 @@
   "meta": {
     "title": "Growth Dashboard",
     "timezone": "Europe/Vienna",
-    "lastUpdated": "2026-10-06T19:11:31+02:00",
-    "lastUpdatedBy": "VoT Growth",
+    "lastUpdated": "2026-10-07T04:52:22+02:00",
+    "lastUpdatedBy": "Growth Intel",
     "weekStart": "2026-09-29",
     "weekEnd": "2026-10-06",
     "notes": "Nur echte Zahlen eintragen. UPDATE_ME = noch kein Live-Wert. Niemals schätzen."
@@ -51,6 +51,20 @@
         "agentsBoard.clipper_akh",
         "meta (bei Bedarf)"
       ]
+    },
+    "growth_intel": {
+      "id": "da2682ad-04a5-4eeb-878c-1dc42d6307b3",
+      "name": "Growth Intel",
+      "owns": [
+        "dashboard_analysis",
+        "content_ideas",
+        "pattern_reports"
+      ],
+      "updates": [
+        "ideas (proposed drafts)",
+        "agentsBoard.growth_intel",
+        "meta (bei Analyse-Updates)"
+      ]
     }
   },
   "overview": {
@@ -60,18 +74,18 @@
       "partial": {
         "tiktok": 2232,
         "instagram": "UPDATE_ME",
-        "youtube": "UPDATE_ME"
+        "youtube": 0
       }
     },
     "totalFollowers": {
       "instagram": 12,
       "tiktok": "UPDATE_ME",
-      "youtube": "UPDATE_ME"
+      "youtube": 0
     },
     "totalPostsThisWeek": {
       "instagram": "UPDATE_ME",
       "tiktok": 6,
-      "youtube": "UPDATE_ME"
+      "youtube": 0
     }
   },
   "platforms": {
@@ -169,38 +183,41 @@
       "isPlaceholder": false
     },
     "youtube": {
-      "handle": "Voices of Tawheed (planned Brand channel; was Hari C private)",
-      "url": "UPDATE_ME",
-      "channelId": "UPDATE_ME",
+      "handle": "@VoicesofTawheed-i4h",
+      "url": "https://www.youtube.com/@VoicesofTawheed-i4h",
+      "channelId": "UCp1BPKYITqgngsAuKfBmfbg",
       "ownerAgent": "deen_growth",
       "ownerAgentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
       "productionOwner": "clipper_akh",
       "productionOwnerId": "b8f5286c-3168-4aad-ba62-b7f68617ba06",
       "metrics": {
-        "subscribers": "UPDATE_ME",
-        "viewsThisWeek": "UPDATE_ME",
+        "subscribers": 0,
+        "viewsThisWeek": 0,
         "likesThisWeek": "UPDATE_ME",
         "commentsThisWeek": "UPDATE_ME",
         "savesThisWeek": "UPDATE_ME",
         "sharesThisWeek": "UPDATE_ME",
-        "postsThisWeek": "UPDATE_ME",
+        "postsThisWeek": 0,
         "watchHours365d": "UPDATE_ME",
         "shortsViews90d": "UPDATE_ME",
-        "postingStreakDays": "UPDATE_ME"
+        "postingStreakDays": 0,
+        "lifetimeViews": 0,
+        "lifetimeVideos": 0
       },
       "topPost": {
         "title": "UPDATE_ME",
         "url": "UPDATE_ME",
         "views": "UPDATE_ME",
         "likes": "UPDATE_ME",
-        "postedAt": "UPDATE_ME"
+        "postedAt": "UPDATE_ME",
+        "note": "Kein Video bisher"
       },
       "monetization": {
         "yppStatus": "UPDATE_ME",
         "fanFundingTier": {
           "neededSubs": 500,
           "neededWatchHoursOrShorts": "3000h Longform / 365d ODER 3M Shorts Views / 90d",
-          "uploadsIn90d": "UPDATE_ME",
+          "uploadsIn90d": 0,
           "progressNote": "Fan-Funding-Tier (500 Subs) ist realistisches Near-Term-Ziel. Ad-Revenue YPP steigt ab 1 Feb 2027 auf 8.000h / 20M Shorts."
         },
         "adRevenueYpp": {
@@ -209,9 +226,11 @@
           "fromFeb2027": "8000h / 365d ODER 20M Shorts / 90d"
         }
       },
-      "source": "Pending: Hari creates Brand channel „Voices of Tawheed“. TubeAlfred found no clear „Hari C“ Islam channel. Studio/TubeAlfred metrics once channelId known.",
-      "metricsAsOf": null,
-      "isPlaceholder": true
+      "source": "TubeAlfred youtube_channel_get + youtube_url_resolve 2026-10-06. Brand channel neu angelegt. Studio-only Metriken (chose-to-view, Watch Hours) noch UPDATE_ME.",
+      "metricsAsOf": "2026-10-06T20:35:58+02:00",
+      "isPlaceholder": false,
+      "displayName": "Voices of Tawheed",
+      "notes": "Brand Account unter h.preljevic92@gmail.com. Session war noch auf Hari C (UCemat4l2AagO8eS1XnEaExA); für Uploads in Studio auf Voices of Tawheed wechseln. Buffer YouTube noch nicht verbunden."
     }
   },
   "ideas": [
@@ -364,6 +383,56 @@
       "ownerAgent": "deen_growth",
       "ownerAgentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
       "notes": "Buffer 6ac0c773… 278 Views / 76 Likes / 10 Shares — höchste Share-Rate der Woche"
+    },
+    {
+      "id": "idea-016",
+      "title": "Al-Kahf Freitag – Hast du heute schon gelesen? (KW41)",
+      "platform": "all",
+      "pillar": "occasion",
+      "status": "draft",
+      "ownerAgent": "deen_growth",
+      "ownerAgentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
+      "notes": "Growth Intel KW41. Hook: Hast du heute schon Al-Kahf gelesen? | 20s Text+Rezitation+DE Benefit | TT Do Abend → Fr Morgen. Warum: Occasion-Shares; Fr 9.10."
+    },
+    {
+      "id": "idea-017",
+      "title": "Letzte Stunde Freitag – Dua-Fenster",
+      "platform": "tiktok",
+      "pillar": "occasion",
+      "status": "draft",
+      "ownerAgent": "deen_growth",
+      "ownerAgentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
+      "notes": "Growth Intel KW41. Hook: Die letzte Stunde am Freitag… | 15–25s Dua+Quelle on-screen | TT Fr Nachmittag. Warum: Niche-Pattern hohe Shares bei Jumu'ah-Timing."
+    },
+    {
+      "id": "idea-018",
+      "title": "Wenn du dich verlassen fühlst – Ad-Duha (DE)",
+      "platform": "all",
+      "pillar": "ayah_meaning",
+      "status": "draft",
+      "ownerAgent": "deen_growth",
+      "ownerAgentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
+      "notes": "Growth Intel KW41. Hook: Wenn du dich verlassen fühlst… | 15–35s Ayah+DE Übersetzung | TT + IG Trial. Warum: Benefit-Titel schlagen generische Rezitation; Originalitäts-Mehrwert = DE."
+    },
+    {
+      "id": "idea-019",
+      "title": "Ayat al-Kursi nach dem Gebet – Benefit",
+      "platform": "all",
+      "pillar": "ayah_meaning",
+      "status": "draft",
+      "ownerAgent": "vot_growth",
+      "ownerAgentId": "44289084-0ba3-49ca-9cf8-eb04829a2288",
+      "notes": "Growth Intel KW41. Hook: Nach dem Gebet – eine Ayah… | 20s + Hadith-Benefit mit Quelle | IG+TT. Warum: Ritual-Habit + klarer Benefit; IG Top war Tawheed/Ikhlas (non-follower Reach)."
+    },
+    {
+      "id": "idea-020",
+      "title": "Tawhid in 30s – Teil 1 (eigene Stimme/Text)",
+      "platform": "all",
+      "pillar": "tawhid_sunnah",
+      "status": "draft",
+      "ownerAgent": "clipper_akh",
+      "ownerAgentId": "b8f5286c-3168-4aad-ba62-b7f68617ba06",
+      "notes": "Growth Intel KW41. Hook: Was bedeutet La ilaha illallah wirklich? | 30s eigene Stimme/Text, Serie #1 | all. Warum: Originalitäts-Pflicht seit Apr/Okt 2026; Serie baut Habit."
     }
   ],
   "plans": {
@@ -383,11 +452,12 @@
     "youtube": {
       "frequency": "1 Short/Tag + 1 Longform alle 1–2 Wochen (Watch Hours)",
       "bestTimesVienna": "Timing laut YT wenig relevant — gleiche Fenster wie TT/IG für Konsistenz.",
-      "focus": "„How many chose to view“, Original commentary/editing. Kein Delete+Repost. Neuer Brand-Kanal „Voices of Tawheed“ statt privatem Hari C — Channel-ID noch offen.",
+      "focus": "Brand-Kanal @VoicesofTawheed-i4h live (0 Videos). Nächster Schritt: in Studio auf diesen Kanal wechseln + Buffer verbinden. Dann 1 Short/Tag + Originalität.",
       "monetization": "Near-term: Fan-Funding (500 Subs). Ad-YPP: bis Feb 2027 4k h / 10M Shorts; ab Feb 2027 8k h / 20M Shorts.",
       "source": "/workspace/growth/research.md §0–1 YouTube"
     }
   },
+  "tasks": [],
   "agentsBoard": {
     "vot_growth": {
       "agentId": "44289084-0ba3-49ca-9cf8-eb04829a2288",
@@ -400,8 +470,8 @@
       "agentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
       "name": "Deen Growth TT+YT",
       "responsibility": "TT Buffer-Metrics wöchentlich; YT Studio/TubeAlfred; TT+YT Ideen & Pläne; Follower-Zahlen",
-      "lastUpdated": "2026-10-06T19:08:45+02:00",
-      "status": "tt_metrics_confirmed_yt_channel_id_needed"
+      "lastUpdated": "2026-10-06T20:35:58+02:00",
+      "status": "yt_channel_live_buffer_connect_pending"
     },
     "clipper_akh": {
       "agentId": "b8f5286c-3168-4aad-ba62-b7f68617ba06",
@@ -409,6 +479,13 @@
       "responsibility": "Video-Produktion; Dashboard-Struktur; Ideas Status filming→posted; Weekly Routine anlegen",
       "lastUpdated": "2026-10-06T19:06:00+02:00",
       "status": "dashboard_bootstrapped"
+    },
+    "growth_intel": {
+      "agentId": "da2682ad-04a5-4eeb-878c-1dc42d6307b3",
+      "name": "Growth Intel",
+      "responsibility": "Dashboard pflegen (Analyse); Muster; virale Sunnah-sichere Ideas vorschlagen; nie posten",
+      "lastUpdated": "2026-10-07T04:52:22+02:00",
+      "status": "first_brief_analysis_delivered_2026-10-07"
     }
   }
 }
