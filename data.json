@@ -3,8 +3,8 @@
   "meta": {
     "title": "Growth Dashboard",
     "timezone": "Europe/Vienna",
-    "lastUpdated": "2026-10-07T04:52:22+02:00",
-    "lastUpdatedBy": "Growth Intel",
+    "lastUpdated": "2026-10-07T06:05:17+02:00",
+    "lastUpdatedBy": "Deen Growth TT+YT",
     "weekStart": "2026-09-29",
     "weekEnd": "2026-10-06",
     "notes": "Nur echte Zahlen eintragen. UPDATE_ME = noch kein Live-Wert. Niemals schätzen."
@@ -184,9 +184,9 @@
       "isPlaceholder": false
     },
     "youtube": {
-      "handle": "@VoicesofTawheed-i4h",
-      "url": "https://www.youtube.com/@VoicesofTawheed-i4h",
-      "channelId": "UCp1BPKYITqgngsAuKfBmfbg",
+      "handle": "@haric8814",
+      "url": "https://www.youtube.com/@haric8814",
+      "channelId": "UCemat4l2AagO8eS1XnEaExA",
       "ownerAgent": "deen_growth",
       "ownerAgentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
       "productionOwner": "clipper_akh",
@@ -198,20 +198,20 @@
         "commentsThisWeek": "UPDATE_ME",
         "savesThisWeek": "UPDATE_ME",
         "sharesThisWeek": "UPDATE_ME",
-        "postsThisWeek": 0,
+        "postsThisWeek": 1,
         "watchHours365d": "UPDATE_ME",
         "shortsViews90d": "UPDATE_ME",
         "postingStreakDays": 0,
         "lifetimeViews": 0,
-        "lifetimeVideos": 0
+        "lifetimeVideos": 1
       },
       "topPost": {
-        "title": "UPDATE_ME",
-        "url": "UPDATE_ME",
-        "views": "UPDATE_ME",
-        "likes": "UPDATE_ME",
-        "postedAt": "UPDATE_ME",
-        "note": "Kein Video bisher"
+        "title": "Prophet Yusuf (AS) Teil 1: Der Traum & der Brunnen | The Story of Yusuf Part 1",
+        "url": "https://youtu.be/mq48te4lCj8",
+        "views": 0,
+        "likes": 0,
+        "postedAt": "2026-10-07",
+        "note": "Revoice Public on Hari C; DE/BS/EN captions; TubeAlfred youtube_video_get 2026-10-07"
       },
       "monetization": {
         "yppStatus": "UPDATE_ME",
@@ -227,11 +227,11 @@
           "fromFeb2027": "8000h / 365d ODER 20M Shorts / 90d"
         }
       },
-      "source": "TubeAlfred youtube_channel_get + youtube_url_resolve 2026-10-06. Brand channel neu angelegt. Studio-only Metriken (chose-to-view, Watch Hours) noch UPDATE_ME.",
-      "metricsAsOf": "2026-10-06T20:35:58+02:00",
+      "source": "TubeAlfred youtube_video_get mq48te4lCj8 + Studio publish 2026-10-07",
+      "metricsAsOf": "2026-10-07T06:05:17+02:00",
       "isPlaceholder": false,
-      "displayName": "Voices of Tawheed",
-      "notes": "Brand Account unter h.preljevic92@gmail.com. Session war noch auf Hari C (UCemat4l2AagO8eS1XnEaExA); für Uploads in Studio auf Voices of Tawheed wechseln. Buffer YouTube noch nicht verbunden."
+      "displayName": "Hari C (VoT YT STOP/banned — publish here until further notice)",
+      "notes": "VoT @VoicesofTawheed-i4h UCp1BPKYITqgngsAuKfBmfbg remains STOP/banned. Active publish channel is Hari C. Yusuf Teil 1 live 2026-10-07: https://youtu.be/mq48te4lCj8 (custom thumb pending phone verify)."
     }
   },
   "ideas": [
@@ -471,8 +471,8 @@
       "agentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
       "name": "Deen Growth TT+YT",
       "responsibility": "TT Buffer-Metrics wöchentlich; YT Studio/TubeAlfred; TT+YT Ideen & Pläne; Follower-Zahlen",
-      "lastUpdated": "2026-10-06T20:35:58+02:00",
-      "status": "yt_channel_live_buffer_connect_pending"
+      "lastUpdated": "2026-10-07T06:05:17+02:00",
+      "status": "yusuf_p1_live_hari_c_mq48te4lCj8_thumb_pending_phone"
     },
     "clipper_akh": {
       "agentId": "b8f5286c-3168-4aad-ba62-b7f68617ba06",
