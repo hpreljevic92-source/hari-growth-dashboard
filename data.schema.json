@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Hari Growth Dashboard: offene Aufgaben",
+  "description": "Validiert die Aufgaben für Hari. Vorhandene und zusätzliche Agent-Felder bleiben erlaubt.",
+  "type": "object",
+  "required": ["tasks"],
+  "properties": {
+    "tasks": {
+      "type": "array",
+      "description": "Nur tatsächlich offene oder erledigte Aufgaben eintragen; ohne Aufgaben bleibt das Array leer.",
+      "items": { "$ref": "#/$defs/task" }
+    }
+  },
+  "additionalProperties": true,
+  "$defs": {
+    "task": {
+      "type": "object",
+      "required": ["type", "title", "status"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S",
+          "description": "Optionale, eindeutige und unveränderliche ID für die sichere Zuordnung von Freigaben."
+        },
+        "type": {
+          "type": "string",
+          "enum": ["google_identity", "upload_ok", "other"]
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["pending", "done"]
+        },
+        "link": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^[hH][tT][tT][pP][sS]?://[^\\s/?#]+(?:[/?#][^\\s]*)?$",
+          "description": "Optionale absolute HTTP(S)-Adresse."
+        }
+      },
+      "additionalProperties": true
+    }
+  }
+}

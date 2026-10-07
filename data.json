@@ -1,4 +1,5 @@
 {
+  "$schema": "./data.schema.json",
   "meta": {
     "title": "Growth Dashboard",
     "timezone": "Europe/Vienna",
