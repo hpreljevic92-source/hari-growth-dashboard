@@ -3,7 +3,7 @@
   "meta": {
     "title": "Growth Dashboard",
     "timezone": "Europe/Vienna",
-    "lastUpdated": "2026-10-08T09:02:00+02:00",
+    "lastUpdated": "2026-10-08T09:07:00+02:00",
     "lastUpdatedBy": "Growth Intel",
     "weekStart": "2026-09-29",
     "weekEnd": "2026-10-06",
@@ -429,12 +429,12 @@
     {
       "id": "idea-001",
       "title": "Surah Ad-Duha – Trost wenn du dich verlassen fühlst (DE)",
-      "platform": "all",
+      "platform": "tiktok",
       "pillar": "ayah_meaning",
-      "status": "draft",
+      "status": "scheduled",
       "ownerAgent": "deen_growth",
       "ownerAgentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
-      "notes": "Hook: Wenn du dich verlassen fühlst… | 15–35s"
+      "notes": "Buffer @deendaily254, Do 8.10. 19:00 Vienna, Post 6ac69fc84026b2413e1ecdfe. Hook: Wenn du dich verlassen fühlst… | 15–35s"
     },
     {
       "id": "idea-002",
@@ -658,13 +658,47 @@
     },
     {
       "id": "idea-024",
-      "title": "Für jeden, der denkt, Allah hört ihn nicht – 2:186 (Share-Reel)",
+      "title": "Wer Allah fürchtet, dem schafft Er einen Ausweg – 65:2–3 (Share-Reel)",
       "platform": "instagram",
       "pillar": "ayah_meaning",
       "status": "draft",
       "ownerAgent": "vot_growth",
       "ownerAgentId": "44289084-0ba3-49ca-9cf8-eb04829a2288",
-      "notes": "Growth Intel KW41. Hook: „Für jeden, der denkt, Allah hört ihn nicht…“ | 15–20s Reel: Rezitation 2:186 (echter Qari genannt) + eigene DE-Übersetzung on-screen (Bubenheim/Elyas zitieren) + 1 Satz eigene Reflexion + CTA „Schick's jemandem, der das heute braucht“ | IG Fr 9.10. 18:30 · TT-Crosspost Fr 9.10. 22:29 (Buffer-Slot, Deen) | Warum: reiner Rezitations-Clip hatte die meisten Shares der Woche (10 von 15 bei 278 Views); IG-Reichweite zu Nicht-Followern über Sends | Quelle: Qur'an 2:186"
+      "notes": "Growth Intel KW41, umgestellt 8.10.: 2:186 schon am 7.10. auf IG gepostet (idea-026). Hook: „Du siehst keinen Ausweg? Lies das.“ | 15–20s Reel: Rezitation 65:2–3 (echter Qari genannt) + eigene DE-Übersetzung on-screen (Bubenheim/Elyas zitieren) + 1 Satz Reflexion + CTA „Schick's jemandem, der das heute braucht“ | IG Fr 9.10. 18:30 · TT-Crosspost optional | Warum: Rezitations-Clip = meiste Shares der Woche (10 von 15) | Quelle: Qur'an 65:2–3 | Hari-Freigabe ausstehend"
+    },
+    {
+      "id": "idea-025",
+      "title": "Ash-Sharh 94:5–8 – Mit der Schwierigkeit kommt Erleichterung",
+      "platform": "tiktok",
+      "pillar": "ayah_meaning",
+      "status": "scheduled",
+      "ownerAgent": "deen_growth",
+      "ownerAgentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
+      "notes": "Buffer @deendaily254, Fr 9.10. 19:00 Vienna, Post 6ac69fceb7850fff3cb857a4."
+    },
+    {
+      "id": "idea-026",
+      "title": "Al-Baqarah 2:186 – Allah ist nah (AR/DE/BS, Luhaidan)",
+      "platform": "instagram",
+      "pillar": "ayah_meaning",
+      "status": "posted",
+      "ownerAgent": "vot_growth",
+      "ownerAgentId": "44289084-0ba3-49ca-9cf8-eb04829a2288",
+      "postedAt": "2026-10-07",
+      "postedUrl": "https://www.instagram.com/voicesoftawheed/reel/DeM8f7HJJyi/",
+      "notes": "IG @voicesoftawheed, gepostet 7.10. (laut CHEF AKHI). Metriken: UPDATE_ME."
+    },
+    {
+      "id": "idea-027",
+      "title": "Ar-Ra'd 13:28 – Im Gedenken Allahs finden Herzen Ruhe (AR/DE/BS, Luhaidan)",
+      "platform": "instagram",
+      "pillar": "ayah_meaning",
+      "status": "posted",
+      "ownerAgent": "vot_growth",
+      "ownerAgentId": "44289084-0ba3-49ca-9cf8-eb04829a2288",
+      "postedAt": "2026-10-07",
+      "postedUrl": "https://www.instagram.com/voicesoftawheed/reel/DeM898AsOHD/",
+      "notes": "IG @voicesoftawheed, gepostet 7.10. (laut CHEF AKHI). Metriken: UPDATE_ME."
     }
   ],
   "plans": {
@@ -716,8 +750,8 @@
       "agentId": "da2682ad-04a5-4eeb-878c-1dc42d6307b3",
       "name": "Growth Intel",
       "responsibility": "Dashboard pflegen (Analyse); Muster; virale Sunnah-sichere Ideas vorschlagen; nie posten",
-      "lastUpdated": "2026-10-08T09:02:00+02:00",
-      "status": "kw41_weekly_brief_delivered_2026-10-08",
+      "lastUpdated": "2026-10-08T09:07:00+02:00",
+      "status": "kw41_ideas_synced_with_buffer_and_ig_2026-10-08",
       "weeklyBrief": {
         "week": "2026-09-29 → 2026-10-06 (komplett); 2026-10-07 → 13 partial",
         "nextActions": [
