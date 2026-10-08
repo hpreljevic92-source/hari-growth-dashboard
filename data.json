@@ -3,11 +3,14 @@
   "meta": {
     "title": "Growth Dashboard",
     "timezone": "Europe/Vienna",
-    "lastUpdated": "2026-10-07T06:05:17+02:00",
-    "lastUpdatedBy": "Deen Growth TT+YT",
+    "lastUpdated": "2026-10-08T09:02:00+02:00",
+    "lastUpdatedBy": "Growth Intel",
     "weekStart": "2026-09-29",
     "weekEnd": "2026-10-06",
-    "notes": "Nur echte Zahlen eintragen. UPDATE_ME = noch kein Live-Wert. Niemals schätzen."
+    "notes": "Nur echte Zahlen eintragen. UPDATE_ME = noch kein Live-Wert. Niemals schätzen. KW41-Update (Growth Intel 2026-10-08): weekStart/weekEnd bleiben auf der letzten KOMPLETTEN Woche 29.9.–6.10. (Basis für Gewinner). Laufende Woche 7.–13.10. ist partial (siehe *.currentWeekPartial). 'ThisWeek'-Werte = Lifetime-to-date-Zahlen der Posts, die im Fenster veröffentlicht wurden (Buffer-/TubeAlfred-Logik), nicht Kanal-Gesamtviews der Woche.",
+    "currentWeekStart": "2026-10-07",
+    "currentWeekEnd": "2026-10-13",
+    "currentWeekPartial": true
   },
   "agents": {
     "vot_growth": {
@@ -73,20 +76,20 @@
       "value": null,
       "note": "Summe nur aus bestätigten Plattform-Werten; IG+YT noch UPDATE_ME → Gesamt als TT-only nicht als Gesamt ausgeben",
       "partial": {
-        "tiktok": 2232,
+        "tiktok": 7682,
         "instagram": "UPDATE_ME",
-        "youtube": 0
+        "youtube": 395
       }
     },
     "totalFollowers": {
       "instagram": 12,
       "tiktok": "UPDATE_ME",
-      "youtube": 0
+      "youtube": 7
     },
     "totalPostsThisWeek": {
       "instagram": "UPDATE_ME",
       "tiktok": 6,
-      "youtube": 0
+      "youtube": 1
     }
   },
   "platforms": {
@@ -132,33 +135,38 @@
       "bufferOrgId": "6ab57b5c3c182524e1126b2f",
       "metrics": {
         "followers": "UPDATE_ME",
-        "viewsThisWeek": 2232,
-        "likesThisWeek": 440,
+        "viewsThisWeek": 7682,
+        "likesThisWeek": 484,
         "commentsThisWeek": 2,
         "savesThisWeek": "UPDATE_ME",
-        "sharesThisWeek": 11,
+        "sharesThisWeek": 15,
         "postsThisWeek": 6,
-        "reachThisWeek": 1908,
-        "engagementRatePct": 20.3,
-        "watchTimeMinutes": 108.23,
-        "avgWatchTimeSec": 2.81,
+        "reachThisWeek": 1918,
+        "engagementRatePct": 6.52,
+        "watchTimeMinutes": 363.78,
+        "avgWatchTimeSec": 2.8,
         "postingStreakDays": 0,
         "postingGoalPerWeek": 5,
         "postingGoalStatus": "AtRisk",
         "postingGoalSentThisPeriod": 0,
-        "postingGoalPeriod": "2026-10-04 → 2026-10-10 Vienna (Buffer)"
+        "postingGoalPeriod": "2026-10-04 → 2026-10-10 Vienna (Buffer)",
+        "postingGoalScheduledThisPeriod": 2
       },
       "topPost": {
         "title": "Salah / Prayer on time reminder",
         "hashtags": "#allah #salah #prayer #islam #quran #sunnah #reminder #muslim #tawheed #prayontime",
         "bufferPostId": "6ac0c724713b7277a0b2e1f2",
         "url": "UPDATE_ME",
-        "views": 855,
-        "likes": 132,
+        "views": 6297,
+        "likes": 176,
         "comments": 1,
-        "shares": 0,
-        "reach": 733,
-        "postedAt": "2026-10-03T11:14:53+02:00"
+        "shares": 4,
+        "reach": 734,
+        "avgWatchSec": 2.83,
+        "watchTimeMinutes": 298.05,
+        "durationSec": 22.8,
+        "postedAt": "2026-10-03T11:14:53+02:00",
+        "note": "Buffer per-post metrics (metricsUpdatedAt 2026-10-07T13:07:40+02:00). Views 6.297 vs Reach 734 = so von Buffer geliefert (Views zählen Mehrfach-Views); nicht korrigiert."
       },
       "scheduleVienna": {
         "mon": [
@@ -179,9 +187,104 @@
           "09:47"
         ]
       },
-      "source": "Buffer get_aggregated_post_metrics + list_posts (includeMetrics) + get_channel 2026-09-29 → 2026-10-06 Vienna",
-      "metricsAsOf": "2026-10-06T14:06:26+02:00",
-      "isPlaceholder": false
+      "source": "Buffer get_aggregated_post_metrics + list_posts (includeMetrics) + get_channel, Fenster 2026-09-29 00:00 → 2026-10-06 23:59 Vienna; Buffer metricsUpdatedAt 2026-10-07T13:07:40+02:00; pulled by Growth Intel 2026-10-08 (Briefing CHEF AKHI)",
+      "metricsAsOf": "2026-10-08T09:02:00+02:00",
+      "isPlaceholder": false,
+      "weekPostLog": [
+        {
+          "bufferPostId": "6ac0c724713b7277a0b2e1f2",
+          "topic": "Salah on time",
+          "postedAt": "2026-10-03T11:14:53+02:00",
+          "durationSec": 22.8,
+          "views": 6297,
+          "likes": 176,
+          "comments": 1,
+          "shares": 4,
+          "reach": 734,
+          "avgWatchSec": 2.83
+        },
+        {
+          "bufferPostId": "6ac0c7734619427d30e83878",
+          "topic": "Quran recite (tilawah)",
+          "postedAt": "2026-10-03T11:16:11+02:00",
+          "durationSec": 22.0,
+          "views": 278,
+          "likes": 76,
+          "comments": 1,
+          "shares": 10,
+          "reach": 241,
+          "avgWatchSec": 2.42
+        },
+        {
+          "bufferPostId": "6ac0c7c24619427d30e8485c",
+          "topic": "Haya – Blick senken",
+          "postedAt": "2026-10-03T11:17:30+02:00",
+          "durationSec": 18.2,
+          "views": 272,
+          "likes": 53,
+          "comments": 0,
+          "shares": 1,
+          "reach": 229,
+          "avgWatchSec": 2.63
+        },
+        {
+          "bufferPostId": "6ac0c8179fdc9f926e729d22",
+          "topic": "Morning Adhkar",
+          "postedAt": "2026-10-03T11:18:54+02:00",
+          "durationSec": 13.3,
+          "views": 266,
+          "likes": 68,
+          "comments": 0,
+          "shares": 0,
+          "reach": 235,
+          "avgWatchSec": 2.4
+        },
+        {
+          "bufferPostId": "6ac0c86ae22a2e5172bab431",
+          "topic": "Eltern / Birr",
+          "postedAt": "2026-10-03T11:20:18+02:00",
+          "durationSec": 21.3,
+          "views": 275,
+          "likes": 48,
+          "comments": 0,
+          "shares": 0,
+          "reach": 232,
+          "avgWatchSec": 2.33
+        },
+        {
+          "bufferPostId": "6ac0d63b3bfd38430fdb58bb",
+          "topic": "3 Fragen im Grab",
+          "postedAt": "2026-10-03T12:19:16+02:00",
+          "durationSec": 40.3,
+          "views": 294,
+          "likes": 63,
+          "comments": 0,
+          "shares": 0,
+          "reach": 247,
+          "avgWatchSec": 4.16
+        }
+      ],
+      "currentWeekPartial": {
+        "window": "2026-10-07 → 2026-10-08T09:00 Vienna",
+        "postsSent": 0,
+        "views": 0,
+        "scheduled": [
+          {
+            "bufferPostId": "6ac69fc84026b2413e1ecdfe",
+            "topic": "Ad-Duha 93:3–5 – Wenn du dich verlassen fühlst",
+            "dueAt": "2026-10-08T19:00:00+02:00",
+            "durationSec": 17.7
+          },
+          {
+            "bufferPostId": "6ac69fceb7850fff3cb857a4",
+            "topic": "Ash-Sharh 94:5–6 – Mit der Erschwernis ist Erleichterung",
+            "dueAt": "2026-10-09T19:00:00+02:00",
+            "durationSec": 20.5
+          }
+        ],
+        "note": "Buffer list_posts + get_aggregated_post_metrics 2026-10-07..2026-10-08 09:00. Letzter gesendeter Post 2026-10-03 → Streak 0."
+      },
+      "metricsSourceUpdatedAt": "2026-10-07T13:07:40+02:00"
     },
     "youtube": {
       "handle": "@haric8814",
@@ -192,34 +295,37 @@
       "productionOwner": "clipper_akh",
       "productionOwnerId": "b8f5286c-3168-4aad-ba62-b7f68617ba06",
       "metrics": {
-        "subscribers": 0,
-        "viewsThisWeek": 0,
-        "likesThisWeek": "UPDATE_ME",
-        "commentsThisWeek": "UPDATE_ME",
+        "subscribers": 7,
+        "viewsThisWeek": 395,
+        "likesThisWeek": 18,
+        "commentsThisWeek": 0,
         "savesThisWeek": "UPDATE_ME",
         "sharesThisWeek": "UPDATE_ME",
         "postsThisWeek": 1,
         "watchHours365d": "UPDATE_ME",
         "shortsViews90d": "UPDATE_ME",
-        "postingStreakDays": 0,
-        "lifetimeViews": 0,
-        "lifetimeVideos": 1
+        "postingStreakDays": 1,
+        "lifetimeViews": 484,
+        "lifetimeVideos": 7
       },
       "topPost": {
-        "title": "Prophet Yusuf (AS) Teil 1: Der Traum & der Brunnen | The Story of Yusuf Part 1",
-        "url": "https://youtu.be/mq48te4lCj8",
-        "views": 0,
-        "likes": 0,
-        "postedAt": "2026-10-07",
-        "note": "Revoice Public on Hari C; DE/BS/EN captions; TubeAlfred youtube_video_get 2026-10-07"
+        "title": "The 3 Questions of the Grave #shorts",
+        "url": "https://www.youtube.com/shorts/VYPk59GG-sY",
+        "views": 395,
+        "likes": 18,
+        "comments": 0,
+        "durationSec": 40,
+        "postedAt": "2026-10-03",
+        "note": "Top Short der Woche 29.9.–6.10. (einziger Upload im Fenster). Gleiches Video wie TT 'Grave questions'. TubeAlfred youtube_videos_batch 2026-10-08."
       },
       "monetization": {
         "yppStatus": "UPDATE_ME",
         "fanFundingTier": {
           "neededSubs": 500,
           "neededWatchHoursOrShorts": "3000h Longform / 365d ODER 3M Shorts Views / 90d",
-          "uploadsIn90d": 0,
-          "progressNote": "Fan-Funding-Tier (500 Subs) ist realistisches Near-Term-Ziel. Ad-Revenue YPP steigt ab 1 Feb 2027 auf 8.000h / 20M Shorts."
+          "uploadsIn90d": 7,
+          "progressNote": "Fan-Funding-Tier (500 Subs) ist realistisches Near-Term-Ziel. Ad-Revenue YPP steigt ab 1 Feb 2027 auf 8.000h / 20M Shorts.",
+          "uploadsIn90dSource": "TubeAlfred publish dates 2026-09-24..2026-10-07 (7 public uploads), 2026-10-08"
         },
         "adRevenueYpp": {
           "neededSubs": 1000,
@@ -227,11 +333,96 @@
           "fromFeb2027": "8000h / 365d ODER 20M Shorts / 90d"
         }
       },
-      "source": "TubeAlfred youtube_video_get mq48te4lCj8 + Studio publish 2026-10-07",
-      "metricsAsOf": "2026-10-07T06:05:17+02:00",
+      "source": "TubeAlfred youtube_channel_get + youtube_channel_videos + youtube_channel_shorts + youtube_videos_batch (Hari C, öffentlich) 2026-10-08; Studio-only Werte = UPDATE_ME",
+      "metricsAsOf": "2026-10-08T09:02:00+02:00",
       "isPlaceholder": false,
-      "displayName": "Hari C (VoT YT STOP/banned — publish here until further notice)",
-      "notes": "VoT @VoicesofTawheed-i4h UCp1BPKYITqgngsAuKfBmfbg remains STOP/banned. Active publish channel is Hari C. Yusuf Teil 1 live 2026-10-07: https://youtu.be/mq48te4lCj8 (custom thumb pending phone verify)."
+      "displayName": "Hari C",
+      "notes": "Voices of Tawheed (@VoicesofTawheed-i4h, UCp1BPKYITqgngsAuKfBmfbg) seit 2026-10-07 gebannt laut CHEF AKHI → nicht einplanen (siehe bannedChannel). Aktiver YT-Kanal = Hari C (@haric8814). Yusuf Teil 1 live 2026-10-07: https://youtu.be/mq48te4lCj8. Frühere Werte (0 Subs / 0 Views / 1 Video, Stand 2026-10-07 06:05) durch TubeAlfred youtube_channel_get 2026-10-08 ersetzt.",
+      "status": "active_publish_channel",
+      "currentWeekPartial": {
+        "window": "2026-10-07 → 2026-10-08T09:00 Vienna",
+        "posts": 1,
+        "videos": [
+          {
+            "title": "Prophet Yusuf (AS) Teil 1: Der Traum & der Brunnen | The Story of Yusuf Part 1",
+            "url": "https://youtu.be/mq48te4lCj8",
+            "format": "longform 5:32",
+            "views": 11,
+            "likes": 0,
+            "comments": 0,
+            "postedAt": "2026-10-07T08:58:31+02:00"
+          }
+        ],
+        "note": "TubeAlfred youtube_channel_videos + youtube_videos_batch 2026-10-08"
+      },
+      "allVideosPublic": [
+        {
+          "id": "VYPk59GG-sY",
+          "title": "The 3 Questions of the Grave #shorts",
+          "postedAt": "2026-10-03",
+          "durationSec": 40,
+          "views": 395,
+          "likes": 18
+        },
+        {
+          "id": "dMRhPfHi6W4",
+          "title": "He Is One | Surah Al-Ikhlas 112:1 #shorts",
+          "postedAt": "2026-09-24",
+          "durationSec": 12,
+          "views": 76,
+          "likes": 6
+        },
+        {
+          "id": "m7h6ovz3fJA",
+          "title": "No God But Allah | Surah Muhammad 47:19 #shorts",
+          "postedAt": "2026-09-24",
+          "durationSec": 12,
+          "views": 4,
+          "likes": 0
+        },
+        {
+          "id": "u2jn5CXPnT4",
+          "title": "None Like Him | Surah Al-Ikhlas 112:4 #shorts",
+          "postedAt": "2026-09-24",
+          "durationSec": 12,
+          "views": 4,
+          "likes": 0
+        },
+        {
+          "id": "d-c0tlLINZw",
+          "title": "Allah, There Is No God But Him | Ayatul Kursi 2:255 #shorts",
+          "postedAt": "2026-09-24",
+          "durationSec": 12,
+          "views": 3,
+          "likes": 0
+        },
+        {
+          "id": "4msfy1-WKmg",
+          "title": "Your Lord Is One | Al-Baqarah 2:163 #shorts",
+          "postedAt": "2026-09-24",
+          "durationSec": 12,
+          "views": 2,
+          "likes": 0
+        },
+        {
+          "id": "mq48te4lCj8",
+          "title": "Prophet Yusuf (AS) Teil 1 (Longform)",
+          "postedAt": "2026-10-07",
+          "durationSec": 332,
+          "views": 11,
+          "likes": 0
+        }
+      ],
+      "bannedChannel": {
+        "name": "Voices of Tawheed",
+        "handle": "@VoicesofTawheed-i4h",
+        "channelId": "UCp1BPKYITqgngsAuKfBmfbg",
+        "status": "banned",
+        "bannedAt": "2026-10-07",
+        "reportedBy": "CHEF AKHI (Briefing 2026-10-08)",
+        "publicCheck": "2026-10-08 09:00 Vienna: öffentliche Kanalseite noch erreichbar ('1 Abonnent') – Ban-Art öffentlich nicht verifizierbar.",
+        "plan": "NICHT einplanen. Historie bleibt."
+      }
     }
   },
   "ideas": [
@@ -434,6 +625,46 @@
       "ownerAgent": "clipper_akh",
       "ownerAgentId": "b8f5286c-3168-4aad-ba62-b7f68617ba06",
       "notes": "Growth Intel KW41. Hook: Was bedeutet La ilaha illallah wirklich? | 30s eigene Stimme/Text, Serie #1 | all. Warum: Originalitäts-Pflicht seit Apr/Okt 2026; Serie baut Habit."
+    },
+    {
+      "id": "idea-021",
+      "title": "Die 3 Fragen im Grab – Teil 2: Wer standhaft bleibt (14:27)",
+      "platform": "all",
+      "pillar": "tawhid_sunnah",
+      "status": "draft",
+      "ownerAgent": "deen_growth",
+      "ownerAgentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
+      "notes": "Growth Intel KW41. Hook: „Teil 2: Wer im Grab die Antwort nicht vergisst…“ | 35–40s, DE on-screen (+EN/BS klein), Rezitation 14:27 (echter Qari, genannt), eigene DE-Reflexion (Text oder Haris Stimme), keine Musik | TT Sa 10.10. 20:30 · YT Hari C Short Sa 10.10. · IG Sa 10.10. 18:00 | Warum: 'Grave Qs' = bestes Avg-Watch auf TT (4,16s) + Top-Short Hari C (395 Views/18 Likes) → Serie fortsetzen | Quelle: Qur'an 14:27; Sahih al-Bukhari 1369 (al-Bara' ibn 'Azib), sahih – https://sunnah.com/bukhari:1369"
+    },
+    {
+      "id": "idea-022",
+      "title": "Das Erste, worüber abgerechnet wird: dein Gebet",
+      "platform": "all",
+      "pillar": "tawhid_sunnah",
+      "status": "draft",
+      "ownerAgent": "deen_growth",
+      "ownerAgentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
+      "notes": "Growth Intel KW41. Hook: „Am Tag des Gerichts wird ZUERST das geprüft…“ | 20–25s (Länge wie Salah-Gewinner 22,8s), DE-Text + eigene Stimme, Ende mit Hoffnung: Sunnah-Gebete füllen Lücken → „Heute 2 Rak'at Sunnah extra“ | TT Sa 10.10. 17:35 (Buffer-Slot) · YT Hari C Short Sa · IG So 11.10. 18:00 | Warum: Salah-Reminder = Top-TT-Post (6.297 Views/176 Likes); gleicher Pillar, neuer Winkel | Quelle: Sunan Abi Dawud 864, Sahih (al-Albani) – https://sunnah.com/abudawud:864"
+    },
+    {
+      "id": "idea-023",
+      "title": "Allah freut sich über deine Tawbah – das Kamel in der Wüste",
+      "platform": "all",
+      "pillar": "tawhid_sunnah",
+      "status": "draft",
+      "ownerAgent": "deen_growth",
+      "ownerAgentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
+      "notes": "Growth Intel KW41. Hook: „Stell dir vor, du verlierst in der Wüste ALLES – und findest es wieder.“ | 30–35s Story, text-geführt, Haris eigene DE-Erzählung (keine KI-Stimme), Wüsten-/Kamel-Footage ohne Menschen, keine Musik | TT So 11.10. 09:47 (Buffer-Slot) · YT Hari C Short So · IG Mo 12.10. 18:00 | Warum: Tawbah-Clip 39:53 (26.9.) = 4.307 Views, bestes Avg-Watch 4,47s bei 36s → Hoffnung/Tawbah + Story hält | Quelle: Sahih Muslim 2747 (Anas ibn Malik), sahih – https://sunnah.com/muslim:2747a"
+    },
+    {
+      "id": "idea-024",
+      "title": "Für jeden, der denkt, Allah hört ihn nicht – 2:186 (Share-Reel)",
+      "platform": "instagram",
+      "pillar": "ayah_meaning",
+      "status": "draft",
+      "ownerAgent": "vot_growth",
+      "ownerAgentId": "44289084-0ba3-49ca-9cf8-eb04829a2288",
+      "notes": "Growth Intel KW41. Hook: „Für jeden, der denkt, Allah hört ihn nicht…“ | 15–20s Reel: Rezitation 2:186 (echter Qari genannt) + eigene DE-Übersetzung on-screen (Bubenheim/Elyas zitieren) + 1 Satz eigene Reflexion + CTA „Schick's jemandem, der das heute braucht“ | IG Fr 9.10. 18:30 · TT-Crosspost Fr 9.10. 22:29 (Buffer-Slot, Deen) | Warum: reiner Rezitations-Clip hatte die meisten Shares der Woche (10 von 15 bei 278 Views); IG-Reichweite zu Nicht-Followern über Sends | Quelle: Qur'an 2:186"
     }
   ],
   "plans": {
@@ -453,7 +684,7 @@
     "youtube": {
       "frequency": "1 Short/Tag + 1 Longform alle 1–2 Wochen (Watch Hours)",
       "bestTimesVienna": "Timing laut YT wenig relevant — gleiche Fenster wie TT/IG für Konsistenz.",
-      "focus": "Brand-Kanal @VoicesofTawheed-i4h live (0 Videos). Nächster Schritt: in Studio auf diesen Kanal wechseln + Buffer verbinden. Dann 1 Short/Tag + Originalität.",
+      "focus": "Aktiver Kanal: Hari C (@haric8814). Voices of Tawheed seit 7.10. gebannt → nicht einplanen. 1 Short/Tag + Yusuf-Longform-Serie (Watch Hours). Originalität: eigene DE-Übersetzung/Stimme pro Video.",
       "monetization": "Near-term: Fan-Funding (500 Subs). Ad-YPP: bis Feb 2027 4k h / 10M Shorts; ab Feb 2027 8k h / 20M Shorts.",
       "source": "/workspace/growth/research.md §0–1 YouTube"
     }
@@ -485,8 +716,23 @@
       "agentId": "da2682ad-04a5-4eeb-878c-1dc42d6307b3",
       "name": "Growth Intel",
       "responsibility": "Dashboard pflegen (Analyse); Muster; virale Sunnah-sichere Ideas vorschlagen; nie posten",
-      "lastUpdated": "2026-10-07T04:52:22+02:00",
-      "status": "first_brief_analysis_delivered_2026-10-07"
+      "lastUpdated": "2026-10-08T09:02:00+02:00",
+      "status": "kw41_weekly_brief_delivered_2026-10-08",
+      "weeklyBrief": {
+        "week": "2026-09-29 → 2026-10-06 (komplett); 2026-10-07 → 13 partial",
+        "nextActions": [
+          "Hari: 2 von idea-021..024 freigeben (manhaj-Check) → Buffer-Ziel 5/5 bis Sa 10.10. 23:59 schaffen",
+          "Posts verteilen (max 1–2/Tag), nicht 6 auf einmal wie am 3.10.",
+          "IG-Wochenzahlen (Insights) nachtragen – aktuell UPDATE_ME"
+        ],
+        "pruneSuggestions": [
+          "idea-016 = Duplikat von idea-013 (Al-Kahf)",
+          "idea-018 = Duplikat von idea-001 (Ad-Duha) – Ad-Duha ist in Buffer für Do 8.10. 19:00 geplant → idea-001 auf filming/posted setzen (Clipper)",
+          "idea-019 = Duplikat von idea-014 (Ayat al-Kursi)",
+          "idea-020 = Duplikat von idea-005 (Tawhid in 30s)",
+          "idea-017 überschneidet idea-003 (Freitag)"
+        ]
+      }
     }
   }
 }
