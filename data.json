@@ -3,7 +3,7 @@
   "meta": {
     "title": "Growth Dashboard",
     "timezone": "Europe/Vienna",
-    "lastUpdated": "2026-10-08T09:07:00+02:00",
+    "lastUpdated": "2026-10-09T09:05:00+02:00",
     "lastUpdatedBy": "Growth Intel",
     "weekStart": "2026-09-29",
     "weekEnd": "2026-10-06",
@@ -76,7 +76,7 @@
       "value": null,
       "note": "Summe nur aus bestätigten Plattform-Werten; IG+YT noch UPDATE_ME → Gesamt als TT-only nicht als Gesamt ausgeben",
       "partial": {
-        "tiktok": 7682,
+        "tiktok": 12729,
         "instagram": "UPDATE_ME",
         "youtube": 395
       }
@@ -135,38 +135,38 @@
       "bufferOrgId": "6ab57b5c3c182524e1126b2f",
       "metrics": {
         "followers": "UPDATE_ME",
-        "viewsThisWeek": 7682,
-        "likesThisWeek": 484,
-        "commentsThisWeek": 2,
+        "viewsThisWeek": 12729,
+        "likesThisWeek": 559,
+        "commentsThisWeek": 3,
         "savesThisWeek": "UPDATE_ME",
         "sharesThisWeek": 15,
         "postsThisWeek": 6,
-        "reachThisWeek": 1918,
-        "engagementRatePct": 6.52,
-        "watchTimeMinutes": 363.78,
-        "avgWatchTimeSec": 2.8,
-        "postingStreakDays": 0,
+        "reachThisWeek": 3316,
+        "engagementRatePct": 4.53,
+        "watchTimeMinutes": 795.07,
+        "avgWatchTimeSec": 2.93,
+        "postingStreakDays": 1,
         "postingGoalPerWeek": 5,
         "postingGoalStatus": "AtRisk",
-        "postingGoalSentThisPeriod": 0,
+        "postingGoalSentThisPeriod": 1,
         "postingGoalPeriod": "2026-10-04 → 2026-10-10 Vienna (Buffer)",
-        "postingGoalScheduledThisPeriod": 2
+        "postingGoalScheduledThisPeriod": 1
       },
       "topPost": {
         "title": "Salah / Prayer on time reminder",
         "hashtags": "#allah #salah #prayer #islam #quran #sunnah #reminder #muslim #tawheed #prayontime",
         "bufferPostId": "6ac0c724713b7277a0b2e1f2",
         "url": "UPDATE_ME",
-        "views": 6297,
-        "likes": 176,
+        "views": 11338,
+        "likes": 249,
         "comments": 1,
         "shares": 4,
-        "reach": 734,
-        "avgWatchSec": 2.83,
-        "watchTimeMinutes": 298.05,
+        "reach": 2129,
+        "avgWatchSec": 3.71,
+        "watchTimeMinutes": 729.13,
         "durationSec": 22.8,
         "postedAt": "2026-10-03T11:14:53+02:00",
-        "note": "Buffer per-post metrics (metricsUpdatedAt 2026-10-07T13:07:40+02:00). Views 6.297 vs Reach 734 = so von Buffer geliefert (Views zählen Mehrfach-Views); nicht korrigiert."
+        "note": "Buffer per-post metrics (metricsUpdatedAt 2026-10-08T12:08:42+02:00). Views 11.338 vs Reach 2.129 = so von Buffer geliefert; nicht korrigiert. +5.041 Views seit Pull 8.10."
       },
       "scheduleVienna": {
         "mon": [
@@ -187,8 +187,8 @@
           "09:47"
         ]
       },
-      "source": "Buffer get_aggregated_post_metrics + list_posts (includeMetrics) + get_channel, Fenster 2026-09-29 00:00 → 2026-10-06 23:59 Vienna; Buffer metricsUpdatedAt 2026-10-07T13:07:40+02:00; pulled by Growth Intel 2026-10-08 (Briefing CHEF AKHI)",
-      "metricsAsOf": "2026-10-08T09:02:00+02:00",
+      "source": "Buffer get_aggregated_post_metrics + list_posts (includeMetrics) + get_channel, Fenster 2026-09-29 00:00 → 2026-10-06 23:59 Vienna + laufende Woche; Buffer metricsUpdatedAt 2026-10-08T12:08:42+02:00; pulled by Growth Intel 2026-10-09",
+      "metricsAsOf": "2026-10-09T09:05:00+02:00",
       "isPlaceholder": false,
       "weekPostLog": [
         {
@@ -196,24 +196,24 @@
           "topic": "Salah on time",
           "postedAt": "2026-10-03T11:14:53+02:00",
           "durationSec": 22.8,
-          "views": 6297,
-          "likes": 176,
+          "views": 11338,
+          "likes": 249,
           "comments": 1,
           "shares": 4,
-          "reach": 734,
-          "avgWatchSec": 2.83
+          "reach": 2129,
+          "avgWatchSec": 3.71
         },
         {
           "bufferPostId": "6ac0c7734619427d30e83878",
           "topic": "Quran recite (tilawah)",
           "postedAt": "2026-10-03T11:16:11+02:00",
           "durationSec": 22.0,
-          "views": 278,
+          "views": 279,
           "likes": 76,
           "comments": 1,
           "shares": 10,
-          "reach": 241,
-          "avgWatchSec": 2.42
+          "reach": 242,
+          "avgWatchSec": 2.41
         },
         {
           "bufferPostId": "6ac0c7c24619427d30e8485c",
@@ -224,7 +224,7 @@
           "likes": 53,
           "comments": 0,
           "shares": 1,
-          "reach": 229,
+          "reach": 230,
           "avgWatchSec": 2.63
         },
         {
@@ -244,47 +244,52 @@
           "topic": "Eltern / Birr",
           "postedAt": "2026-10-03T11:20:18+02:00",
           "durationSec": 21.3,
-          "views": 275,
-          "likes": 48,
+          "views": 277,
+          "likes": 49,
           "comments": 0,
           "shares": 0,
           "reach": 232,
-          "avgWatchSec": 2.33
+          "avgWatchSec": 2.32
         },
         {
           "bufferPostId": "6ac0d63b3bfd38430fdb58bb",
           "topic": "3 Fragen im Grab",
           "postedAt": "2026-10-03T12:19:16+02:00",
           "durationSec": 40.3,
-          "views": 294,
-          "likes": 63,
-          "comments": 0,
+          "views": 297,
+          "likes": 64,
+          "comments": 1,
           "shares": 0,
-          "reach": 247,
-          "avgWatchSec": 4.16
+          "reach": 248,
+          "avgWatchSec": 4.13
         }
       ],
       "currentWeekPartial": {
-        "window": "2026-10-07 → 2026-10-08T09:00 Vienna",
-        "postsSent": 0,
-        "views": 0,
-        "scheduled": [
+        "window": "2026-10-07 → 2026-10-09T09:04 Vienna",
+        "postsSent": 1,
+        "sent": [
           {
             "bufferPostId": "6ac69fc84026b2413e1ecdfe",
             "topic": "Ad-Duha 93:3–5 – Wenn du dich verlassen fühlst",
-            "dueAt": "2026-10-08T19:00:00+02:00",
-            "durationSec": 17.7
-          },
+            "sentAt": "2026-10-08T19:04:14+02:00",
+            "durationSec": 17.7,
+            "views": "UPDATE_ME",
+            "likes": "UPDATE_ME",
+            "url": "UPDATE_ME"
+          }
+        ],
+        "views": "UPDATE_ME",
+        "scheduled": [
           {
             "bufferPostId": "6ac69fceb7850fff3cb857a4",
-            "topic": "Ash-Sharh 94:5–6 – Mit der Erschwernis ist Erleichterung",
+            "topic": "Ash-Sharh 94:5–6 (Buffer-Caption)",
             "dueAt": "2026-10-09T19:00:00+02:00",
             "durationSec": 20.5
           }
         ],
-        "note": "Buffer list_posts + get_aggregated_post_metrics 2026-10-07..2026-10-08 09:00. Letzter gesendeter Post 2026-10-03 → Streak 0."
+        "note": "Buffer list_posts 2026-10-09: Ad-Duha status sent. Buffer-Metriken für Ad-Duha noch nicht aktualisiert (metricsUpdatedAt = Erstellzeit) und Aggregat 7.10.–9.10. zeigt noch 0 Posts (Buffer-Lag) → Views UPDATE_ME, nicht 0. Buffer-Ziel 4.–10.10.: 1 gesendet, 1 geplant, AtRisk."
       },
-      "metricsSourceUpdatedAt": "2026-10-07T13:07:40+02:00"
+      "metricsSourceUpdatedAt": "2026-10-08T12:08:42+02:00"
     },
     "youtube": {
       "handle": "@haric8814",
@@ -333,7 +338,7 @@
           "fromFeb2027": "8000h / 365d ODER 20M Shorts / 90d"
         }
       },
-      "source": "TubeAlfred youtube_channel_get + youtube_channel_videos + youtube_channel_shorts + youtube_videos_batch (Hari C, öffentlich) 2026-10-08; Studio-only Werte = UPDATE_ME",
+      "source": "TubeAlfred youtube_channel_get + youtube_channel_videos + youtube_channel_shorts + youtube_videos_batch (Hari C, öffentlich) 2026-10-08; Studio-only Werte = UPDATE_ME | 2026-10-09: TubeAlfred credits empty (0, youtube_channel_get abgelehnt) – YT-Werte vom 8.10. unverändert, metricsAsOf bleibt 8.10.",
       "metricsAsOf": "2026-10-08T09:02:00+02:00",
       "isPlaceholder": false,
       "displayName": "Hari C",
@@ -431,10 +436,13 @@
       "title": "Surah Ad-Duha – Trost wenn du dich verlassen fühlst (DE)",
       "platform": "tiktok",
       "pillar": "ayah_meaning",
-      "status": "scheduled",
+      "status": "posted",
       "ownerAgent": "deen_growth",
       "ownerAgentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
-      "notes": "Buffer @deendaily254, Do 8.10. 19:00 Vienna, Post 6ac69fc84026b2413e1ecdfe. Hook: Wenn du dich verlassen fühlst… | 15–35s"
+      "notes": "Buffer @deendaily254 gesendet Do 8.10. 19:04 Vienna (geplant 19:00), Post 6ac69fc84026b2413e1ecdfe. TikTok-Link + Metriken: UPDATE_ME (Buffer-Metriken noch nicht refreshed, Stand 9.10. 09:04). Hook: Wenn du dich verlassen fühlst… | 17,7s",
+      "postedAt": "2026-10-08T19:04:14+02:00",
+      "postedUrl": "UPDATE_ME",
+      "bufferPostId": "6ac69fc84026b2413e1ecdfe"
     },
     {
       "id": "idea-002",
@@ -674,7 +682,7 @@
       "status": "scheduled",
       "ownerAgent": "deen_growth",
       "ownerAgentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
-      "notes": "Buffer @deendaily254, Fr 9.10. 19:00 Vienna, Post 6ac69fceb7850fff3cb857a4."
+      "notes": "Buffer @deendaily254, Fr 9.10. 19:00 Vienna, Post 6ac69fceb7850fff3cb857a4. Hinweis Growth Intel 9.10.: Buffer-Caption nennt 94:5–6 (Titel sagt 94:5–8) – bitte abgleichen."
     },
     {
       "id": "idea-026",
@@ -750,14 +758,15 @@
       "agentId": "da2682ad-04a5-4eeb-878c-1dc42d6307b3",
       "name": "Growth Intel",
       "responsibility": "Dashboard pflegen (Analyse); Muster; virale Sunnah-sichere Ideas vorschlagen; nie posten",
-      "lastUpdated": "2026-10-08T09:07:00+02:00",
-      "status": "kw41_ideas_synced_with_buffer_and_ig_2026-10-08",
+      "lastUpdated": "2026-10-09T09:05:00+02:00",
+      "status": "kw41_refresh_2026-10-09_scheduled_status_ui",
       "weeklyBrief": {
         "week": "2026-09-29 → 2026-10-06 (komplett); 2026-10-07 → 13 partial",
         "nextActions": [
-          "Hari: 2 von idea-021..024 freigeben (manhaj-Check) → Buffer-Ziel 5/5 bis Sa 10.10. 23:59 schaffen",
+          "Hari: 2 von idea-021..024 freigeben (manhaj-Check) → Buffer-Ziel bis Sa 10.10. 23:59: aktuell 1 gesendet + 1 geplant von 5",
           "Posts verteilen (max 1–2/Tag), nicht 6 auf einmal wie am 3.10.",
-          "IG-Wochenzahlen (Insights) nachtragen – aktuell UPDATE_ME"
+          "IG-Wochenzahlen (Insights) + Metriken der 2 IG-Reels vom 7.10. nachtragen – aktuell UPDATE_ME",
+          "TubeAlfred-Credits aufladen (0) – sonst keine YT-Zahlen"
         ],
         "pruneSuggestions": [
           "idea-016 = Duplikat von idea-013 (Al-Kahf)",

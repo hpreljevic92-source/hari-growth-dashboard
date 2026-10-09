@@ -6,6 +6,8 @@ Statisches Dashboard (`index.html` + `data.json`) auf GitHub Pages, für Handy u
 
 Im Panel **„Wartet auf Hari“** erscheinen Ideen mit `status: "draft"` und Aufgaben mit `status: "pending"`.
 
+Ideen-Status: `draft | approved | scheduled | filming | posted` – `scheduled` = liegt in Buffer/Queue mit Uhrzeit (Vienna) + Post-ID in `notes`. Das Missions-Board zeigt aktive Ideen (draft/approved/scheduled/filming) zuerst und lässt sich per Status-Chip filtern.
+
 1. **Freigeben** setzt die Idee in der lokalen Vorschau auf `approved`; **Ablehnen** entfernt sie. **Erledigt** setzt eine Aufgabe auf `done`.
 2. **data.json herunterladen** erzeugt die Datei mit den vorgemerkten Änderungen. Die Klicks sind bis zum Commit ungespeichert; GitHub Pages kann die Quelldatei nicht selbst schreiben.
 3. Vor dem Ersetzen mit der neuesten `data.json` im GitHub-Repo vergleichen. Bei parallelen Agent-Updates ausschließlich die eigenen Statusänderungen bzw. entfernten Drafts in die neueste Datei übertragen; Agent-Felder und neue Ideen erhalten.

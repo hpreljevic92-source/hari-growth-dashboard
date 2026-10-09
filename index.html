@@ -24,6 +24,7 @@
     --muted: #7a9bb0;
     --ok: #00ff9d;
     --warn: #ffb020;
+    --sched: #b18cff;
     --bad: #ff4d6a;
     --ig: #ff4d8d;
     --tt: #00f0ff;
@@ -594,6 +595,10 @@
   }
 
   /* —— Mission board —— */
+  .idea-filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .idea-filters .st { cursor: pointer; opacity: 0.7; font-family: var(--mono); }
+  .idea-filters .st.on { opacity: 1; outline: 1px solid var(--cyan); }
+  .idea-filters .st-all { background: var(--glass-strong); color: var(--cyan); border: 1px solid var(--border); }
   .mission-board {
     position: relative;
     display: flex;
@@ -640,6 +645,7 @@
   .mission.st-posted::before { background: var(--ok); box-shadow: 0 0 10px var(--ok); }
   .mission.st-filming::before { background: var(--warn); box-shadow: 0 0 10px var(--warn); }
   .mission.st-approved::before { background: var(--blue); box-shadow: 0 0 10px var(--blue); }
+  .mission.st-scheduled::before { background: var(--sched); box-shadow: 0 0 10px var(--sched); }
   .mission.st-draft::before { background: var(--muted); box-shadow: none; }
 
   .st {
@@ -655,6 +661,7 @@
   }
   .st-draft { background: rgba(122, 155, 176, 0.18); color: #b0c8d8; border: 1px solid rgba(122, 155, 176, 0.38); }
   .st-approved { background: rgba(59, 130, 246, 0.2); color: #8ec0ff; border: 1px solid rgba(59, 130, 246, 0.45); box-shadow: 0 0 14px rgba(59, 130, 246, 0.2); }
+  .st-scheduled { background: rgba(177, 140, 255, 0.18); color: var(--sched); border: 1px solid rgba(177, 140, 255, 0.45); box-shadow: 0 0 14px rgba(177, 140, 255, 0.2); }
   .st-filming { background: rgba(255, 176, 32, 0.16); color: var(--warn); border: 1px solid rgba(255, 176, 32, 0.45); box-shadow: 0 0 14px rgba(255, 176, 32, 0.2); }
   .st-posted { background: rgba(0, 255, 157, 0.14); color: var(--ok); border: 1px solid rgba(0, 255, 157, 0.4); box-shadow: 0 0 14px rgba(0, 255, 157, 0.18); }
 
@@ -1020,6 +1027,7 @@
         <span class="sec-tag">Ideen-Queue · Timeline</span>
       </div>
       <div class="sec-b">
+        <div class="idea-filters" id="ideaFilters" role="group" aria-label="Ideen nach Status filtern"></div>
         <div class="mission-board" id="ideas"></div>
       </div>
     </section>
@@ -1073,6 +1081,46 @@ const Sound = {
   hover() { this.beep(1200, 0.03, 'sine', 0.02); },
   click() { this.beep(660, 0.05, 'triangle', 0.025); }
 };
+
+/* Ideas board: status labels, order, counts, filter (scheduled = in Buffer/Queue mit Zeit + Post-ID) */
+const IDEA_STATUS_DE = { draft: 'ENTWURF', approved: 'FREIGEGEBEN', scheduled: 'GEPLANT', filming: 'DREH', posted: 'GEPOSTET' };
+const IDEA_STATUS_ORDER = ['scheduled', 'filming', 'approved', 'draft', 'posted'];
+const IDEA_ACTIVE = ['draft', 'approved', 'scheduled', 'filming'];
+let ideasData = null;
+let ideaFilter = 'active';
+function renderIdeasBoard() {
+  const d = ideasData || {};
+  const all = (d.ideas || []).map((i, idx) => ({ i, idx, st: i.status || 'draft' }));
+  const counts = {};
+  all.forEach(x => { counts[x.st] = (counts[x.st] || 0) + 1; });
+  const activeCount = all.filter(x => IDEA_ACTIVE.includes(x.st)).length;
+  const chips = [['active', 'AKTIV', activeCount, 'st-all'], ['all', 'ALLE', all.length, 'st-all']]
+    .concat(IDEA_STATUS_ORDER.map(k => [k, IDEA_STATUS_DE[k], counts[k] || 0, 'st-' + k]));
+  document.getElementById('ideaFilters').innerHTML = chips.map(([k, label, n, cls]) =>
+    `<button type="button" class="st ${cls}${ideaFilter === k ? ' on' : ''}" data-idea-filter="${k}" aria-pressed="${ideaFilter === k}">${label} ${n}</button>`).join('');
+  const rank = st => { const r = IDEA_STATUS_ORDER.indexOf(st); return r < 0 ? IDEA_STATUS_ORDER.length : r; };
+  const shown = all
+    .filter(x => ideaFilter === 'all' ? true : ideaFilter === 'active' ? IDEA_ACTIVE.includes(x.st) : x.st === ideaFilter)
+    .sort((a, b) => rank(a.st) - rank(b.st) || a.idx - b.idx)
+    .slice(0, 14);
+  document.getElementById('ideas').innerHTML = shown.map(({ i, st }) => {
+    const agentName = d.agents?.[i.ownerAgent]?.name || i.ownerAgent || '—';
+    return `<div class="mission st-${escapeHtml(st)}" data-sound-hover>
+      <span class="st st-${escapeHtml(st)}">${IDEA_STATUS_DE[st] || escapeHtml(st)}</span>
+      <div>
+        <div class="t">${escapeHtml(i.title || '')}</div>
+        <div class="meta">${escapeHtml(i.platform || '')} · ${escapeHtml(i.pillar || '')}${i.notes ? ' · ' + escapeHtml(i.notes) : ''}</div>
+      </div>
+      <div class="crew">${escapeHtml(agentName)}</div>
+    </div>`;
+  }).join('') || '<div style="color:var(--muted)">Keine Missionen</div>';
+}
+document.getElementById('ideaFilters').addEventListener('click', event => {
+  const btn = event.target.closest('[data-idea-filter]');
+  if (!btn) return;
+  ideaFilter = btn.getAttribute('data-idea-filter');
+  renderIdeasBoard();
+});
 
 document.getElementById('soundToggle').addEventListener('click', function () {
   Sound.enabled = !Sound.enabled;
@@ -1489,20 +1537,8 @@ function render(d) {
   }).join('');
 
   /* Ideas mission board */
-  const statusDE = { draft: 'ENTWURF', approved: 'FREIGEGEBEN', filming: 'DREH', posted: 'GEPOSTET' };
-  const ideas = (d.ideas || []).slice(0, 14);
-  document.getElementById('ideas').innerHTML = ideas.map(i => {
-    const agentName = d.agents?.[i.ownerAgent]?.name || i.ownerAgent || '—';
-    const st = i.status || 'draft';
-    return `<div class="mission st-${escapeHtml(st)}" data-sound-hover>
-      <span class="st st-${escapeHtml(st)}">${statusDE[st] || st}</span>
-      <div>
-        <div class="t">${escapeHtml(i.title || '')}</div>
-        <div class="meta">${escapeHtml(i.platform || '')} · ${escapeHtml(i.pillar || '')}${i.notes ? ' · ' + escapeHtml(i.notes) : ''}</div>
-      </div>
-      <div class="crew">${escapeHtml(agentName)}</div>
-    </div>`;
-  }).join('') || '<div style="color:var(--muted)">Keine Missionen</div>';
+  ideasData = d;
+  renderIdeasBoard();
 
   try {
     renderHariQueue(d);
