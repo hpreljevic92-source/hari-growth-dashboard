@@ -3,11 +3,11 @@
   "meta": {
     "title": "Growth Dashboard",
     "timezone": "Europe/Vienna",
-    "lastUpdated": "2026-10-12T08:55:30+02:00",
-    "lastUpdatedBy": "Growth Intel",
+    "lastUpdated": "2026-10-12T10:20:51+02:00",
+    "lastUpdatedBy": "Deen Growth TT+YT",
     "weekStart": "2026-10-06",
     "weekEnd": "2026-10-12",
-    "notes": "Nur echte Zahlen eintragen. UPDATE_ME = noch kein Live-Wert. Niemals schätzen. KW42-Rollover (Growth Intel 2026-10-12): letzte komplette Woche = 6.–12.10. inkl. Montag 12.10. (Woche endet heute → Zahlen können sich noch bewegen; Buffer-Stand 12.10. 08:12). Vorwoche 29.9.–6.10. in meta.previousWeek für WoW. 'ThisWeek'-Werte = Lifetime-to-date-Zahlen der Posts, die im Fenster veröffentlicht wurden. YouTube eingefroren auf 8.10. (TubeAlfred 0 Credits).",
+    "notes": "Nur echte Zahlen eintragen. UPDATE_ME = noch kein Live-Wert. Niemals schätzen. KW42-Rollover (Growth Intel 2026-10-12): letzte komplette Woche = 6.–12.10. inkl. Montag 12.10. (Woche endet heute → Zahlen können sich noch bewegen; Buffer-Stand 12.10. 08:12). Vorwoche 29.9.–6.10. in meta.previousWeek für WoW. 'ThisWeek'-Werte = Lifetime-to-date-Zahlen der Posts, die im Fenster veröffentlicht wurden. YouTube eingefroren auf 8.10. (TubeAlfred 0 Credits). | Weekly Routine 12.10. 10:18 (CHEF AKHI): Woche 6.–12.10. bestätigt; TT-Zahlen von Growth Intel 08:55 übernommen (Buffer 08:12); TubeAlfred erneut 0 Credits → YT-Wochenwerte UPDATE_ME; IG-Wochenwerte warten auf VoT Growth (Insights). 8 Ideen ins ideasArchive verschoben (4 alte posted vom 3.10. + 4 Duplikate).",
     "previousWeek": {
       "weekStart": "2026-09-29",
       "weekEnd": "2026-10-06",
@@ -124,14 +124,14 @@
       "ownerAgent": "vot_growth",
       "ownerAgentId": "44289084-0ba3-49ca-9cf8-eb04829a2288",
       "metrics": {
-        "followers": 12,
-        "viewsThisWeek": "UPDATE_ME",
-        "likesThisWeek": "UPDATE_ME",
-        "commentsThisWeek": "UPDATE_ME",
-        "savesThisWeek": "UPDATE_ME",
-        "sharesThisWeek": "UPDATE_ME",
-        "postsThisWeek": "UPDATE_ME",
-        "reachThisWeek": "UPDATE_ME",
+        "followers": 14,
+        "viewsThisWeek": 350,
+        "likesThisWeek": 11,
+        "commentsThisWeek": 0,
+        "savesThisWeek": 1,
+        "sharesThisWeek": 0,
+        "postsThisWeek": 3,
+        "reachThisWeek": 309,
         "postingStreakDays": "UPDATE_ME"
       },
       "topPost": {
@@ -147,9 +147,38 @@
         "caption": "#allah #tawheed #ikhlas #quran #islam #worship #reminder #muslim #lailahaillallah #faith",
         "note": "All-time top of 25 reels with Insights. 0.2% of views from followers (mostly non-followers)."
       },
-      "source": "Instagram Insights via box browser 2026-10-06 (25 reels). Shares=0 on all scraped. Oct 3 reels not in returned grid — week metrics left UPDATE_ME.",
-      "metricsAsOf": "2026-10-06T19:11:31+02:00",
-      "isPlaceholder": true
+      "source": "IG Insights web, Last 7 days (≈6–12 Oct), read 2026-10-12: views 350, viewers 309, interactions 14, profile visits 16. Per-reel likes/saves/viewers from post insights; per-reel views were unclear (top content 121/114/110), so they're left out. Streak not tracked.",
+      "metricsAsOf": "2026-10-12T10:20:00+02:00",
+      "isPlaceholder": false,
+      "weekReels": [
+        {
+          "url": "https://www.instagram.com/voicesoftawheed/reel/DeKXsRyBeVa/",
+          "title": "Ikhlas test",
+          "viewers": 105,
+          "likes": 3,
+          "saves": 1,
+          "comments": 0,
+          "shares": 0
+        },
+        {
+          "url": "https://www.instagram.com/voicesoftawheed/reel/DeM8f7HJJyi/",
+          "title": "Al-Baqarah 2:186",
+          "viewers": 108,
+          "likes": 6,
+          "saves": 0,
+          "comments": 0,
+          "shares": 0
+        },
+        {
+          "url": "https://www.instagram.com/voicesoftawheed/reel/DeM898AsOHD/",
+          "title": "Ar-Ra'd 13:28",
+          "viewers": 112,
+          "likes": 2,
+          "saves": 0,
+          "comments": 0,
+          "shares": 0
+        }
+      ]
     },
     "tiktok": {
       "handle": "@deendaily254",
@@ -159,7 +188,7 @@
       "bufferChannelId": "6ab5b83dea19ca0bdeddf2ff",
       "bufferOrgId": "6ab57b5c3c182524e1126b2f",
       "metrics": {
-        "followers": "UPDATE_ME",
+        "followers": 39,
         "viewsThisWeek": 556,
         "likesThisWeek": 84,
         "commentsThisWeek": 1,
@@ -285,7 +314,8 @@
         "window": "2026-10-13 → 2026-10-19",
         "scheduledInBuffer": 0,
         "note": "Buffer list_posts 12.10.: keine geplanten Posts; Buffer-Ziel 11.–17.10. = 0/5, AtRisk."
-      }
+      },
+      "followersSource": "Public profile tiktok.com/@deendaily254, read 2026-10-12 10:20 (TikTok Studio not logged in)"
     },
     "youtube": {
       "handle": "@haric8814",
@@ -297,27 +327,32 @@
       "productionOwnerId": "b8f5286c-3168-4aad-ba62-b7f68617ba06",
       "metrics": {
         "subscribers": 7,
-        "viewsThisWeek": "UPDATE_ME",
+        "viewsThisWeek": 29,
         "likesThisWeek": "UPDATE_ME",
-        "commentsThisWeek": "UPDATE_ME",
+        "commentsThisWeek": 0,
         "savesThisWeek": "UPDATE_ME",
         "sharesThisWeek": "UPDATE_ME",
-        "postsThisWeek": "UPDATE_ME",
+        "postsThisWeek": 1,
         "watchHours365d": "UPDATE_ME",
         "shortsViews90d": "UPDATE_ME",
         "postingStreakDays": "UPDATE_ME",
         "lifetimeViews": 484,
-        "lifetimeVideos": 7
+        "lifetimeVideos": 7,
+        "watchHoursThisWeek": 0.1,
+        "views28d": 1800,
+        "watchHours28d": 4.1,
+        "impressionsThisWeek": 310,
+        "ctrThisWeek": "1,0 %"
       },
       "topPost": {
         "title": "The 3 Questions of the Grave #shorts",
         "url": "https://www.youtube.com/shorts/VYPk59GG-sY",
-        "views": 395,
+        "views": 25,
         "likes": 18,
         "comments": 0,
         "durationSec": 40,
         "postedAt": "2026-10-03",
-        "note": "Top Short der Woche 29.9.–6.10. (einziger Upload im Fenster). Gleiches Video wie TT 'Grave questions'. TubeAlfred youtube_videos_batch 2026-10-08."
+        "note": "Studio Advanced mode 04.–10.10.2026; since publish 26 views, 0,1 h, 0 comments, 0 shares"
       },
       "monetization": {
         "yppStatus": "UPDATE_ME",
@@ -334,8 +369,8 @@
           "fromFeb2027": "8000h / 365d ODER 20M Shorts / 90d"
         }
       },
-      "source": "TubeAlfred (Hari C, öffentlich) Stand 2026-10-08; subscribers/lifetime eingefroren auf 8.10. | Woche 6.–12.10.: TubeAlfred credits empty (0) → Wochenwerte UPDATE_ME (bekannt: Yusuf Teil 1 am 7.10. hochgeladen, 11 Views am 8.10.)",
-      "metricsAsOf": "2026-10-08T09:02:00+02:00",
+      "source": "YouTube Studio Analytics (Hari C), Letzte 7 Tage = 04.–10.10.2026 (Studio data ends 10.10.; 6.–12.10. not selectable), read 2026-10-12",
+      "metricsAsOf": "2026-10-12T10:20:51+02:00",
       "isPlaceholder": false,
       "displayName": "Hari C",
       "notes": "Voices of Tawheed (@VoicesofTawheed-i4h, UCp1BPKYITqgngsAuKfBmfbg) seit 2026-10-07 gebannt laut CHEF AKHI → nicht einplanen (siehe bannedChannel). Aktiver YT-Kanal = Hari C (@haric8814). Yusuf Teil 1 live 2026-10-07: https://youtu.be/mq48te4lCj8. Frühere Werte (0 Subs / 0 Views / 1 Video, Stand 2026-10-07 06:05) durch TubeAlfred youtube_channel_get 2026-10-08 ersetzt.",
@@ -480,36 +515,6 @@
       "notes": "Originalitäts-Pflicht 2026; Serie nummerieren"
     },
     {
-      "id": "idea-006",
-      "title": "Haya – Blick senken (Reminder)",
-      "platform": "tiktok",
-      "pillar": "tawhid_sunnah",
-      "status": "posted",
-      "ownerAgent": "deen_growth",
-      "ownerAgentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
-      "notes": "Buffer 6ac0c7c2… posted 2026-10-03"
-    },
-    {
-      "id": "idea-007",
-      "title": "Morning Adhkar – Start den Tag mit Dhikr",
-      "platform": "tiktok",
-      "pillar": "dua",
-      "status": "posted",
-      "ownerAgent": "deen_growth",
-      "ownerAgentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
-      "notes": "Buffer 6ac0c817… posted 2026-10-03"
-    },
-    {
-      "id": "idea-008",
-      "title": "Salah on time – Bete rechtzeitig",
-      "platform": "tiktok",
-      "pillar": "tawhid_sunnah",
-      "status": "posted",
-      "ownerAgent": "deen_growth",
-      "ownerAgentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
-      "notes": "Top Post diese Woche: 855 Views / 132 Likes"
-    },
-    {
       "id": "idea-009",
       "title": "IG Trial Reel: Ad-Duha Hook A/B (2 Varianten)",
       "platform": "instagram",
@@ -570,26 +575,6 @@
       "notes": "2:255; Benefit: zwischen dir und Jannah nur noch der Tod (an-Nasa'i)"
     },
     {
-      "id": "idea-015",
-      "title": "Quran recite clip (high shares) – Format wiederholen",
-      "platform": "tiktok",
-      "pillar": "ayah_meaning",
-      "status": "posted",
-      "ownerAgent": "deen_growth",
-      "ownerAgentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
-      "notes": "Buffer 6ac0c773… 278 Views / 76 Likes / 10 Shares — höchste Share-Rate der Woche"
-    },
-    {
-      "id": "idea-016",
-      "title": "Al-Kahf Freitag – Hast du heute schon gelesen? (KW41)",
-      "platform": "all",
-      "pillar": "occasion",
-      "status": "draft",
-      "ownerAgent": "deen_growth",
-      "ownerAgentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
-      "notes": "Growth Intel KW41. Hook: Hast du heute schon Al-Kahf gelesen? | 20s Text+Rezitation+DE Benefit | TT Do Abend → Fr Morgen. Warum: Occasion-Shares; Fr 9.10."
-    },
-    {
       "id": "idea-017",
       "title": "Letzte Stunde Freitag – Dua-Fenster",
       "platform": "tiktok",
@@ -598,36 +583,6 @@
       "ownerAgent": "deen_growth",
       "ownerAgentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
       "notes": "Growth Intel KW41. Hook: Die letzte Stunde am Freitag… | 15–25s Dua+Quelle on-screen | TT Fr Nachmittag. Warum: Niche-Pattern hohe Shares bei Jumu'ah-Timing."
-    },
-    {
-      "id": "idea-018",
-      "title": "Wenn du dich verlassen fühlst – Ad-Duha (DE)",
-      "platform": "all",
-      "pillar": "ayah_meaning",
-      "status": "draft",
-      "ownerAgent": "deen_growth",
-      "ownerAgentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
-      "notes": "Growth Intel KW41. Hook: Wenn du dich verlassen fühlst… | 15–35s Ayah+DE Übersetzung | TT + IG Trial. Warum: Benefit-Titel schlagen generische Rezitation; Originalitäts-Mehrwert = DE."
-    },
-    {
-      "id": "idea-019",
-      "title": "Ayat al-Kursi nach dem Gebet – Benefit",
-      "platform": "all",
-      "pillar": "ayah_meaning",
-      "status": "draft",
-      "ownerAgent": "vot_growth",
-      "ownerAgentId": "44289084-0ba3-49ca-9cf8-eb04829a2288",
-      "notes": "Growth Intel KW41. Hook: Nach dem Gebet – eine Ayah… | 20s + Hadith-Benefit mit Quelle | IG+TT. Warum: Ritual-Habit + klarer Benefit; IG Top war Tawheed/Ikhlas (non-follower Reach)."
-    },
-    {
-      "id": "idea-020",
-      "title": "Tawhid in 30s – Teil 1 (eigene Stimme/Text)",
-      "platform": "all",
-      "pillar": "tawhid_sunnah",
-      "status": "draft",
-      "ownerAgent": "clipper_akh",
-      "ownerAgentId": "b8f5286c-3168-4aad-ba62-b7f68617ba06",
-      "notes": "Growth Intel KW41. Hook: Was bedeutet La ilaha illallah wirklich? | 30s eigene Stimme/Text, Serie #1 | all. Warum: Originalitäts-Pflicht seit Apr/Okt 2026; Serie baut Habit."
     },
     {
       "id": "idea-021",
@@ -782,22 +737,22 @@
       "agentId": "44289084-0ba3-49ca-9cf8-eb04829a2288",
       "name": "VoT Growth",
       "responsibility": "IG @voicesoftawheed Metrics, Top Post, Streak, IG-Ideen, IG-Plan",
-      "lastUpdated": "2026-10-06T19:11:31+02:00",
-      "status": "followers_and_topPost_live_week_pending_oct_reels"
+      "lastUpdated": "2026-10-12T10:20:00+02:00",
+      "status": "week_6-12_oct_live"
     },
     "deen_growth": {
       "agentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
       "name": "Deen Growth TT+YT",
       "responsibility": "TT Buffer-Metrics wöchentlich; YT Studio/TubeAlfred; TT+YT Ideen & Pläne; Follower-Zahlen",
-      "lastUpdated": "2026-10-07T06:05:17+02:00",
-      "status": "yusuf_p1_live_hari_c_mq48te4lCj8_thumb_pending_phone"
+      "lastUpdated": "2026-10-12T10:20:51+02:00",
+      "status": "yt_week_metrics_updated_tt_followers_39"
     },
     "clipper_akh": {
       "agentId": "b8f5286c-3168-4aad-ba62-b7f68617ba06",
       "name": "Clipper AKH",
       "responsibility": "Video-Produktion; Dashboard-Struktur; Ideas Status filming→posted; Weekly Routine anlegen",
-      "lastUpdated": "2026-10-06T19:06:00+02:00",
-      "status": "dashboard_bootstrapped"
+      "lastUpdated": "2026-10-12T10:18:00+02:00",
+      "status": "weekly_routine_run_2026-10-12_ig_yt_pending"
     },
     "growth_intel": {
       "agentId": "da2682ad-04a5-4eeb-878c-1dc42d6307b3",
@@ -822,5 +777,111 @@
         ]
       }
     }
-  }
+  },
+  "ideasArchive": [
+    {
+      "id": "idea-006",
+      "title": "Haya – Blick senken (Reminder)",
+      "platform": "tiktok",
+      "pillar": "tawhid_sunnah",
+      "status": "posted",
+      "ownerAgent": "deen_growth",
+      "ownerAgentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
+      "notes": "Buffer 6ac0c7c2… posted 2026-10-03",
+      "archivedAt": "2026-10-12T10:18:00+02:00",
+      "archivedBy": "CHEF AKHI (Weekly Routine)",
+      "archiveReason": "posted 3.10. (alte Woche) → Archiv"
+    },
+    {
+      "id": "idea-007",
+      "title": "Morning Adhkar – Start den Tag mit Dhikr",
+      "platform": "tiktok",
+      "pillar": "dua",
+      "status": "posted",
+      "ownerAgent": "deen_growth",
+      "ownerAgentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
+      "notes": "Buffer 6ac0c817… posted 2026-10-03",
+      "archivedAt": "2026-10-12T10:18:00+02:00",
+      "archivedBy": "CHEF AKHI (Weekly Routine)",
+      "archiveReason": "posted 3.10. (alte Woche) → Archiv"
+    },
+    {
+      "id": "idea-008",
+      "title": "Salah on time – Bete rechtzeitig",
+      "platform": "tiktok",
+      "pillar": "tawhid_sunnah",
+      "status": "posted",
+      "ownerAgent": "deen_growth",
+      "ownerAgentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
+      "notes": "Top Post diese Woche: 855 Views / 132 Likes",
+      "archivedAt": "2026-10-12T10:18:00+02:00",
+      "archivedBy": "CHEF AKHI (Weekly Routine)",
+      "archiveReason": "posted 3.10. (alte Woche) → Archiv"
+    },
+    {
+      "id": "idea-015",
+      "title": "Quran recite clip (high shares) – Format wiederholen",
+      "platform": "tiktok",
+      "pillar": "ayah_meaning",
+      "status": "posted",
+      "ownerAgent": "deen_growth",
+      "ownerAgentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
+      "notes": "Buffer 6ac0c773… 278 Views / 76 Likes / 10 Shares — höchste Share-Rate der Woche",
+      "archivedAt": "2026-10-12T10:18:00+02:00",
+      "archivedBy": "CHEF AKHI (Weekly Routine)",
+      "archiveReason": "posted 3.10. (alte Woche) → Archiv"
+    },
+    {
+      "id": "idea-016",
+      "title": "Al-Kahf Freitag – Hast du heute schon gelesen? (KW41)",
+      "platform": "all",
+      "pillar": "occasion",
+      "status": "draft",
+      "ownerAgent": "deen_growth",
+      "ownerAgentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
+      "notes": "Growth Intel KW41. Hook: Hast du heute schon Al-Kahf gelesen? | 20s Text+Rezitation+DE Benefit | TT Do Abend → Fr Morgen. Warum: Occasion-Shares; Fr 9.10.",
+      "archivedAt": "2026-10-12T10:18:00+02:00",
+      "archivedBy": "CHEF AKHI (Weekly Routine)",
+      "archiveReason": "Duplikat von idea-013 (Al-Kahf), Growth-Intel-Prune"
+    },
+    {
+      "id": "idea-018",
+      "title": "Wenn du dich verlassen fühlst – Ad-Duha (DE)",
+      "platform": "all",
+      "pillar": "ayah_meaning",
+      "status": "draft",
+      "ownerAgent": "deen_growth",
+      "ownerAgentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
+      "notes": "Growth Intel KW41. Hook: Wenn du dich verlassen fühlst… | 15–35s Ayah+DE Übersetzung | TT + IG Trial. Warum: Benefit-Titel schlagen generische Rezitation; Originalitäts-Mehrwert = DE.",
+      "archivedAt": "2026-10-12T10:18:00+02:00",
+      "archivedBy": "CHEF AKHI (Weekly Routine)",
+      "archiveReason": "Duplikat von idea-001 (Ad-Duha, schon gepostet)"
+    },
+    {
+      "id": "idea-019",
+      "title": "Ayat al-Kursi nach dem Gebet – Benefit",
+      "platform": "all",
+      "pillar": "ayah_meaning",
+      "status": "draft",
+      "ownerAgent": "vot_growth",
+      "ownerAgentId": "44289084-0ba3-49ca-9cf8-eb04829a2288",
+      "notes": "Growth Intel KW41. Hook: Nach dem Gebet – eine Ayah… | 20s + Hadith-Benefit mit Quelle | IG+TT. Warum: Ritual-Habit + klarer Benefit; IG Top war Tawheed/Ikhlas (non-follower Reach).",
+      "archivedAt": "2026-10-12T10:18:00+02:00",
+      "archivedBy": "CHEF AKHI (Weekly Routine)",
+      "archiveReason": "Duplikat von idea-014 (Ayat al-Kursi)"
+    },
+    {
+      "id": "idea-020",
+      "title": "Tawhid in 30s – Teil 1 (eigene Stimme/Text)",
+      "platform": "all",
+      "pillar": "tawhid_sunnah",
+      "status": "draft",
+      "ownerAgent": "clipper_akh",
+      "ownerAgentId": "b8f5286c-3168-4aad-ba62-b7f68617ba06",
+      "notes": "Growth Intel KW41. Hook: Was bedeutet La ilaha illallah wirklich? | 30s eigene Stimme/Text, Serie #1 | all. Warum: Originalitäts-Pflicht seit Apr/Okt 2026; Serie baut Habit.",
+      "archivedAt": "2026-10-12T10:18:00+02:00",
+      "archivedBy": "CHEF AKHI (Weekly Routine)",
+      "archiveReason": "Duplikat von idea-005 (Tawhid in 30s)"
+    }
+  ]
 }
