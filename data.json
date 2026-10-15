@@ -3,11 +3,11 @@
   "meta": {
     "title": "Growth Dashboard",
     "timezone": "Europe/Vienna",
-    "lastUpdated": "2026-10-12T10:20:51+02:00",
-    "lastUpdatedBy": "Deen Growth TT+YT",
+    "lastUpdated": "2026-10-15T09:01:20+02:00",
+    "lastUpdatedBy": "Growth Intel",
     "weekStart": "2026-10-06",
     "weekEnd": "2026-10-12",
-    "notes": "Nur echte Zahlen eintragen. UPDATE_ME = noch kein Live-Wert. Niemals schätzen. KW42-Rollover (Growth Intel 2026-10-12): letzte komplette Woche = 6.–12.10. inkl. Montag 12.10. (Woche endet heute → Zahlen können sich noch bewegen; Buffer-Stand 12.10. 08:12). Vorwoche 29.9.–6.10. in meta.previousWeek für WoW. 'ThisWeek'-Werte = Lifetime-to-date-Zahlen der Posts, die im Fenster veröffentlicht wurden. YouTube eingefroren auf 8.10. (TubeAlfred 0 Credits). | Weekly Routine 12.10. 10:18 (CHEF AKHI): Woche 6.–12.10. bestätigt; TT-Zahlen von Growth Intel 08:55 übernommen (Buffer 08:12); TubeAlfred erneut 0 Credits → YT-Wochenwerte UPDATE_ME; IG-Wochenwerte warten auf VoT Growth (Insights). 8 Ideen ins ideasArchive verschoben (4 alte posted vom 3.10. + 4 Duplikate).",
+    "notes": "Growth Intel Verify 2026-10-14 09:00 Vienna: Buffer list_posts (metrics 08:02) → TT Week Views 565 / Likes 85 / 2 Posts; Queue 0; verdict NOTHING_NEW. | Nur echte Zahlen eintragen. UPDATE_ME = noch kein Live-Wert. Niemals schätzen. KW42-Rollover (Growth Intel 2026-10-12): letzte komplette Woche = 6.–12.10. inkl. Montag 12.10. (Woche endet heute → Zahlen können sich noch bewegen; Buffer-Stand 12.10. 08:12). Vorwoche 29.9.–6.10. in meta.previousWeek für WoW. 'ThisWeek'-Werte = Lifetime-to-date-Zahlen der Posts, die im Fenster veröffentlicht wurden. YouTube eingefroren auf 8.10. (TubeAlfred 0 Credits). | Weekly Routine 12.10. 10:18 (CHEF AKHI): Woche 6.–12.10. bestätigt; TT-Zahlen von Growth Intel 08:55 übernommen (Buffer 08:12); TubeAlfred erneut 0 Credits → YT-Wochenwerte UPDATE_ME; IG-Wochenwerte warten auf VoT Growth (Insights). 8 Ideen ins ideasArchive verschoben (4 alte posted vom 3.10. + 4 Duplikate).",
     "previousWeek": {
       "weekStart": "2026-09-29",
       "weekEnd": "2026-10-06",
@@ -101,7 +101,7 @@
       "value": null,
       "note": "Summe nur aus bestätigten Plattform-Werten; IG+YT noch UPDATE_ME → Gesamt als TT-only nicht als Gesamt ausgeben",
       "partial": {
-        "tiktok": 556,
+        "tiktok": 567,
         "instagram": "UPDATE_ME",
         "youtube": "UPDATE_ME"
       }
@@ -189,16 +189,16 @@
       "bufferOrgId": "6ab57b5c3c182524e1126b2f",
       "metrics": {
         "followers": 39,
-        "viewsThisWeek": 556,
-        "likesThisWeek": 84,
+        "viewsThisWeek": 567,
+        "likesThisWeek": 85,
         "commentsThisWeek": 1,
         "savesThisWeek": "UPDATE_ME",
         "sharesThisWeek": 0,
         "postsThisWeek": 2,
-        "reachThisWeek": 477,
-        "engagementRatePct": 15.29,
-        "watchTimeMinutes": 28.37,
-        "avgWatchTimeSec": 3.0,
+        "reachThisWeek": 486,
+        "engagementRatePct": 15.1,
+        "watchTimeMinutes": 28.75,
+        "avgWatchTimeSec": 2.98,
         "postingStreakDays": 0,
         "postingGoalPerWeek": 5,
         "postingGoalStatus": "AtRisk",
@@ -209,7 +209,7 @@
         "wow": {
           "views": {
             "prev": 12729,
-            "now": 556
+            "now": 567
           },
           "posts": {
             "prev": 6,
@@ -217,7 +217,7 @@
           },
           "likes": {
             "prev": 559,
-            "now": 84
+            "now": 85
           },
           "shares": {
             "prev": 15,
@@ -225,7 +225,7 @@
           },
           "avgWatchSec": {
             "prev": 2.93,
-            "now": 3.0
+            "now": 2.98
           }
         }
       },
@@ -233,16 +233,16 @@
         "title": "Ash-Sharh 94:5–8 – Für jeden, der gerade kämpft",
         "bufferPostId": "6ac69fceb7850fff3cb857a4",
         "url": "UPDATE_ME",
-        "views": 278,
-        "likes": 49,
+        "views": 282,
+        "likes": 50,
         "comments": 0,
         "shares": 0,
-        "reach": 240,
-        "avgWatchSec": 3.55,
-        "watchTimeMinutes": 16.68,
+        "reach": 244,
+        "avgWatchSec": 3.52,
+        "watchTimeMinutes": 16.88,
         "durationSec": 20.5,
         "postedAt": "2026-10-09T19:04:38+02:00",
-        "note": "Views gleichauf mit Ad-Duha (278); Top wegen mehr Likes + längerer Watch-Zeit. Buffer metricsUpdatedAt 2026-10-12T08:12:18+02:00."
+        "note": "Top bleibt Ash-Sharh (50 Likes vs 35, Ø 3,52s vs 2,42s). Buffer metricsUpdatedAt 2026-10-15T05:15:34+02:00."
       },
       "scheduleVienna": {
         "mon": [
@@ -263,8 +263,8 @@
           "09:47"
         ]
       },
-      "source": "Buffer get_aggregated_post_metrics (6.–12.10. Vienna) + list_posts (includeMetrics) + get_channel; Buffer metricsUpdatedAt 2026-10-12T08:12:18+02:00; pulled by Growth Intel 2026-10-12",
-      "metricsAsOf": "2026-10-12T08:55:30+02:00",
+      "source": "Buffer get_aggregated_post_metrics (6.–12.10.) + list_posts (includeMetrics) + get_channel; per-post metricsUpdatedAt 2026-10-15T05:15:34+02:00; pulled by Growth Intel 2026-10-15. Wochensummen views/likes/reach/watch = Summe der 2 Posts (Ad-Duha + Ash-Sharh) aus list_posts.",
+      "metricsAsOf": "2026-10-15T09:01:20+02:00",
       "isPlaceholder": false,
       "weekPostLog": [
         {
@@ -272,12 +272,12 @@
           "topic": "Ad-Duha 93:3–5 – Wenn du dich verlassen fühlst",
           "postedAt": "2026-10-08T19:04:14+02:00",
           "durationSec": 17.7,
-          "views": 278,
+          "views": 285,
           "likes": 35,
           "comments": 1,
           "shares": 0,
-          "reach": 237,
-          "avgWatchSec": 2.45,
+          "reach": 242,
+          "avgWatchSec": 2.42,
           "url": "UPDATE_ME"
         },
         {
@@ -285,35 +285,36 @@
           "topic": "Ash-Sharh 94:5–8 – Für jeden, der gerade kämpft",
           "postedAt": "2026-10-09T19:04:38+02:00",
           "durationSec": 20.5,
-          "views": 278,
-          "likes": 49,
+          "views": 282,
+          "likes": 50,
           "comments": 0,
           "shares": 0,
-          "reach": 240,
-          "avgWatchSec": 3.55,
+          "reach": 244,
+          "avgWatchSec": 3.52,
           "url": "UPDATE_ME"
         }
       ],
-      "metricsSourceUpdatedAt": "2026-10-12T08:12:18+02:00",
+      "metricsSourceUpdatedAt": "2026-10-15T05:15:34+02:00",
       "lifetimeHighlights": [
         {
           "bufferPostId": "6ac0c724713b7277a0b2e1f2",
           "topic": "Salah on time (3.10.)",
-          "views": 11356,
+          "url": "https://www.tiktok.com/@deendaily254/video/7692367214460030240",
+          "views": 11359,
           "likes": 249,
           "comments": 1,
           "shares": 4,
           "reach": 10781,
-          "avgWatchSec": 3.71,
-          "watchTimeMinutes": 729.85,
-          "metricsUpdatedAt": "2026-10-12T08:12:18+02:00",
-          "note": "Reach 2.129 → 10.781 seit 8.10. laut Buffer"
+          "avgWatchSec": 3.57,
+          "watchTimeMinutes": 703.48,
+          "metricsUpdatedAt": "2026-10-15T05:15:34+02:00",
+          "note": "Lifetime-Ausreißer; Buffer 15.10.: 11.359 Views / Reach 10.781 – praktisch kein Wachstum mehr seit 12.10."
         }
       ],
       "upcoming": {
         "window": "2026-10-13 → 2026-10-19",
         "scheduledInBuffer": 0,
-        "note": "Buffer list_posts 12.10.: keine geplanten Posts; Buffer-Ziel 11.–17.10. = 0/5, AtRisk."
+        "note": "Buffer list_posts 15.10. 09:0x Vienna (inkl. draft/needs_approval): keine geplanten Posts; postingGoal 11.–17.10. = 0/5 gesendet, 0 scheduled, AtRisk."
       },
       "followersSource": "Public profile tiktok.com/@deendaily254, read 2026-10-12 10:20 (TikTok Studio not logged in)"
     },
@@ -462,17 +463,17 @@
       "status": "posted",
       "ownerAgent": "deen_growth",
       "ownerAgentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
-      "notes": "Buffer @deendaily254 gesendet Do 8.10. 19:04 Vienna, Post 6ac69fc84026b2413e1ecdfe. Buffer 12.10.: 278 Views / 35 Likes / 1 Kommentar / 0 Shares / Reach 237 / Ø 2,45s. TikTok-Link: UPDATE_ME (Buffer liefert keinen).",
+      "notes": "Buffer @deendaily254 gesendet Do 8.10. 19:04 Vienna, Post 6ac69fc84026b2413e1ecdfe. Buffer 15.10.: 285 Views / 35 Likes / 1 Kommentar / 0 Shares / Reach 242 / Ø 2,42s. TikTok-Link: UPDATE_ME (Buffer liefert keinen).",
       "postedAt": "2026-10-08T19:04:14+02:00",
       "postedUrl": "UPDATE_ME",
       "bufferPostId": "6ac69fc84026b2413e1ecdfe",
-      "views": 278,
+      "views": 285,
       "likes": 35,
       "comments": 1,
       "shares": 0,
-      "reach": 237,
-      "avgWatchSec": 2.45,
-      "metricsAsOf": "2026-10-12T08:55:30+02:00"
+      "reach": 242,
+      "avgWatchSec": 2.42,
+      "metricsAsOf": "2026-10-15T09:01:20+02:00"
     },
     {
       "id": "idea-002",
@@ -632,17 +633,17 @@
       "status": "posted",
       "ownerAgent": "deen_growth",
       "ownerAgentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
-      "notes": "Buffer @deendaily254 gesendet Fr 9.10. 19:04 Vienna, Post 6ac69fceb7850fff3cb857a4 (Caption nennt bewusst 94:5–6, Video zeigt 94:5–8). Buffer 12.10.: 278 Views / 49 Likes / 0 Shares / Reach 240 / Ø 3,55s. TikTok-Link: UPDATE_ME.",
+      "notes": "Buffer @deendaily254 gesendet Fr 9.10. 19:04 Vienna, Post 6ac69fceb7850fff3cb857a4 (Caption nennt bewusst 94:5–6, Video zeigt 94:5–8). Buffer 15.10.: 282 Views / 50 Likes / 0 Shares / Reach 244 / Ø 3,52s. TikTok-Link: UPDATE_ME.",
       "postedAt": "2026-10-09T19:04:38+02:00",
       "postedUrl": "UPDATE_ME",
       "bufferPostId": "6ac69fceb7850fff3cb857a4",
-      "views": 278,
-      "likes": 49,
+      "views": 282,
+      "likes": 50,
       "comments": 0,
       "shares": 0,
-      "reach": 240,
-      "avgWatchSec": 3.55,
-      "metricsAsOf": "2026-10-12T08:55:30+02:00"
+      "reach": 244,
+      "avgWatchSec": 3.52,
+      "metricsAsOf": "2026-10-15T09:01:20+02:00"
     },
     {
       "id": "idea-026",
@@ -676,7 +677,7 @@
       "status": "draft",
       "ownerAgent": "deen_growth",
       "ownerAgentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
-      "notes": "Growth Intel KW42. Hook: „Willst du die ganze Nacht beten – ohne wach zu bleiben?“ | 20–25s, eigener DE-Text on-screen + Haris eigene Stimme oder nur Text, ruhiges Morgen-Footage ohne Menschen, keine Musik | TT Di 13.10. 07:28 (Buffer-Slot) · YT Hari C Short Di 13.10. | Warum: Salah-Reminder ist der einzige Ausreißer (Buffer 12.10.: 11.356 Views, Reach 10.781) → praktischer Salah-Benefit statt reiner Trost-Ayah | Quelle: Sahih Muslim 656a ('Uthman ibn 'Affan), sahih – https://sunnah.com/muslim:656a"
+      "notes": "Growth Intel KW42. Hook: „Willst du die ganze Nacht beten – ohne wach zu bleiben?“ | 20–25s, eigener DE-Text on-screen + Haris eigene Stimme oder nur Text, ruhiges Morgen-Footage ohne Menschen, keine Musik | TT Di 13.10. 07:28 (Buffer-Slot) · YT Hari C Short Di 13.10. | Warum: Salah-Reminder ist der einzige Ausreißer (Buffer 12.10.: 11.356 Views, Reach 10.781) → praktischer Salah-Benefit statt reiner Trost-Ayah | Quelle: Sahih Muslim 656a ('Uthman ibn 'Affan), sahih – https://sunnah.com/muslim:656a | Status 15.10. (CHEF AKHI): als tt028 produziert, liegt bei Deen Growth und wartet auf Haris OK – bleibt draft (nicht in Buffer)."
     },
     {
       "id": "idea-029",
@@ -686,17 +687,22 @@
       "status": "draft",
       "ownerAgent": "deen_growth",
       "ownerAgentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
-      "notes": "Growth Intel KW42. Hook: „2 Minuten, die mehr wert sind als die ganze Welt.“ | 15–20s, DE-Text + eigene Stimme, CTA „Morgen vor Fajr: 2 Rak'at“ | TT Mi 14.10. 19:00 · YT Hari C Short Mi 14.10. | Warum: Salah-Pillar bricht aus; kurze, konkrete Handlung | Quelle: Sahih Muslim 725a ('A'ischa), sahih – https://sunnah.com/muslim:725a"
+      "notes": "Growth Intel KW42. Hook: „2 Minuten, die mehr wert sind als die ganze Welt.“ | 15–20s, DE-Text + eigene Stimme, CTA „Morgen vor Fajr: 2 Rak'at“ | TT Mi 14.10. 19:00 · YT Hari C Short Mi 14.10. | Warum: Salah-Pillar bricht aus; kurze, konkrete Handlung | Quelle: Sahih Muslim 725a ('A'ischa), sahih – https://sunnah.com/muslim:725a | Status 15.10. (CHEF AKHI): als tt029 produziert, liegt bei Deen Growth und wartet auf Haris OK – bleibt draft (nicht in Buffer)."
     },
     {
       "id": "idea-030",
       "title": "Der Moment, in dem du Allah am nächsten bist – Sujud",
       "platform": "instagram",
       "pillar": "dua",
-      "status": "draft",
+      "status": "posted",
       "ownerAgent": "vot_growth",
       "ownerAgentId": "44289084-0ba3-49ca-9cf8-eb04829a2288",
-      "notes": "Growth Intel KW42. Hook: „Es gibt einen Moment, in dem du Allah am nächsten bist.“ | 15–20s Reel, eigener DE-Text, ruhiges Footage ohne Menschen, CTA „Schick's jemandem, für den du heute im Sujud Dua machst“ | IG Do 15.10. 18:30 | Warum: Trost-Ayahs holen Likes, aber 0 Shares (Ad-Duha/Ash-Sharh je 0) → Share-CTA mit persönlichem Bezug testen; IG-Reichweite über Sends | Quelle: Sahih Muslim 482 (Abu Hurayra), sahih – https://sunnah.com/muslim:482"
+      "notes": "Growth Intel KW42. Hook: „Es gibt einen Moment, in dem du Allah am nächsten bist.“ | 15–20s Reel, eigener DE-Text, ruhiges Footage ohne Menschen, CTA „Schick's jemandem, für den du heute im Sujud Dua machst“ | IG Do 15.10. 18:30 | Warum: Trost-Ayahs holen Likes, aber 0 Shares (Ad-Duha/Ash-Sharh je 0) → Share-CTA mit persönlichem Bezug testen; IG-Reichweite über Sends | Quelle: Sahih Muslim 482 (Abu Hurayra), sahih – https://sunnah.com/muslim:482 Posted 2026-10-14 21:10 Vienna: https://www.instagram.com/voicesoftawheed/reel/DefGj3VBU-w/",
+      "views": "UPDATE_ME",
+      "likes": "UPDATE_ME",
+      "reach": "UPDATE_ME",
+      "saves": "UPDATE_ME",
+      "shares": "UPDATE_ME"
     },
     {
       "id": "idea-031",
@@ -706,7 +712,7 @@
       "status": "draft",
       "ownerAgent": "deen_growth",
       "ownerAgentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
-      "notes": "Growth Intel KW42. Hook: „Wenn du denkst, du schaffst das nicht mehr…“ | 15–20s: Rezitation 2:286 (echter Qari genannt) + eigene DE-Übersetzung on-screen + 1 Satz eigene Reflexion, keine Musik | TT Sa 17.10. 17:35 (Buffer-Slot) · YT Hari C Short Sa 17.10. | Warum: einzige Shares kamen bisher vom Rezitations-Clip (10 Shares); Ash-Sharh-Trost-Hook hielt am längsten (3,55s) → Rezitation + Trost-Hook kombinieren | Quelle: Qur'an 2:286"
+      "notes": "Growth Intel KW42. Hook: „Wenn du denkst, du schaffst das nicht mehr…“ | 15–20s: Rezitation 2:286 (echter Qari genannt) + eigene DE-Übersetzung on-screen + 1 Satz eigene Reflexion, keine Musik | TT Sa 17.10. 17:35 (Buffer-Slot) · YT Hari C Short Sa 17.10. | Warum: einzige Shares kamen bisher vom Rezitations-Clip (10 Shares); Ash-Sharh-Trost-Hook hielt am längsten (3,55s) → Rezitation + Trost-Hook kombinieren | Quelle: Qur'an 2:286 | Status 15.10. (CHEF AKHI): als tt031 produziert, liegt bei Deen Growth und wartet auf Haris OK – bleibt draft (nicht in Buffer)."
     }
   ],
   "plans": {
@@ -737,8 +743,8 @@
       "agentId": "44289084-0ba3-49ca-9cf8-eb04829a2288",
       "name": "VoT Growth",
       "responsibility": "IG @voicesoftawheed Metrics, Top Post, Streak, IG-Ideen, IG-Plan",
-      "lastUpdated": "2026-10-12T10:20:00+02:00",
-      "status": "week_6-12_oct_live"
+      "lastUpdated": "2026-10-14T21:12:00+02:00",
+      "status": "sujud_reel_posted_2026-10-14"
     },
     "deen_growth": {
       "agentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
@@ -758,10 +764,13 @@
       "agentId": "da2682ad-04a5-4eeb-878c-1dc42d6307b3",
       "name": "Growth Intel",
       "responsibility": "Dashboard pflegen (Analyse); Muster; virale Sunnah-sichere Ideas vorschlagen; nie posten",
-      "lastUpdated": "2026-10-12T08:55:30+02:00",
-      "status": "kw42_week_review_2026-10-12",
+      "lastUpdated": "2026-10-15T09:01:20+02:00",
+      "status": "verified_2026-10-15_nothing_new",
       "weeklyBrief": {
-        "week": "2026-10-06 → 2026-10-12 (komplett, Mo 12.10. inkl.)",
+        "week": "2026-10-06 → 2026-10-12 (komplett)",
+        "verifiedAt": "2026-10-15T09:01:20+02:00",
+        "verdict": "NOTHING_NEW",
+        "note": "15.10.: keine neuen TT-Posts seit 9.10.; Buffer-Queue 0 (Ziel 11.–17.10. 0/5). Deltas nur Drift: Ad-Duha 284→285, Ash-Sharh 281→282, Salah 11.358→11.359. idea-030 Sujud auf IG posted (Metriken UPDATE_ME). tt028/029/031 produziert, warten bei Deen Growth. Draft-Queue über Ziel → keine neuen Ideen.",
         "nextActions": [
           "Hari: Ideen freigeben (Vorschlag idea-028, 029, 031 für TT) → Buffer ist für 13.–19.10. LEER (0/5)",
           "1 Post pro Slot, kein Batching",
@@ -769,12 +778,14 @@
           "TubeAlfred-Credits aufladen (0)"
         ],
         "pruneSuggestions": [
-          "idea-016 = Duplikat von idea-013 (Al-Kahf)",
-          "idea-018 = Duplikat von idea-001 (Ad-Duha) – Ad-Duha ist in Buffer für Do 8.10. 19:00 geplant → idea-001 auf filming/posted setzen (Clipper)",
-          "idea-019 = Duplikat von idea-014 (Ayat al-Kursi)",
-          "idea-020 = Duplikat von idea-005 (Tawhid in 30s)",
-          "idea-017 überschneidet idea-003 (Freitag)"
-        ]
+          "idea-017 überschneidet idea-003 (Freitag)",
+          "Queue über Ziel (19 Drafts) — freigeben oder archivieren statt neue Drafts"
+        ],
+        "winnersWeek": {
+          "tiktok": "Ash-Sharh 280 Views / 49 Likes (Top); Ad-Duha 283 Views / 35 Likes. WoW Views 12.729→563 wegen 6→2 Posts + Salah-Ausreißer in Vorwoche (Lifetime ~11.358).",
+          "instagram": "350 Views / 3 Posts (VoT 12.10.) — unverändert, kein neuer Insights-Stand",
+          "youtube": "Studio-Stand 12.10. eingefroren; TubeAlfred 0 Credits"
+        }
       }
     }
   },
