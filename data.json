@@ -3,8 +3,8 @@
   "meta": {
     "title": "Growth Dashboard",
     "timezone": "Europe/Vienna",
-    "lastUpdated": "2026-10-15T09:01:20+02:00",
-    "lastUpdatedBy": "Growth Intel",
+    "lastUpdated": "2026-10-17T11:20:07+02:00",
+    "lastUpdatedBy": "Deen Growth TT+YT",
     "weekStart": "2026-10-06",
     "weekEnd": "2026-10-12",
     "notes": "Growth Intel Verify 2026-10-14 09:00 Vienna: Buffer list_posts (metrics 08:02) → TT Week Views 565 / Likes 85 / 2 Posts; Queue 0; verdict NOTHING_NEW. | Nur echte Zahlen eintragen. UPDATE_ME = noch kein Live-Wert. Niemals schätzen. KW42-Rollover (Growth Intel 2026-10-12): letzte komplette Woche = 6.–12.10. inkl. Montag 12.10. (Woche endet heute → Zahlen können sich noch bewegen; Buffer-Stand 12.10. 08:12). Vorwoche 29.9.–6.10. in meta.previousWeek für WoW. 'ThisWeek'-Werte = Lifetime-to-date-Zahlen der Posts, die im Fenster veröffentlicht wurden. YouTube eingefroren auf 8.10. (TubeAlfred 0 Credits). | Weekly Routine 12.10. 10:18 (CHEF AKHI): Woche 6.–12.10. bestätigt; TT-Zahlen von Growth Intel 08:55 übernommen (Buffer 08:12); TubeAlfred erneut 0 Credits → YT-Wochenwerte UPDATE_ME; IG-Wochenwerte warten auf VoT Growth (Insights). 8 Ideen ins ideasArchive verschoben (4 alte posted vom 3.10. + 4 Duplikate).",
@@ -312,9 +312,9 @@
         }
       ],
       "upcoming": {
-        "window": "2026-10-13 → 2026-10-19",
-        "scheduledInBuffer": 0,
-        "note": "Buffer list_posts 15.10. 09:0x Vienna (inkl. draft/needs_approval): keine geplanten Posts; postingGoal 11.–17.10. = 0/5 gesendet, 0 scheduled, AtRisk."
+        "window": "2026-10-17 → 2026-10-19",
+        "scheduledInBuffer": 3,
+        "note": "Buffer list_posts 17.10. (Deen Growth): 3 geplant – tt031 Sa 17.10. 19:00, tt028 So 18.10. 19:00, tt029 Mo 19.10. 19:00 Wien. Queue 3/10."
       },
       "followersSource": "Public profile tiktok.com/@deendaily254, read 2026-10-12 10:20 (TikTok Studio not logged in)"
     },
@@ -674,20 +674,20 @@
       "title": "Fajr in der Gemeinschaft – als hättest du die ganze Nacht gebetet",
       "platform": "all",
       "pillar": "tawhid_sunnah",
-      "status": "draft",
+      "status": "scheduled",
       "ownerAgent": "deen_growth",
       "ownerAgentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
-      "notes": "Growth Intel KW42. Hook: „Willst du die ganze Nacht beten – ohne wach zu bleiben?“ | 20–25s, eigener DE-Text on-screen + Haris eigene Stimme oder nur Text, ruhiges Morgen-Footage ohne Menschen, keine Musik | TT Di 13.10. 07:28 (Buffer-Slot) · YT Hari C Short Di 13.10. | Warum: Salah-Reminder ist der einzige Ausreißer (Buffer 12.10.: 11.356 Views, Reach 10.781) → praktischer Salah-Benefit statt reiner Trost-Ayah | Quelle: Sahih Muslim 656a ('Uthman ibn 'Affan), sahih – https://sunnah.com/muslim:656a | Status 15.10. (CHEF AKHI): als tt028 produziert, liegt bei Deen Growth und wartet auf Haris OK – bleibt draft (nicht in Buffer)."
+      "notes": "Growth Intel KW42. Hook: „Willst du die ganze Nacht beten – ohne wach zu bleiben?“ | 20–25s, eigener DE-Text on-screen + Haris eigene Stimme oder nur Text, ruhiges Morgen-Footage ohne Menschen, keine Musik | TT Di 13.10. 07:28 (Buffer-Slot) · YT Hari C Short Di 13.10. | Warum: Salah-Reminder ist der einzige Ausreißer (Buffer 12.10.: 11.356 Views, Reach 10.781) → praktischer Salah-Benefit statt reiner Trost-Ayah | Quelle: Sahih Muslim 656a ('Uthman ibn 'Affan), sahih – https://sunnah.com/muslim:656a | Status 15.10. (CHEF AKHI): als tt028 produziert, liegt bei Deen Growth und wartet auf Haris OK – bleibt draft (nicht in Buffer). | Buffer 6ad33d850a208cb32312c9bf, TT So 18.10. 19:00 Wien (Hari-OK 17.10. 11:18)"
     },
     {
       "id": "idea-029",
       "title": "Die 2 Rak'at vor Fajr – besser als die ganze Welt",
       "platform": "all",
       "pillar": "tawhid_sunnah",
-      "status": "draft",
+      "status": "scheduled",
       "ownerAgent": "deen_growth",
       "ownerAgentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
-      "notes": "Growth Intel KW42. Hook: „2 Minuten, die mehr wert sind als die ganze Welt.“ | 15–20s, DE-Text + eigene Stimme, CTA „Morgen vor Fajr: 2 Rak'at“ | TT Mi 14.10. 19:00 · YT Hari C Short Mi 14.10. | Warum: Salah-Pillar bricht aus; kurze, konkrete Handlung | Quelle: Sahih Muslim 725a ('A'ischa), sahih – https://sunnah.com/muslim:725a | Status 15.10. (CHEF AKHI): als tt029 produziert, liegt bei Deen Growth und wartet auf Haris OK – bleibt draft (nicht in Buffer)."
+      "notes": "Growth Intel KW42. Hook: „2 Minuten, die mehr wert sind als die ganze Welt.“ | 15–20s, DE-Text + eigene Stimme, CTA „Morgen vor Fajr: 2 Rak'at“ | TT Mi 14.10. 19:00 · YT Hari C Short Mi 14.10. | Warum: Salah-Pillar bricht aus; kurze, konkrete Handlung | Quelle: Sahih Muslim 725a ('A'ischa), sahih – https://sunnah.com/muslim:725a | Status 15.10. (CHEF AKHI): als tt029 produziert, liegt bei Deen Growth und wartet auf Haris OK – bleibt draft (nicht in Buffer). | Buffer 6ad33d96769b4579346dd4ce, TT Mo 19.10. 19:00 Wien (Hari-OK 17.10. 11:18)"
     },
     {
       "id": "idea-030",
@@ -709,10 +709,10 @@
       "title": "Allah belastet keine Seele über ihre Kraft – 2:286 (Share-Clip)",
       "platform": "tiktok",
       "pillar": "ayah_meaning",
-      "status": "draft",
+      "status": "scheduled",
       "ownerAgent": "deen_growth",
       "ownerAgentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
-      "notes": "Growth Intel KW42. Hook: „Wenn du denkst, du schaffst das nicht mehr…“ | 15–20s: Rezitation 2:286 (echter Qari genannt) + eigene DE-Übersetzung on-screen + 1 Satz eigene Reflexion, keine Musik | TT Sa 17.10. 17:35 (Buffer-Slot) · YT Hari C Short Sa 17.10. | Warum: einzige Shares kamen bisher vom Rezitations-Clip (10 Shares); Ash-Sharh-Trost-Hook hielt am längsten (3,55s) → Rezitation + Trost-Hook kombinieren | Quelle: Qur'an 2:286 | Status 15.10. (CHEF AKHI): als tt031 produziert, liegt bei Deen Growth und wartet auf Haris OK – bleibt draft (nicht in Buffer)."
+      "notes": "Growth Intel KW42. Hook: „Wenn du denkst, du schaffst das nicht mehr…“ | 15–20s: Rezitation 2:286 (echter Qari genannt) + eigene DE-Übersetzung on-screen + 1 Satz eigene Reflexion, keine Musik | TT Sa 17.10. 17:35 (Buffer-Slot) · YT Hari C Short Sa 17.10. | Warum: einzige Shares kamen bisher vom Rezitations-Clip (10 Shares); Ash-Sharh-Trost-Hook hielt am längsten (3,55s) → Rezitation + Trost-Hook kombinieren | Quelle: Qur'an 2:286 | Status 15.10. (CHEF AKHI): als tt031 produziert, liegt bei Deen Growth und wartet auf Haris OK – bleibt draft (nicht in Buffer). | Buffer 6ad33d7e0a208cb32312c7bf, TT Sa 17.10. 19:00 Wien (Hari-OK 17.10. 11:18)"
     }
   ],
   "plans": {
@@ -750,8 +750,8 @@
       "agentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
       "name": "Deen Growth TT+YT",
       "responsibility": "TT Buffer-Metrics wöchentlich; YT Studio/TubeAlfred; TT+YT Ideen & Pläne; Follower-Zahlen",
-      "lastUpdated": "2026-10-12T10:20:51+02:00",
-      "status": "yt_week_metrics_updated_tt_followers_39"
+      "lastUpdated": "2026-10-17T11:20:07+02:00",
+      "status": "tt028_029_031_scheduled_buffer_3of10"
     },
     "clipper_akh": {
       "agentId": "b8f5286c-3168-4aad-ba62-b7f68617ba06",
