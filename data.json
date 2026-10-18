@@ -3,7 +3,7 @@
   "meta": {
     "title": "Growth Dashboard",
     "timezone": "Europe/Vienna",
-    "lastUpdated": "2026-10-17T11:20:07+02:00",
+    "lastUpdated": "2026-10-18T17:07:39+02:00",
     "lastUpdatedBy": "Deen Growth TT+YT",
     "weekStart": "2026-10-06",
     "weekEnd": "2026-10-12",
@@ -312,9 +312,9 @@
         }
       ],
       "upcoming": {
-        "window": "2026-10-17 → 2026-10-19",
-        "scheduledInBuffer": 3,
-        "note": "Buffer list_posts 17.10. (Deen Growth): 3 geplant – tt031 Sa 17.10. 19:00, tt028 So 18.10. 19:00, tt029 Mo 19.10. 19:00 Wien. Queue 3/10."
+        "window": "2026-10-18 → 2026-10-19",
+        "scheduledInBuffer": 2,
+        "note": "Buffer 18.10. 17:07 Wien (Deen Growth): tt031 gesendet 17.10. 19:02, tt032 gesendet 18.10. 16:55, tt033 gesendet 18.10. 17:06; geplant: tt028 So 18.10. 19:00, tt029 Mo 19.10. 19:00. Queue 2/10."
       },
       "followersSource": "Public profile tiktok.com/@deendaily254, read 2026-10-12 10:20 (TikTok Studio not logged in)"
     },
@@ -709,10 +709,30 @@
       "title": "Allah belastet keine Seele über ihre Kraft – 2:286 (Share-Clip)",
       "platform": "tiktok",
       "pillar": "ayah_meaning",
-      "status": "scheduled",
+      "status": "posted",
       "ownerAgent": "deen_growth",
       "ownerAgentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
-      "notes": "Growth Intel KW42. Hook: „Wenn du denkst, du schaffst das nicht mehr…“ | 15–20s: Rezitation 2:286 (echter Qari genannt) + eigene DE-Übersetzung on-screen + 1 Satz eigene Reflexion, keine Musik | TT Sa 17.10. 17:35 (Buffer-Slot) · YT Hari C Short Sa 17.10. | Warum: einzige Shares kamen bisher vom Rezitations-Clip (10 Shares); Ash-Sharh-Trost-Hook hielt am längsten (3,55s) → Rezitation + Trost-Hook kombinieren | Quelle: Qur'an 2:286 | Status 15.10. (CHEF AKHI): als tt031 produziert, liegt bei Deen Growth und wartet auf Haris OK – bleibt draft (nicht in Buffer). | Buffer 6ad33d7e0a208cb32312c7bf, TT Sa 17.10. 19:00 Wien (Hari-OK 17.10. 11:18)"
+      "notes": "Growth Intel KW42. Hook: „Wenn du denkst, du schaffst das nicht mehr…“ | 15–20s: Rezitation 2:286 (echter Qari genannt) + eigene DE-Übersetzung on-screen + 1 Satz eigene Reflexion, keine Musik | TT Sa 17.10. 17:35 (Buffer-Slot) · YT Hari C Short Sa 17.10. | Warum: einzige Shares kamen bisher vom Rezitations-Clip (10 Shares); Ash-Sharh-Trost-Hook hielt am längsten (3,55s) → Rezitation + Trost-Hook kombinieren | Quelle: Qur'an 2:286 | Status 15.10. (CHEF AKHI): als tt031 produziert, liegt bei Deen Growth und wartet auf Haris OK – bleibt draft (nicht in Buffer). | Buffer 6ad33d7e0a208cb32312c7bf, TT Sa 17.10. 19:00 Wien (Hari-OK 17.10. 11:18) | gesendet Sa 17.10. 19:02 Wien – https://www.tiktok.com/@deendaily254/video/7697682877005286689"
+    },
+    {
+      "id": "idea-032",
+      "title": "Al-Ikhlas 112:1–4 – ein Drittel des Qur'an",
+      "pillar": "ayah_meaning",
+      "platform": "tiktok",
+      "status": "posted",
+      "ownerAgent": "deen_growth",
+      "ownerAgentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
+      "notes": "Hook: „Diese Sure ist ein Drittel des Qur'an wert.“ | tt032, 16,8 s, Alafasy 112:1–4, AR/DE/BS | Quelle Nutzen: Sahih al-Bukhari 5013 | Hari-OK 18.10. 16:53 | Buffer 6ad4dd7f769b457934c8de14, TT So 18.10. 16:55 Wien (shareNow) | https://tiktok.com/@deendaily254/video/7698021282637499680"
+    },
+    {
+      "id": "idea-033",
+      "title": "Du'a 2:201 – das häufigste Bittgebet des Propheten ﷺ",
+      "pillar": "ayah_meaning",
+      "platform": "tiktok",
+      "status": "posted",
+      "ownerAgent": "deen_growth",
+      "ownerAgentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
+      "notes": "Hook: „Das Bittgebet, das der Prophet ﷺ am häufigsten sprach.“ | tt033, 19,9 s, Alafasy 2:201 + CTA „Sprich es heute 3x.“ | Quelle: Sahih al-Bukhari 6389 | Hari-OK 18.10. 16:53 | Buffer 6ad4dd900b0d72757a281a25, TT So 18.10. 17:06 Wien | https://tiktok.com/@deendaily254/video/7698024156780154145"
     }
   ],
   "plans": {
@@ -750,8 +770,8 @@
       "agentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
       "name": "Deen Growth TT+YT",
       "responsibility": "TT Buffer-Metrics wöchentlich; YT Studio/TubeAlfred; TT+YT Ideen & Pläne; Follower-Zahlen",
-      "lastUpdated": "2026-10-17T11:20:07+02:00",
-      "status": "tt028_029_031_scheduled_buffer_3of10"
+      "lastUpdated": "2026-10-18T17:07:39+02:00",
+      "status": "tt031_tt032_tt033_posted_tt028_tt029_scheduled_2of10"
     },
     "clipper_akh": {
       "agentId": "b8f5286c-3168-4aad-ba62-b7f68617ba06",
