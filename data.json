@@ -3,11 +3,11 @@
   "meta": {
     "title": "Growth Dashboard",
     "timezone": "Europe/Vienna",
-    "lastUpdated": "2026-10-19T10:25:00+02:00",
+    "lastUpdated": "2026-10-19T10:30:00+02:00",
     "lastUpdatedBy": "Deen Growth TT+YT",
     "weekStart": "2026-10-12",
     "weekEnd": "2026-10-18",
-    "notes": "Deen Growth 19.10. 10:25: TT Follower 41 (öffentl. Profil 10:20); idea-028 Link ergänzt; Per-Post-Views aus öffentl. Profil; YT 12.–18.10 pending (Studio access). | Weekly Routine 19.10. 10:20 (CHEF AKHI): Rollover auf KW42 = 12.–18.10. (komplett, Vienna). TT aus Buffer list_posts (metricsUpdatedAt 18.10. 23:19Z = 19.10. 01:19 Wien) + get_channel 19.10.: 4 Posts / 3.503 Views / 253 Likes / 8 Shares. Buffer liefert für die neuen Posts Reach 0 → reachThisWeek UPDATE_ME. IG + YT Wochenwerte UPDATE_ME (keine neuen Insights; TubeAlfred 0 Credits). Vorwoche 6.–12.10. in meta.previousWeek. ideas: idea-028 → posted; idea-003 + idea-009 ins Archiv (Queue >14). | Growth Intel Verify 2026-10-19 08:58 Vienna: Buffer list_posts (metrics 18.10. 23:19Z) → TT Woche 12.–18.10.: 4 Posts / 3.503 Views / 253 Likes; Ziel 18.–24.10. 3/5 + 1 geplant (OnTrack); Details agentsBoard.growth_intel.weeklyBrief; Wochen-Rollover macht die Weekly Routine. | Growth Intel Verify 2026-10-14 09:00 Vienna: Buffer list_posts (metrics 08:02) → TT Week Views 565 / Likes 85 / 2 Posts; Queue 0; verdict NOTHING_NEW. | Nur echte Zahlen eintragen. UPDATE_ME = noch kein Live-Wert. Niemals schätzen. KW42-Rollover (Growth Intel 2026-10-12): letzte komplette Woche = 6.–12.10. inkl. Montag 12.10. (Woche endet heute → Zahlen können sich noch bewegen; Buffer-Stand 12.10. 08:12). Vorwoche 29.9.–6.10. in meta.previousWeek für WoW. 'ThisWeek'-Werte = Lifetime-to-date-Zahlen der Posts, die im Fenster veröffentlicht wurden. YouTube eingefroren auf 8.10. (TubeAlfred 0 Credits). | Weekly Routine 12.10. 10:18 (CHEF AKHI): Woche 6.–12.10. bestätigt; TT-Zahlen von Growth Intel 08:55 übernommen (Buffer 08:12); TubeAlfred erneut 0 Credits → YT-Wochenwerte UPDATE_ME; IG-Wochenwerte warten auf VoT Growth (Insights). 8 Ideen ins ideasArchive verschoben (4 alte posted vom 3.10. + 4 Duplikate).",
+    "notes": "Deen Growth 19.10. 10:25: TT Follower 41 (öffentl. Profil 10:20); idea-028 Link ergänzt; Per-Post-Views aus öffentl. Profil; YT Studio 11.–17.10.: 2 Views / 0,0 h / ±0 Subs (7) / 24 Impr. / 0 % CTR / 0 Uploads; 28T 529 Views / 2,1 h / +6. | Weekly Routine 19.10. 10:20 (CHEF AKHI): Rollover auf KW42 = 12.–18.10. (komplett, Vienna). TT aus Buffer list_posts (metricsUpdatedAt 18.10. 23:19Z = 19.10. 01:19 Wien) + get_channel 19.10.: 4 Posts / 3.503 Views / 253 Likes / 8 Shares. Buffer liefert für die neuen Posts Reach 0 → reachThisWeek UPDATE_ME. IG + YT Wochenwerte UPDATE_ME (keine neuen Insights; TubeAlfred 0 Credits). Vorwoche 6.–12.10. in meta.previousWeek. ideas: idea-028 → posted; idea-003 + idea-009 ins Archiv (Queue >14). | Growth Intel Verify 2026-10-19 08:58 Vienna: Buffer list_posts (metrics 18.10. 23:19Z) → TT Woche 12.–18.10.: 4 Posts / 3.503 Views / 253 Likes; Ziel 18.–24.10. 3/5 + 1 geplant (OnTrack); Details agentsBoard.growth_intel.weeklyBrief; Wochen-Rollover macht die Weekly Routine. | Growth Intel Verify 2026-10-14 09:00 Vienna: Buffer list_posts (metrics 08:02) → TT Week Views 565 / Likes 85 / 2 Posts; Queue 0; verdict NOTHING_NEW. | Nur echte Zahlen eintragen. UPDATE_ME = noch kein Live-Wert. Niemals schätzen. KW42-Rollover (Growth Intel 2026-10-12): letzte komplette Woche = 6.–12.10. inkl. Montag 12.10. (Woche endet heute → Zahlen können sich noch bewegen; Buffer-Stand 12.10. 08:12). Vorwoche 29.9.–6.10. in meta.previousWeek für WoW. 'ThisWeek'-Werte = Lifetime-to-date-Zahlen der Posts, die im Fenster veröffentlicht wurden. YouTube eingefroren auf 8.10. (TubeAlfred 0 Credits). | Weekly Routine 12.10. 10:18 (CHEF AKHI): Woche 6.–12.10. bestätigt; TT-Zahlen von Growth Intel 08:55 übernommen (Buffer 08:12); TubeAlfred erneut 0 Credits → YT-Wochenwerte UPDATE_ME; IG-Wochenwerte warten auf VoT Growth (Insights). 8 Ideen ins ideasArchive verschoben (4 alte posted vom 3.10. + 4 Duplikate).",
     "previousWeek": {
       "weekStart": "2026-10-06",
       "weekEnd": "2026-10-12",
@@ -111,11 +111,11 @@
   "overview": {
     "totalViewsThisWeek": {
       "value": null,
-      "note": "Woche 12.–18.10.: nur TT bestätigt (Buffer); IG+YT UPDATE_ME → kein Gesamtwert",
+      "note": "Woche 12.–18.10.: TT bestätigt (Buffer); YT = Studio 11.–17.10. (2 Views); IG UPDATE_ME → kein Gesamtwert",
       "partial": {
         "tiktok": 3503,
         "instagram": "UPDATE_ME",
-        "youtube": "UPDATE_ME"
+        "youtube": 2
       }
     },
     "totalFollowers": {
@@ -126,7 +126,7 @@
     "totalPostsThisWeek": {
       "instagram": "UPDATE_ME",
       "tiktok": 4,
-      "youtube": "UPDATE_ME"
+      "youtube": 0
     }
   },
   "platforms": {
@@ -377,32 +377,33 @@
       "productionOwnerId": "b8f5286c-3168-4aad-ba62-b7f68617ba06",
       "metrics": {
         "subscribers": 7,
-        "viewsThisWeek": "UPDATE_ME",
+        "viewsThisWeek": 2,
         "likesThisWeek": "UPDATE_ME",
         "commentsThisWeek": "UPDATE_ME",
         "savesThisWeek": "UPDATE_ME",
         "sharesThisWeek": "UPDATE_ME",
-        "postsThisWeek": "UPDATE_ME",
+        "postsThisWeek": 0,
         "watchHours365d": "UPDATE_ME",
         "shortsViews90d": "UPDATE_ME",
-        "postingStreakDays": "UPDATE_ME",
+        "postingStreakDays": 0,
         "lifetimeViews": 484,
         "lifetimeVideos": 7,
-        "watchHoursThisWeek": "UPDATE_ME",
-        "views28d": 1800,
-        "watchHours28d": 4.1,
-        "impressionsThisWeek": "UPDATE_ME",
-        "ctrThisWeek": "UPDATE_ME"
+        "watchHoursThisWeek": 0.0,
+        "views28d": 529,
+        "watchHours28d": 2.1,
+        "impressionsThisWeek": 24,
+        "ctrThisWeek": "0 %",
+        "subscriberChangeThisWeek": 0,
+        "weekRange": "2026-10-11 → 2026-10-17 (Studio 'Letzte 7 Tage'; 18.10. wegen Datenverzögerung noch nicht verfügbar)",
+        "subscriberChange28d": 6,
+        "range28d": "2026-09-20 → 2026-10-17 (Studio)"
       },
       "topPost": {
-        "title": "The 3 Questions of the Grave #shorts",
-        "url": "https://www.youtube.com/shorts/VYPk59GG-sY",
-        "views": 25,
-        "likes": 18,
-        "comments": 0,
-        "durationSec": 40,
-        "postedAt": "2026-10-03",
-        "note": "Studio Advanced mode 04.–10.10.2026; since publish 26 views, 0,1 h, 0 comments, 0 shares"
+        "title": "Prophet Yusuf (AS) Teil 1",
+        "url": "https://youtu.be/mq48te4lCj8",
+        "views": 2,
+        "postedAt": "2026-10-07T08:58:31+02:00",
+        "note": "Top-Inhalt Studio 11.–17.10.2026 (Letzte 7 Tage)."
       },
       "monetization": {
         "yppStatus": "UPDATE_ME",
@@ -419,11 +420,11 @@
           "fromFeb2027": "8000h / 365d ODER 20M Shorts / 90d"
         }
       },
-      "source": "Wochenwerte 12.–18.10. UPDATE_ME: TubeAlfred 19.10. 10:14 = 0 Credits (402), kein neuer Studio-Export. Subs 7 / lifetime / 28d = Stand Studio 12.10. Vorwoche (Studio 04.–10.10.) in meta.previousWeek.youtube.",
-      "metricsAsOf": "2026-10-12T10:20:51+02:00",
-      "isPlaceholder": true,
+      "source": "YouTube Studio Hari C (Deen Growth via Studio), abgerufen 2026-10-19: 'Letzte 7 Tage' = 11.–17.10. (nicht 12.–18.10.; 18.10. Datenverzögerung) → 2 Views / 0,0 h / ±0 Subs / 24 Impressionen / 0 % CTR / 0 Uploads; 28 Tage 20.09.–17.10.: 529 Views / 2,1 h / +6 Subs. Likes/Comments/Shares nicht geliefert → UPDATE_ME. lifetimeViews/lifetimeVideos = Stand 12.10. Vorwoche (04.–10.10.) in meta.previousWeek.youtube.",
+      "metricsAsOf": "2026-10-19T10:30:00+02:00",
+      "isPlaceholder": false,
       "displayName": "Hari C",
-      "notes": "Voices of Tawheed (@VoicesofTawheed-i4h, UCp1BPKYITqgngsAuKfBmfbg) seit 2026-10-07 gebannt laut CHEF AKHI → nicht einplanen (siehe bannedChannel). Aktiver YT-Kanal = Hari C (@haric8814). Yusuf Teil 1 live 2026-10-07: https://youtu.be/mq48te4lCj8. Frühere Werte (0 Subs / 0 Views / 1 Video, Stand 2026-10-07 06:05) durch TubeAlfred youtube_channel_get 2026-10-08 ersetzt. | YT 12.–18.10 pending (Studio access) – Stand 19.10. 10:20 Wien (Deen Growth).",
+      "notes": "Voices of Tawheed (@VoicesofTawheed-i4h, UCp1BPKYITqgngsAuKfBmfbg) seit 2026-10-07 gebannt laut CHEF AKHI → nicht einplanen (siehe bannedChannel). Aktiver YT-Kanal = Hari C (@haric8814). Yusuf Teil 1 live 2026-10-07: https://youtu.be/mq48te4lCj8. Frühere Werte (0 Subs / 0 Views / 1 Video, Stand 2026-10-07 06:05) durch TubeAlfred youtube_channel_get 2026-10-08 ersetzt. | 19.10.: YT-Woche = Studio 11.–17.10. (Range weicht um 1 Tag von meta.weekStart/End 12.–18.10. ab).",
       "status": "active_publish_channel",
       "allVideosPublic": [
         {
@@ -493,14 +494,14 @@
         "publicCheck": "2026-10-08 09:00 Vienna: öffentliche Kanalseite noch erreichbar ('1 Abonnent') – Ban-Art öffentlich nicht verifizierbar.",
         "plan": "NICHT einplanen. Historie bleibt."
       },
-      "knownUploadsThisWeek": [
-        {
-          "title": "Prophet Yusuf (AS) Teil 1",
-          "url": "https://youtu.be/mq48te4lCj8",
-          "postedAt": "2026-10-07T08:58:31+02:00",
-          "viewsAsOf20261008": 11
-        }
-      ]
+      "knownUploadsThisWeek": [],
+      "topPost28d": {
+        "title": "The 3 Questions of the Grave #shorts",
+        "url": "https://www.youtube.com/shorts/VYPk59GG-sY",
+        "views": 395,
+        "range": "2026-09-20 → 2026-10-17",
+        "note": "Top-Inhalt Studio 28 Tage"
+      }
     }
   },
   "ideas": [
@@ -845,8 +846,8 @@
       "agentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
       "name": "Deen Growth TT+YT",
       "responsibility": "TT Buffer-Metrics wöchentlich; YT Studio/TubeAlfred; TT+YT Ideen & Pläne; Follower-Zahlen",
-      "lastUpdated": "2026-10-19T10:25:00+02:00",
-      "status": "tt028_posted_link_added_tt029_scheduled_19oct_1900_followers41_yt_week_pending_studio"
+      "lastUpdated": "2026-10-19T10:30:00+02:00",
+      "status": "tt028_posted_link_added_tt029_scheduled_19oct_1900_followers41_yt_11-17oct_live"
     },
     "clipper_akh": {
       "agentId": "b8f5286c-3168-4aad-ba62-b7f68617ba06",
