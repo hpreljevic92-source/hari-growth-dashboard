@@ -799,10 +799,42 @@
   /* —— Crew panels —— */
   .crew-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     gap: 12px;
   }
   @media (max-width: 800px) { .crew-grid { grid-template-columns: 1fr; } }
+  .crew-panel.paused { opacity: 0.72; }
+  .paused-note {
+    margin-top: 12px;
+    font-size: 0.82rem;
+    color: var(--muted);
+  }
+  .asof {
+    display: block;
+    margin-top: 6px;
+    font-family: var(--mono);
+    font-size: 0.68rem;
+    color: var(--muted);
+  }
+  .recent-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 12px;
+  }
+  @media (max-width: 800px) { .recent-grid { grid-template-columns: 1fr; } }
+  .recent-card {
+    background: linear-gradient(160deg, rgba(0, 45, 70, 0.45), rgba(0, 0, 0, 0.45));
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 14px 16px;
+  }
+  .recent-card h3 {
+    margin: 0 0 6px;
+    font-size: 0.92rem;
+  }
+  .recent-meta { font-size: 0.75rem; color: var(--muted); }
+  .recent-note { margin-top: 8px; font-size: 0.78rem; color: var(--muted); }
+  .plat.paused { opacity: 0.78; }
   .crew-panel {
     position: relative;
     background: linear-gradient(160deg, rgba(0, 45, 70, 0.45), rgba(0, 0, 0, 0.45));
@@ -954,7 +986,7 @@
         <span class="channels-badge" id="channelsActive">KANÄLE AKTIV —</span>
       </div>
       <h1>GROWTH COMMAND CENTER</h1>
-      <div class="sub">Islamische Kanäle · Instagram · TikTok · YouTube · Wien</div>
+      <div class="sub">Aktive Kanäle: TikTok @deendaily254 · Instagram @voicesoftawheed · YouTube pausiert · Wien</div>
       <div class="meta-bar">
         <span class="chip" id="weekChip">Woche: —</span>
         <span class="chip" id="updatedChip">Stand: lädt…</span>
@@ -1023,6 +1055,19 @@
 
     <section class="sec anim d5">
       <div class="sec-h">
+        <h2>Aktuelle Posts</h2>
+        <span class="sec-tag">echte Zahlen · mit Stand</span>
+      </div>
+      <div class="sec-b">
+        <div class="recent-grid" id="recentPosts"></div>
+        <h3 style="margin:22px 0 10px;font-size:0.95rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--cyan);">Top-Performer</h3>
+        <p id="topNote" class="recent-note" style="margin-top:0"></p>
+        <div class="recent-grid" id="topPosts"></div>
+      </div>
+    </section>
+
+    <section class="sec anim d6">
+      <div class="sec-h">
         <h2>Missions-Board</h2>
         <span class="sec-tag">Ideen-Queue · Timeline</span>
       </div>
@@ -1042,11 +1087,12 @@
 
     <section class="sec anim d7">
       <div class="sec-h">
-        <h2>Crew-Status</h2>
-        <span class="sec-tag">Agent-Verantwortung</span>
+        <h2>Team</h2>
+        <span class="sec-tag">Aktuelle Agenten</span>
       </div>
       <div class="sec-b">
         <div class="crew-grid" id="board"></div>
+        <p class="paused-note" id="pausedNote"></p>
       </div>
     </section>
 
@@ -1162,7 +1208,7 @@ setInterval(tickClock, 1000);
 
 const isEmpty = (v) => v === null || v === undefined || v === '' || v === 'UPDATE_ME';
 const fmt = (v) => {
-  if (isEmpty(v)) return '<span class="signal-weak">SIGNAL WEAK</span>';
+  if (isEmpty(v)) return '<span class="signal-weak">noch keine Daten</span>';
   if (typeof v === 'number') return v.toLocaleString('de-AT');
   return escapeHtml(String(v));
 };
@@ -1372,10 +1418,10 @@ function render(d) {
   const plats = d.platforms || {};
   const ov = d.overview || {};
 
-  const liveCount = ['instagram', 'tiktok', 'youtube']
+  const liveCount = ['instagram', 'tiktok']
     .filter(k => plats[k] && !plats[k].isPlaceholder).length;
   document.getElementById('channelsActive').textContent =
-    'KANÄLE AKTIV ' + liveCount + '/3';
+    'KANÄLE AKTIV ' + liveCount + '/2  ·  YT pausiert';
 
   document.getElementById('weekChip').innerHTML =
     'Woche: <strong>' + escapeHtml(m.weekStart || '—') + '</strong> → <strong>' + escapeHtml(m.weekEnd || '—') + '</strong>';
@@ -1397,7 +1443,7 @@ function render(d) {
     ringPostsCls = postsTT >= goalTT ? 'ring-fg ok' : (ttMet.postingGoalStatus === 'AtRisk' ? 'ring-fg warn' : 'ring-fg');
   }
 
-  const livePct = (liveCount / 3) * 100;
+  const livePct = (liveCount / 2) * 100;
 
   let engPct = engTT;
   let engLabel = engTT !== null ? engTT.toLocaleString('de-AT', { maximumFractionDigits: 1 }) + '%' : null;
@@ -1436,9 +1482,9 @@ function render(d) {
     {
       title: 'Sensoren Live',
       pct: livePct,
-      label: liveCount + '/3',
-      cls: liveCount === 3 ? 'ring-fg ok' : (liveCount >= 1 ? 'ring-fg' : 'ring-fg warn'),
-      hint: 'Plattformen mit echten Daten',
+      label: liveCount + '/2',
+      cls: liveCount === 2 ? 'ring-fg ok' : (liveCount >= 1 ? 'ring-fg' : 'ring-fg warn'),
+      hint: 'IG + TT mit frischen Wochenzahlen',
       weak: false
     }
   ];
@@ -1449,11 +1495,11 @@ function render(d) {
         ${r.weak ? ringSVG(0, 'ring-fg warn') : ringSVG(r.pct, r.cls)}
         <div class="ring-center">
           <div class="ring-val">${r.weak ? '—' : escapeHtml(String(r.label))}</div>
-          <div class="ring-unit">${r.weak ? 'WEAK' : ''}</div>
+          <div class="ring-unit">${r.weak ? '' : ''}</div>
         </div>
       </div>
       <div class="ring-lbl">${escapeHtml(r.title)}</div>
-      <div class="ring-hint">${r.weak ? '<span class="signal-weak">SIGNAL WEAK</span>' : escapeHtml(r.hint)}</div>
+      <div class="ring-hint">${r.weak ? '<span class="signal-weak">noch keine Daten</span>' : escapeHtml(r.hint)}</div>
     </div>
   `).join('');
 
@@ -1469,7 +1515,7 @@ function render(d) {
     <div class="stat-mini">
       <div class="lbl">Views diese Woche</div>
       <div class="val">${ttV !== null ? fmt(ttV) + '<span style="font-size:.65rem;color:var(--muted);margin-left:4px">TT</span>' : fmt('UPDATE_ME')}</div>
-      <div class="hint">IG ${isEmpty(igV) ? '<span class="signal-weak">SIGNAL WEAK</span>' : fmt(igV)} · YT ${isEmpty(ytV) ? '<span class="signal-weak">SIGNAL WEAK</span>' : fmt(ytV)}</div>
+      <div class="hint">IG ${isEmpty(igV) ? '<span class="signal-weak">noch keine Daten</span>' : fmt(igV)} · YT ${isEmpty(ytV) ? '<span class="signal-weak">noch keine Daten</span>' : fmt(ytV)}</div>
     </div>
     <div class="stat-mini">
       <div class="lbl">Follower / Subs</div>
@@ -1484,7 +1530,7 @@ function render(d) {
       <div class="val">${[postsIG, postsTTo, postsYT].every(x => typeof x === 'number')
         ? fmt(postsIG + postsTTo + postsYT)
         : (postsTTo !== null ? fmt(postsTTo) + '<span style="font-size:.65rem;color:var(--muted);margin-left:4px">TT</span>' : fmt('UPDATE_ME'))}</div>
-      <div class="hint">IG ${isEmpty(postsIG) ? '<span class="signal-weak">SIGNAL WEAK</span>' : fmt(postsIG)} · TT ${fmt(postsTTo)} · YT ${isEmpty(postsYT) ? '<span class="signal-weak">SIGNAL WEAK</span>' : fmt(postsYT)}</div>
+      <div class="hint">IG ${isEmpty(postsIG) ? '<span class="signal-weak">noch keine Daten</span>' : fmt(postsIG)} · TT ${fmt(postsTTo)} · YT ${isEmpty(postsYT) ? '<span class="signal-weak">noch keine Daten</span>' : fmt(postsYT)}</div>
     </div>`;
 
   /* Platforms */
@@ -1508,14 +1554,16 @@ function render(d) {
       const ff = p.monetization.fanFundingTier || {};
       if (!isEmpty(ff.neededSubs)) extra.push(['Fan-Fund Subs', ff.neededSubs]);
     }
-    return `<div class="plat ${clsMap[key]}" data-sound-hover>
+    const paused = key === 'youtube' || p.status === 'paused';
+    const asOf = p.metricsAsOf || p.followersAsOf;
+    return `<div class="plat ${clsMap[key]}${paused ? ' paused' : ''}" data-sound-hover>
       <div class="plat-top">
         <div>
-          <h3>${labels[key]}</h3>
+          <h3>${labels[key]}${paused ? ' · PAUSIERT' : ''}</h3>
           <div class="handle">${escapeHtml(p.handle || '')}</div>
           <div class="owner">Owner: ${escapeHtml((d.agents?.[p.ownerAgent]?.name) || p.ownerAgent || '—')}</div>
         </div>
-        ${live ? '<span class="live-tag">LIVE</span>' : '<span class="signal-weak">SIGNAL WEAK</span>'}
+        ${paused ? '<span class="signal-weak">pausiert</span>' : (live ? '<span class="live-tag">LIVE</span>' : '<span class="signal-weak">noch keine Daten</span>')}
       </div>
       <div class="metrics">
         <div class="m"><div class="k">${key === 'youtube' ? 'Subs' : 'Follower'}</div><div class="v">${fmt(followers)}</div></div>
@@ -1531,8 +1579,11 @@ function render(d) {
       <div class="top-post">
         <div class="tp-lbl">◆ Top Transmission</div>
         <strong>${fmt(top.title)}</strong><br>
-        <span style="font-size:0.75rem;color:var(--muted)">${fmt(top.views)} Views · ${fmt(top.likes)} Likes · ${isEmpty(top.postedAt) ? '<span class="signal-weak">SIGNAL WEAK</span>' : escapeHtml(fmtVienna(top.postedAt) || top.postedAt)}</span>
+        <span style="font-size:0.75rem;color:var(--muted)">${fmt(top.views)} Views · ${fmt(top.likes)} Likes · ${isEmpty(top.postedAt) ? '<span class="signal-weak">noch keine Daten</span>' : escapeHtml(fmtVienna(top.postedAt) || top.postedAt)}</span>
+        ${top.note ? `<div class="recent-note">${escapeHtml(top.note)}</div>` : ''}
       </div>
+      <span class="asof">Stand: ${isEmpty(asOf) ? 'noch keine Daten' : escapeHtml(fmtVienna(asOf) || asOf)}</span>
+      ${p.lastKnownWeek ? `<span class="asof">Letzte komplette IG-Woche ${escapeHtml(p.lastKnownWeek.weekStart || '')}–${escapeHtml(p.lastKnownWeek.weekEnd || '')}: ${fmt(p.lastKnownWeek.viewsThisWeek)} Views · ${fmt(p.lastKnownWeek.postsThisWeek)} Posts (Stand ${escapeHtml(fmtVienna(p.lastKnownWeek.metricsAsOf) || p.lastKnownWeek.metricsAsOf || '')})</span>` : ''}
     </div>`;
   }).join('');
 
@@ -1561,9 +1612,9 @@ function render(d) {
     </div>`;
   }).join('');
 
-  /* Crew board */
+  /* Team board */
   const board = d.agentsBoard || {};
-  const boardOrder = ['vot_growth', 'deen_growth', 'clipper_akh'];
+  const boardOrder = (d.team && d.team.activeKeys) || Object.keys(board).filter(k => board[k] && typeof board[k] === 'object' && !Array.isArray(board[k]) && k !== 'displayOrder');
   document.getElementById('board').innerHTML = boardOrder.map(k => {
     const a = board[k] || {};
     const hasUpdate = !isEmpty(a.lastUpdated);
@@ -1571,17 +1622,47 @@ function render(d) {
       <div class="crew-top">
         <div>
           <div class="crew-name">${escapeHtml(a.name || k)}</div>
-          <div class="crew-id">${escapeHtml(a.agentId || '')}</div>
+          <div class="crew-id">${escapeHtml(a.agentId || 'ID noch nicht hinterlegt')}</div>
         </div>
-        ${hasUpdate ? '<span class="live-tag">AKTIV</span>' : '<span class="signal-weak">SIGNAL WEAK</span>'}
+        <span class="live-tag">AKTIV</span>
       </div>
       <div class="crew-resp">${escapeHtml(a.responsibility || '')}</div>
       <div class="crew-foot">
-        <div class="crew-ts ${hasUpdate ? 'fresh' : ''}">${hasUpdate ? escapeHtml(fmtVienna(a.lastUpdated) || a.lastUpdated) : 'noch nie aktualisiert'}</div>
+        <div class="crew-ts ${hasUpdate ? 'fresh' : ''}">${hasUpdate ? escapeHtml(fmtVienna(a.lastUpdated) || a.lastUpdated) : 'Stand: noch keine Daten'}</div>
         ${a.status ? `<span class="status-chip" title="${escapeHtml(a.status)}">${escapeHtml(a.status)}</span>` : ''}
       </div>
     </div>`;
   }).join('');
+  const paused = (d.team && d.team.pausedOrFrozen) || [];
+  const pausedEl = document.getElementById('pausedNote');
+  if (pausedEl) {
+    pausedEl.textContent = paused.length
+      ? 'Eingefroren / pausiert: ' + paused.join(', ') + '. YouTube-Kanal ist pausiert. Clipper AKH und alte Labs sind entfernt.'
+      : '';
+  }
+
+  const postCard = (item) => {
+    const title = item.title || '—';
+    const url = isEmpty(item.url) ? null : item.url;
+    const titleHtml = url ? `<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(title)}</a>` : escapeHtml(title);
+    return `<div class="recent-card" data-sound-hover>
+      <h3>${titleHtml}</h3>
+      <div class="recent-meta">${escapeHtml((item.platform || '').toUpperCase())} · ${fmt(item.views)} Views · ${fmt(item.likes)} Likes${isEmpty(item.shares) ? '' : ' · ' + fmt(item.shares) + ' Shares'}${isEmpty(item.engagementRatePct) ? '' : ' · ER ' + fmt(item.engagementRatePct) + '%'}${isEmpty(item.avgWatchSec) ? '' : ' · Ø ' + fmt(item.avgWatchSec) + ' s'}</div>
+      <span class="asof">Stand: ${isEmpty(item.asOf) ? 'noch keine Daten' : escapeHtml(fmtVienna(item.asOf) || item.asOf)}${item.postedAt ? ' · gepostet ' + escapeHtml(fmtVienna(item.postedAt) || item.postedAt) : ''}</span>
+      ${item.note || item.why ? `<div class="recent-note">${escapeHtml(item.note || item.why)}</div>` : ''}
+    </div>`;
+  };
+  const recent = d.recentHighlights || [];
+  const recentEl = document.getElementById('recentPosts');
+  if (recentEl) recentEl.innerHTML = recent.length ? recent.map(postCard).join('') : '<p class="recent-note">noch keine Daten</p>';
+  const tops = (d.topPerformers && d.topPerformers.items) || [];
+  const topEl = document.getElementById('topPosts');
+  if (topEl) topEl.innerHTML = tops.length ? tops.map(postCard).join('') : '<p class="recent-note">noch keine Daten</p>';
+  const topNote = document.getElementById('topNote');
+  if (topNote) {
+    const tp = d.topPerformers || {};
+    topNote.textContent = [tp.note, tp.asOf ? ('Stand ' + (fmtVienna(tp.asOf) || tp.asOf)) : ''].filter(Boolean).join(' · ');
+  }
 
   /* Sound hooks on hover (only if enabled) */
   document.querySelectorAll('[data-sound-hover]').forEach(el => {
