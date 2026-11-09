@@ -3,47 +3,59 @@
  "meta": {
   "title": "Growth Dashboard",
   "timezone": "Europe/Vienna",
-  "lastUpdated": "2026-11-05T15:28:02+01:00",
-  "lastUpdatedBy": "CHEF AKHI",
-  "weekStart": "2026-11-02",
-  "weekEnd": "2026-11-08",
-  "notes": "Update 5.11. 15:30 Wien (CHEF AKHI): Teamliste auf aktuelle Agenten umgestellt (Clipper AKH / alte Bots entfernt). Woche auf 2.–8.11. gerollt (läuft noch). TikTok Buffer live (metricsUpdatedAt 5.11. 06:38 Wien): aktuelle Woche 4 Posts / 3.140 Views / 200 Likes / 13 Kommentare / 8 Shares; Eng. 7,04 %; Ø Watch 3,60 s; Reach UPDATE_ME (Umfrage-Post Reach 0, Buffer-Summe 1.193 unvollständig). Queue: 1 geplant (Chat-Dua Bukhari 6369 TR-slow, 5.11. 18:00 Wien). IG-Wochenwerte der aktuellen Woche: noch keine Insights; letzter Stand 2.11. (Woche 26.10.–1.11.): 46 Follower, 1.912 Views, 12 Posts. Heutiges IG-Reel https://www.instagram.com/reel/DfXNXisv0Pj/ live (VoT Growth), keine View-Zahlen. YouTube pausiert. Follower TT 45 Stand 28.10. (nicht neu geprüft). Niemals Zahlen schätzen.",
+  "lastUpdated": "2026-11-09T10:17:00+01:00",
+  "lastUpdatedBy": "Deen Growth TT+YT",
+  "weekStart": "2026-11-09",
+  "weekEnd": "2026-11-15",
+  "notes": "Deen Growth 9.11. 10:17 Wien: Vorwoche TT bestätigt (6 sent/5 mit Zahlen, 3.470 Views, Top Dua Sorge 836/7 Shares). platforms.tiktok + overview.TT auf Woche 9.–15.11. gesetzt (0 Posts, Queue leer). Chat-Dua Sync weiter offen. Follower TT weiter 45 (28.10.). YT pausiert. | Wochen-Update 9.11. ~10:15 Wien (CHEF AKHI): Woche auf 9.–15.11. gesetzt; 2.–8.11. nach meta.previousWeek archiviert. IG Vorwoche: 4 Posts, 2.607 Views, 53 Follower, Top „Bei Sorgen“ 1.252 Views (VoT Insights 9.11. 09:10). TT Vorwoche: 6 Posts / 3.470 Views / 223 Likes / 9 Shares (Growth Intel Buffer-Brief, Stand 9.11. 02:42; 1 Post ohne Sync). platforms.tiktok noch Datei-Stand 5.11. (3.140 Views / 4 Posts) — Deen Growth soll Vorwoche bestätigen und 9.–15.11. neu ziehen. YouTube pausiert / UPDATE_ME. research.md unverändert seit 1.11. → Pläne nicht angefasst. Ideen-Queue: 14 aktiv (12 draft + 2 approved), 7 posted (kein Trim). Buffer-Queue 9.–15.11. laut Intel leer. Niemals Zahlen schätzen. VoT Growth 9.11. ~10:16 Wien: platforms.instagram + overview IG für neue Woche auf UPDATE_ME gesetzt (keine neuen Insights); Profil-Follower 53 + Streak 0 behalten. previousWeek.instagram unberührt.",
   "previousWeek": {
-   "weekStart": "2026-10-26",
-   "weekEnd": "2026-11-01",
+   "weekStart": "2026-11-02",
+   "weekEnd": "2026-11-08",
    "tiktok": {
-    "viewsThisWeek": 6032,
-    "likesThisWeek": 395,
-    "commentsThisWeek": 2,
-    "sharesThisWeek": 21,
-    "postsThisWeek": 11,
-    "reachThisWeek": 5275,
-    "engagementRatePct": 6.93,
-    "watchTimeMinutes": 403.52,
-    "avgWatchTimeSec": 4.44
+    "viewsThisWeek": 3470,
+    "likesThisWeek": 223,
+    "commentsThisWeek": 14,
+    "sharesThisWeek": 9,
+    "postsThisWeek": 6,
+    "postsWithMetrics": 5,
+    "reachThisWeek": 2995,
+    "engagementRatePct": 7.09,
+    "watchTimeMinutes": 218.5,
+    "avgWatchTimeSec": 3.71,
+    "metricsAsOf": "2026-11-09T02:42:38+01:00",
+    "source": "Deen Growth TT+YT Buffer get_aggregated_post_metrics + list_posts(includeMetrics) + get_post + get_channel, Org 6ab57b5c3c182524e1126b2f / Channel 6ab5b83dea19ca0bdeddf2ff, metricsUpdatedAt 2026-11-09T01:42:38Z (= 9.11. 02:42 Wien), abgerufen 2026-11-09T10:16+01:00. 6 gesendet / 5 mit Metriken; Chat-Dua 6369 TR (6aec8d89368462a0c0e6924a) weiter ohne Sync (alle 0, metricsUpdatedAt = Anlegezeit 5.11. 15:07 Wien)."
    },
    "tiktokTopPost": {
-    "title": "Ayah – Herz Ruhe (Chat)",
-    "views": 843,
-    "likes": 64
+    "title": "Dua gegen Sorge/Trauer – Bukhari 6369 (Sprich nach)",
+    "bufferPostId": "6aea3eff52391758e2e7cd9b",
+    "url": "https://tiktok.com/@deendaily254/video/7704039442574544160",
+    "views": 836,
+    "likes": 52,
+    "comments": 1,
+    "shares": 7,
+    "reach": 716,
+    "avgWatchSec": 2.96,
+    "engagementRatePct": 7.18,
+    "postedAt": "2026-11-03T21:09:11+01:00"
    },
    "instagram": {
-    "followers": 46,
-    "viewsThisWeek": 1912,
-    "likesThisWeek": 100,
-    "commentsThisWeek": 0,
-    "savesThisWeek": 19,
+    "followers": 53,
+    "viewsThisWeek": 2607,
+    "likesThisWeek": 117,
+    "commentsThisWeek": 1,
+    "savesThisWeek": 36,
     "sharesThisWeek": 0,
-    "postsThisWeek": 12,
-    "reachThisWeek": 1288,
-    "topPostTitle": "Dua3 Herz – Al-Imran 3:8",
-    "topPostViews": 448,
-    "metricsAsOf": "2026-11-02T09:15:00+01:00",
-    "source": "IG Insights web, VoT Growth 2.11. 09:15 Wien, Woche ~26.10.–01.11."
+    "postsThisWeek": 4,
+    "reachThisWeek": 2003,
+    "topPostTitle": "Bei Sorgen: Sprich diese Dua. (AI label)",
+    "topPostViews": 1252,
+    "topPostUrl": "https://www.instagram.com/reel/DfSt9BMMhb_/",
+    "metricsAsOf": "2026-11-09T09:10:00+01:00",
+    "source": "IG Insights web, VoT Growth 2026-11-09 ~09:10 Wien, Last 7 days (raw /workspace/growth/ig_live_2026-11-09.json). viewsThisWeek/reachThisWeek = Konto Views 2607 / Viewer 2003. likes/comments/saves/shares/posts = Summe der 4 noch sichtbaren Posts vom 3.–4.11. Profil 53 Follower. DfXNXisv0Pj (5.11.) nicht verfügbar, nicht mitgezählt."
    },
    "youtube": "pausiert / UPDATE_ME",
-   "source": "TT: Buffer get_aggregated_post_metrics 26.10.–1.11. Vienna, metricsUpdatedAt 2026-11-05T05:38:47Z (= 5.11. 06:38 Wien). IG: unverändert letzter Insights-Stand 2.11.",
-   "note": "Vorheriger previousWeek (19.–25.10.) liegt im Backup .data.json.bak-2026-11-05-chef"
+   "source": "IG: VoT Growth Insights 9.11. 09:10 Wien (platforms.instagram). TT: Deen Growth Buffer bestätigt 9.11. 10:16 Wien (metrics 9.11. 02:42 Wien). YT: pausiert.",
+   "note": "Vorwoche 2.–8.11. TT von Deen Growth bestätigt (Zahlen = Intel-Provisorium). Chat-Dua 6369 TR weiter Sync-Lücke. platforms.tiktok auf 9.–15.11. zurückgesetzt."
   }
  },
  "agents": {
@@ -178,28 +190,28 @@
  "overview": {
   "totalViewsThisWeek": {
    "value": null,
-   "note": "Woche 2.–8.11. (läuft noch): TT Buffer 3.140 Views (Stand 5.11. 06:38 Wien). IG aktuelle Woche noch keine Insights. YT pausiert.",
+   "note": "Woche 9.–15.11.: TT 0 Views (Buffer 9.11. 10:16 Wien, noch keine Posts). IG Last 7 days 2.607 Views (VoT 9.11. 09:10; platforms.instagram noch Vorwochen-Stand bis VoT-Refresh). YT pausiert.",
    "partial": {
-    "tiktok": 3140,
+    "tiktok": 0,
     "instagram": "UPDATE_ME",
     "youtube": "UPDATE_ME"
    }
   },
   "totalFollowers": {
-   "instagram": 46,
+   "instagram": 53,
    "tiktok": 45,
    "youtube": 7,
    "asOf": {
-    "instagram": "2026-11-02T09:15:00+01:00",
+    "instagram": "2026-11-09T09:10:00+01:00",
     "tiktok": "2026-10-28T03:41:00+01:00",
     "youtube": "2026-10-19T10:30:00+02:00"
    }
   },
   "totalPostsThisWeek": {
    "instagram": "UPDATE_ME",
-   "tiktok": 4,
+   "tiktok": 0,
    "youtube": "UPDATE_ME",
-   "note": "IG: heutiges Reel live, Wochen-Zählung ohne Insights unsicher → UPDATE_ME. YT pausiert."
+   "note": "TT: 0 Posts Woche 9.–15.11. (Buffer Queue leer, 9.11. 10:16 Wien). IG: platforms.instagram noch 4 Posts Vorwoche bis VoT-Refresh. YT pausiert."
   }
  },
  "platforms": {
@@ -209,7 +221,7 @@
    "ownerAgent": "vot_growth",
    "ownerAgentId": "44289084-0ba3-49ca-9cf8-eb04829a2288",
    "metrics": {
-    "followers": 46,
+    "followers": 53,
     "viewsThisWeek": "UPDATE_ME",
     "likesThisWeek": "UPDATE_ME",
     "commentsThisWeek": "UPDATE_ME",
@@ -217,370 +229,117 @@
     "sharesThisWeek": "UPDATE_ME",
     "postsThisWeek": "UPDATE_ME",
     "reachThisWeek": "UPDATE_ME",
-    "postingStreakDays": "UPDATE_ME"
+    "postingStreakDays": 0
    },
    "topPost": {
-    "title": "Dua3 Herz – Al-Imran 3:8 (AI label)",
-    "url": "https://www.instagram.com/reel/DfB5mPahSFg/",
-    "views": 448,
-    "likes": 25,
-    "saves": 8,
-    "reach": 383,
-    "comments": 0,
-    "shares": 0,
-    "follows": 2,
+    "title": "UPDATE_ME",
+    "url": "UPDATE_ME",
+    "views": "UPDATE_ME",
+    "likes": "UPDATE_ME",
+    "saves": "UPDATE_ME",
+    "reach": "UPDATE_ME",
+    "comments": "UPDATE_ME",
+    "shares": "UPDATE_ME",
+    "follows": "UPDATE_ME",
     "avgWatchSec": null,
-    "postedAt": "2026-10-28T08:30:00+01:00",
-    "note": "Top der letzten kompletten Insights-Woche ~26.10.–01.11., Stand 2.11. 09:15 Wien. Kein neuer Insights-Abruf seitdem."
+    "postedAt": "UPDATE_ME",
+    "note": "Neue Woche 09.–15.11., noch keine Insights; nächster Pull Mo 16.11. 09:00"
    },
-   "source": "Follower und letzte Wochenwerte: IG Insights web, VoT Growth 2026-11-02 09:15 Wien (Woche ~26.10.–01.11., raw /workspace/growth/ig_live_2026-11-02.json). Aktuelle Woche 2.–8.11.: noch keine Insights. Heutiges Reel DfXNXisv0Pj live (VoT Growth 5.11.), ohne Zahlen.",
-   "metricsAsOf": "2026-11-02T09:15:00+01:00",
+   "source": "Neue Woche 09.–15.11., noch keine Insights; nächster Pull Mo 16.11. 09:00. Profil-Stand 2026-11-09T09:10:00+01:00 aus /workspace/growth/ig_live_2026-11-09.json: 53 Follower / 28 Following / 85 Posts. Vorwoche 2.–8.11. in meta.previousWeek.instagram und platforms.instagram.lastKnownWeek. postingStreakDays=0 (letzter sichtbarer Post 2026-11-04).",
+   "metricsAsOf": "2026-11-09T09:10:00+01:00",
    "isPlaceholder": true,
-   "weekReels": [
-    {
-     "url": "https://www.instagram.com/reel/DfBcKiDOUvd/",
-     "title": "reel",
-     "postedAtUTC": "2026-10-28T03:13Z",
-     "type": "reel",
-     "views": 376,
-     "viewers": 328,
-     "likes": 17,
-     "comments": 0,
-     "saves": 2,
-     "shares": 0,
-     "follows": 0
-    },
-    {
-     "url": "https://www.instagram.com/reel/DfBmAACRj08/",
-     "title": "reel",
-     "postedAtUTC": "2026-10-28T04:39Z",
-     "type": "reel",
-     "views": 17,
-     "viewers": 12,
-     "likes": 0,
-     "comments": 0,
-     "saves": 0,
-     "shares": 0,
-     "follows": 0
-    },
-    {
-     "url": "https://www.instagram.com/reel/DfB5mPahSFg/",
-     "title": "reel Dua3 Herz 3:8",
-     "postedAtUTC": "2026-10-28T07:30Z",
-     "type": "reel",
-     "views": 448,
-     "viewers": 383,
-     "likes": 25,
-     "comments": 0,
-     "saves": 8,
-     "shares": 0,
-     "follows": 2
-    },
-    {
-     "url": "https://www.instagram.com/reel/DfCH-n4PdGL/",
-     "title": "reel Dua3 Eltern 17:24",
-     "postedAtUTC": "2026-10-28T09:36Z",
-     "type": "reel",
-     "views": 328,
-     "viewers": 294,
-     "likes": 15,
-     "comments": 0,
-     "saves": 3,
-     "shares": 0,
-     "follows": 4
-    },
-    {
-     "url": "https://www.instagram.com/reel/DfCfopaBcd7/",
-     "title": "reel Dua3 Rabbana 2:201",
-     "postedAtUTC": "2026-10-28T13:03Z",
-     "type": "reel",
-     "views": 394,
-     "viewers": 352,
-     "likes": 20,
-     "comments": 0,
-     "saves": 3,
-     "shares": 0,
-     "follows": 0
-    },
-    {
-     "url": "https://www.instagram.com/reel/DfHcihgvCHP/",
-     "title": "reel Nuh DE",
-     "postedAtUTC": "2026-10-30T11:12Z",
-     "type": "reel",
-     "views": 160,
-     "viewers": 151,
-     "likes": 3,
-     "comments": 0,
-     "saves": 0,
-     "shares": 0,
-     "follows": 0
-    },
-    {
-     "url": "https://www.instagram.com/reel/DfMM1vXBM_p/",
-     "title": "reel Nuh BS",
-     "postedAtUTC": "2026-11-01T07:31Z",
-     "type": "reel",
-     "views": 9,
-     "viewers": 7,
-     "likes": 0,
-     "comments": 0,
-     "saves": 0,
-     "shares": 0,
-     "follows": 0
-    },
-    {
-     "url": "https://www.instagram.com/reel/DfMNfqCMMvo/",
-     "title": "reel Sharh 94:5-8",
-     "postedAtUTC": "2026-11-01T07:37Z",
-     "type": "reel",
-     "views": 156,
-     "viewers": 145,
-     "likes": 4,
-     "comments": 0,
-     "saves": 1,
-     "shares": 0,
-     "follows": 0
-    },
-    {
-     "url": "https://www.instagram.com/reel/DfMN_Nzh8it/",
-     "title": "reel Ra'd 13:28",
-     "postedAtUTC": "2026-11-01T07:41Z",
-     "type": "reel",
-     "views": 183,
-     "viewers": 164,
-     "likes": 9,
-     "comments": 0,
-     "saves": 1,
-     "shares": 0,
-     "follows": 0
-    },
-    {
-     "url": "https://www.instagram.com/reel/DfMOePthchq/",
-     "title": "reel Talaq 65:2-3",
-     "postedAtUTC": "2026-11-01T07:45Z",
-     "type": "reel",
-     "views": 145,
-     "viewers": 133,
-     "likes": 4,
-     "comments": 0,
-     "saves": 0,
-     "shares": 0,
-     "follows": 0
-    },
-    {
-     "url": "https://www.instagram.com/reel/DfMO8ZMhJ2N/",
-     "title": "reel Nuh EN",
-     "postedAtUTC": "2026-11-01T07:49Z",
-     "type": "reel",
-     "views": 7,
-     "viewers": 4,
-     "likes": 0,
-     "comments": 0,
-     "saves": 0,
-     "shares": 0,
-     "follows": 0
-    },
-    {
-     "url": "https://www.instagram.com/p/DfMPZ-9iOT5/",
-     "title": "carousel Dua Teil 2",
-     "postedAtUTC": "2026-11-01T07:53Z",
-     "type": "carousel",
-     "views": 33,
-     "viewers": 13,
-     "likes": 3,
-     "comments": 0,
-     "saves": 1,
-     "shares": 0,
-     "follows": 0
-    }
-   ],
+   "weekReels": [],
    "lastKnownWeek": {
-    "weekStart": "2026-10-26",
-    "weekEnd": "2026-11-01",
-    "metricsAsOf": "2026-11-02T09:15:00+01:00",
-    "followers": 46,
-    "viewsThisWeek": 1912,
-    "likesThisWeek": 100,
-    "commentsThisWeek": 0,
-    "savesThisWeek": 19,
+    "weekStart": "2026-11-02",
+    "weekEnd": "2026-11-08",
+    "metricsAsOf": "2026-11-09T09:10:00+01:00",
+    "followers": 53,
+    "viewsThisWeek": 2607,
+    "likesThisWeek": 117,
+    "commentsThisWeek": 1,
+    "savesThisWeek": 36,
     "sharesThisWeek": 0,
-    "postsThisWeek": 12,
-    "reachThisWeek": 1288,
-    "source": "IG Insights web, VoT Growth 2.11. 09:10–09:15 Wien"
+    "postsThisWeek": 4,
+    "reachThisWeek": 2003,
+    "source": "IG Insights web, VoT Growth 9.11. ~09:10 Wien, Last 7 days"
    },
    "recentPosts": [
     {
-     "url": "https://www.instagram.com/reel/DfBcKiDOUvd/",
-     "title": "reel",
-     "postedAtUTC": "2026-10-28T03:13Z",
+     "url": "https://www.instagram.com/reel/DfSt9BMMhb_/",
+     "title": "reel Bei Sorgen Dua",
+     "postedAt": "2026-11-03",
      "type": "reel",
-     "views": 376,
-     "viewers": 328,
-     "likes": 17,
+     "hook": "Bei Sorgen: Sprich diese Dua. Der Prophet ﷺ pflegte sie zu sprechen.",
+     "ai_label": true,
+     "views": 1252,
+     "viewers": 1105,
+     "likes": 79,
      "comments": 0,
-     "saves": 2,
-     "shares": 0,
-     "follows": 0
-    },
-    {
-     "url": "https://www.instagram.com/reel/DfBmAACRj08/",
-     "title": "reel",
-     "postedAtUTC": "2026-10-28T04:39Z",
-     "type": "reel",
-     "views": 17,
-     "viewers": 12,
-     "likes": 0,
-     "comments": 0,
-     "saves": 0,
-     "shares": 0,
-     "follows": 0
-    },
-    {
-     "url": "https://www.instagram.com/reel/DfB5mPahSFg/",
-     "title": "reel Dua3 Herz 3:8",
-     "postedAtUTC": "2026-10-28T07:30Z",
-     "type": "reel",
-     "views": 448,
-     "viewers": 383,
-     "likes": 25,
-     "comments": 0,
-     "saves": 8,
-     "shares": 0,
-     "follows": 2
-    },
-    {
-     "url": "https://www.instagram.com/reel/DfCH-n4PdGL/",
-     "title": "reel Dua3 Eltern 17:24",
-     "postedAtUTC": "2026-10-28T09:36Z",
-     "type": "reel",
-     "views": 328,
-     "viewers": 294,
-     "likes": 15,
-     "comments": 0,
-     "saves": 3,
+     "saves": 29,
      "shares": 0,
      "follows": 4
     },
     {
-     "url": "https://www.instagram.com/reel/DfCfopaBcd7/",
-     "title": "reel Dua3 Rabbana 2:201",
-     "postedAtUTC": "2026-10-28T13:03Z",
+     "url": "https://www.instagram.com/reel/DfStQyPJ_p3/",
+     "title": "reel Familie 25:74",
+     "postedAt": "2026-11-03",
      "type": "reel",
-     "views": 394,
-     "viewers": 352,
-     "likes": 20,
+     "hook": "Für deine Familie. Sprich diese Dua. Das ist das Gebet für Ehepartner und Kinder, Al-Furqan 25:74.",
+     "ai_label": true,
+     "views": 531,
+     "viewers": 488,
+     "likes": 33,
      "comments": 0,
-     "saves": 3,
+     "saves": 7,
      "shares": 0,
-     "follows": 0
+     "follows": 1
     },
     {
-     "url": "https://www.instagram.com/reel/DfHcihgvCHP/",
-     "title": "reel Nuh DE",
-     "postedAtUTC": "2026-10-30T11:12Z",
+     "url": "https://www.instagram.com/reel/DfTMjiHBTSX/",
+     "title": "reel prayer-place poll",
+     "postedAt": "2026-11-04",
      "type": "reel",
-     "views": 160,
-     "viewers": 151,
-     "likes": 3,
-     "comments": 0,
+     "hook": "Wo kannst du unterwegs beten?",
+     "ai_label": true,
+     "views": 169,
+     "viewers": 155,
+     "likes": 5,
+     "comments": 1,
      "saves": 0,
      "shares": 0,
      "follows": 0
     },
     {
-     "url": "https://www.instagram.com/reel/DfMM1vXBM_p/",
-     "title": "reel Nuh BS",
-     "postedAtUTC": "2026-11-01T07:31Z",
+     "url": "https://www.instagram.com/reel/DfStwlwtrzL/",
+     "title": "reel Sayyid al-Istighfar",
+     "postedAt": "2026-11-03",
      "type": "reel",
-     "views": 9,
-     "viewers": 7,
+     "hook": "Sayyid al-Istighfar – die beste Bitte um Vergebung. Sprich sie nach.",
+     "ai_label": true,
+     "views": 21,
+     "viewers": 10,
      "likes": 0,
      "comments": 0,
      "saves": 0,
-     "shares": 0,
-     "follows": 0
-    },
-    {
-     "url": "https://www.instagram.com/reel/DfMNfqCMMvo/",
-     "title": "reel Sharh 94:5-8",
-     "postedAtUTC": "2026-11-01T07:37Z",
-     "type": "reel",
-     "views": 156,
-     "viewers": 145,
-     "likes": 4,
-     "comments": 0,
-     "saves": 1,
-     "shares": 0,
-     "follows": 0
-    },
-    {
-     "url": "https://www.instagram.com/reel/DfMN_Nzh8it/",
-     "title": "reel Ra'd 13:28",
-     "postedAtUTC": "2026-11-01T07:41Z",
-     "type": "reel",
-     "views": 183,
-     "viewers": 164,
-     "likes": 9,
-     "comments": 0,
-     "saves": 1,
-     "shares": 0,
-     "follows": 0
-    },
-    {
-     "url": "https://www.instagram.com/reel/DfMOePthchq/",
-     "title": "reel Talaq 65:2-3",
-     "postedAtUTC": "2026-11-01T07:45Z",
-     "type": "reel",
-     "views": 145,
-     "viewers": 133,
-     "likes": 4,
-     "comments": 0,
-     "saves": 0,
-     "shares": 0,
-     "follows": 0
-    },
-    {
-     "url": "https://www.instagram.com/reel/DfMO8ZMhJ2N/",
-     "title": "reel Nuh EN",
-     "postedAtUTC": "2026-11-01T07:49Z",
-     "type": "reel",
-     "views": 7,
-     "viewers": 4,
-     "likes": 0,
-     "comments": 0,
-     "saves": 0,
-     "shares": 0,
-     "follows": 0
-    },
-    {
-     "url": "https://www.instagram.com/p/DfMPZ-9iOT5/",
-     "title": "carousel Dua Teil 2",
-     "postedAtUTC": "2026-11-01T07:53Z",
-     "type": "carousel",
-     "views": 33,
-     "viewers": 13,
-     "likes": 3,
-     "comments": 0,
-     "saves": 1,
      "shares": 0,
      "follows": 0
     },
     {
      "url": "https://www.instagram.com/reel/DfXNXisv0Pj/",
      "title": "Chat-Dua gegen Sorge/Trauer (Bukhari 6369, TR-slow)",
-     "postedAtUTC": "2026-11-05",
+     "postedAt": "2026-11-05",
      "type": "reel",
-     "views": "UPDATE_ME",
-     "viewers": "UPDATE_ME",
-     "likes": "UPDATE_ME",
-     "comments": "UPDATE_ME",
-     "saves": "UPDATE_ME",
-     "shares": "UPDATE_ME",
-     "follows": "UPDATE_ME",
-     "note": "Live bestätigt von VoT Growth am 5.11.2026; Download geprüft (27,6 s), KI-Label an, Caption 1:1, FB aus. Insights/Views fehlen."
+     "views": null,
+     "viewers": null,
+     "likes": null,
+     "comments": null,
+     "saves": null,
+     "shares": null,
+     "follows": null,
+     "note": "Am 5.11. als live bestätigt; am 9.11. 09:10 Wien: Seite nicht verfügbar (nicht im Grid, direkte URL: This page isn't available). Keine Insights, nicht in den Wochensummen."
     }
    ],
-   "followersAsOf": "2026-11-02T09:15:00+01:00"
+   "followersAsOf": "2026-11-09T09:10:00+01:00"
   },
   "tiktok": {
    "handle": "@deendaily254",
@@ -591,63 +350,61 @@
    "bufferOrgId": "6ab57b5c3c182524e1126b2f",
    "metrics": {
     "followers": 45,
-    "viewsThisWeek": 3140,
-    "likesThisWeek": 200,
-    "commentsThisWeek": 13,
+    "viewsThisWeek": 0,
+    "likesThisWeek": 0,
+    "commentsThisWeek": 0,
     "savesThisWeek": "UPDATE_ME",
-    "sharesThisWeek": 8,
-    "postsThisWeek": 4,
-    "reachThisWeek": "UPDATE_ME",
-    "engagementRatePct": 7.04,
-    "watchTimeMinutes": 193.05,
-    "avgWatchTimeSec": 3.6,
-    "postingStreakDays": "UPDATE_ME",
+    "sharesThisWeek": 0,
+    "postsThisWeek": 0,
+    "reachThisWeek": 0,
+    "engagementRatePct": 0,
+    "watchTimeMinutes": 0,
+    "avgWatchTimeSec": 0,
+    "postingStreakDays": 0,
     "postingGoalPerWeek": 5,
-    "postingGoalStatus": "4/5 gesendet in 2.–8.11.; 1 geplant 5.11. 18:00 Wien (Chat-Dua 6369 TR-slow)",
-    "postingGoalSentThisPeriod": 4,
-    "postingGoalPeriod": "2026-11-02 → 2026-11-08 Vienna (Dashboard-Woche; Buffer-eigene Periode 1.–7.11.: 7 sent + 1 scheduled, Ziel 5 Hit)",
-    "postingGoalScheduledThisPeriod": 1,
-    "postingGoalPreviousPeriod": "2026-10-26 → 2026-11-01 Vienna: 11 Posts / 6.032 Views (Buffer 5.11. 06:38 Wien)",
+    "postingGoalStatus": "AtRisk — Buffer-Periode 8.–14.11.: 0 sent / 0 scheduled (Ziel 5)",
+    "postingGoalSentThisPeriod": 0,
+    "postingGoalPeriod": "2026-11-08 → 2026-11-14 Vienna (Buffer postingGoal); Dashboard-Woche 9.–15.11.",
+    "postingGoalScheduledThisPeriod": 0,
+    "postingGoalPreviousPeriod": "2026-11-02 → 2026-11-08 Vienna: 6 Posts / 3.470 Views (5 mit Metriken; Buffer 9.11. 02:42 Wien)",
     "wow": {
      "views": {
-      "prev": 6032,
-      "now": 3140
+      "prev": 3470,
+      "now": 0
      },
      "posts": {
-      "prev": 11,
-      "now": 4
+      "prev": 6,
+      "now": 0
      },
      "likes": {
-      "prev": 395,
-      "now": 200
+      "prev": 223,
+      "now": 0
      },
      "shares": {
-      "prev": 21,
-      "now": 8
+      "prev": 9,
+      "now": 0
      },
      "avgWatchSec": {
-      "prev": 4.44,
-      "now": 3.6
+      "prev": 3.71,
+      "now": 0
      }
     },
-    "derivedNote": "Buffer get_aggregated_post_metrics 2.11. 00:00 – 5.11. 15:30 Wien (Start 2026-11-01T23:00:00Z, End 2026-11-05T14:30:00Z), metricsUpdatedAt 2026-11-05T05:38:47Z = 5.11. 06:38 Wien: 4 Posts / 3.140 Views / 200 Likes / 13 Kommentare / 8 Shares / 193,05 Watch-Min / Ø 3,60 s / Eng. 7,04 %. Reach UPDATE_ME, weil der Umfrage-Post Reach 0 liefert (Buffer-Summe 1.193 nur aus 3 Posts). Woche läuft noch bis 8.11. WoW vs. komplette Vorwoche daher nicht vergleichbar. Follower nicht neu geprüft (45, öffentl. Profil 28.10.).",
+    "derivedNote": "Neue Woche 9.–15.11. noch leer (Buffer aggregate postCount 0, metricsUpdatedAt null). Queue 0. Chat-Dua 6369 TR aus Vorwoche weiterhin ohne Buffer-Sync.",
     "following": 63,
     "profileTotalLikes": "10.3K"
    },
    "topPost": {
-    "title": "Dua gegen Sorge/Trauer – Bukhari 6369 (Sprich nach)",
-    "bufferPostId": "6aea3eff52391758e2e7cd9b",
+    "title": "UPDATE_ME",
+    "bufferPostId": null,
     "url": "UPDATE_ME",
-    "views": 830,
-    "likes": 52,
-    "comments": 1,
-    "shares": 7,
-    "reach": 416,
-    "avgWatchSec": 2.93,
-    "watchTimeMinutes": 41.17,
-    "engagementRatePct": 7.23,
-    "postedAt": "2026-11-03T21:09:11+01:00",
-    "note": "Top der laufenden Woche 2.–8.11. nach Views (Buffer 5.11. 06:38 Wien). Meiste Shares diese Woche (7). Umfrage-Post hat mehr Kommentare (11) und höhere ER (8,45 %), aber Reach 0."
+    "views": "UPDATE_ME",
+    "likes": "UPDATE_ME",
+    "comments": "UPDATE_ME",
+    "shares": "UPDATE_ME",
+    "reach": "UPDATE_ME",
+    "avgWatchSec": "UPDATE_ME",
+    "postedAt": null,
+    "note": "Keine Posts in Woche 9.–15.11. bisher. Vorwochen-Top: Dua Sorge 6369 836 Views / 7 Shares (siehe lastKnownWeek / meta.previousWeek)."
    },
    "scheduleVienna": {
     "mon": [
@@ -668,65 +425,11 @@
      "09:47"
     ]
    },
-   "source": "Buffer get_aggregated_post_metrics + list_posts(includeMetrics) + get_channel, Org 6ab57b5c3c182524e1126b2f / Channel 6ab5b83dea19ca0bdeddf2ff, metricsUpdatedAt 2026-11-05T06:38:47+01:00, abgerufen 2026-11-05T15:28:02+01:00 von CHEF AKHI. Follower: öffentl. Profil 28.10. (nicht neu geprüft).",
-   "metricsAsOf": "2026-11-05T06:38:47+01:00",
+   "source": "Deen Growth TT+YT Buffer get_aggregated_post_metrics + list_posts(status scheduled/draft/needs_approval/error/sending) + get_channel, Org 6ab57b5c3c182524e1126b2f / Channel 6ab5b83dea19ca0bdeddf2ff, abgerufen 2026-11-09T10:16+01:00 Europe/Vienna. Woche 9.–15.11.: 0 Posts, Queue leer. Follower nicht in get_channel → Stand 28.10. belassen.",
+   "metricsAsOf": "2026-11-09T10:17:00+01:00",
    "isPlaceholder": false,
-   "weekPostLog": [
-    {
-     "bufferPostId": "6aea3efc5fa3d509fa3e63eb",
-     "topic": "Sayyid al-Istighfar – Bukhari 6306 (Sprich nach)",
-     "postedAtVienna": "2026-11-03T21:09:08+01:00",
-     "views": 756,
-     "likes": 44,
-     "comments": 1,
-     "shares": 0,
-     "reach": 368,
-     "avgWatchSec": 3.42,
-     "watchTimeMinutes": 44.62,
-     "engagementRatePct": 5.95
-    },
-    {
-     "bufferPostId": "6aea3eff52391758e2e7cd9b",
-     "topic": "Dua gegen Sorge/Trauer – Bukhari 6369 (Sprich nach)",
-     "postedAtVienna": "2026-11-03T21:09:11+01:00",
-     "views": 830,
-     "likes": 52,
-     "comments": 1,
-     "shares": 7,
-     "reach": 416,
-     "avgWatchSec": 2.93,
-     "watchTimeMinutes": 41.17,
-     "engagementRatePct": 7.23
-    },
-    {
-     "bufferPostId": "6aea3ef92128cca0a51faa58",
-     "topic": "Dua für Ehepartner & Kinder – 25:74 (Sprich nach)",
-     "postedAtVienna": "2026-11-03T21:09:28+01:00",
-     "views": 749,
-     "likes": 48,
-     "comments": 0,
-     "shares": 0,
-     "reach": 409,
-     "avgWatchSec": 3.29,
-     "watchTimeMinutes": 41.95,
-     "engagementRatePct": 6.41
-    },
-    {
-     "bufferPostId": "6aea7f9aff887f055cdca069",
-     "topic": "Umfrage Gebetsplatz",
-     "postedAtVienna": "2026-11-04T01:44:49+01:00",
-     "views": 805,
-     "likes": 56,
-     "comments": 11,
-     "shares": 1,
-     "reach": "UPDATE_ME",
-     "avgWatchSec": 4.75,
-     "watchTimeMinutes": 65.32,
-     "engagementRatePct": 8.45,
-     "note": "Buffer Reach 0 (Lücke, kein echter 0-Wert)."
-    }
-   ],
-   "metricsSourceUpdatedAt": "2026-11-05T06:38:47+01:00",
+   "weekPostLog": [],
+   "metricsSourceUpdatedAt": null,
    "lifetimeHighlights": [
     {
      "bufferPostId": "6ac0c724713b7277a0b2e1f2",
@@ -744,12 +447,32 @@
     }
    ],
    "upcoming": {
-    "window": "2026-11-02 → 2026-11-08",
-    "scheduledInBuffer": 1,
-    "note": "Chat-Dua Bukhari 6369 TR-slow geplant 5.11.2026 18:00 Europe/Vienna (Buffer dueAt 2026-11-05T17:00:00Z, Post 6aec8d89368462a0c0e6924a). Noch nicht gesendet."
+    "window": "2026-11-09 → 2026-11-15",
+    "scheduledInBuffer": 0,
+    "note": "Queue leer (list_posts scheduled/draft/needs_approval/error/sending = 0). Buffer postingGoal 0/5 AtRisk."
    },
-   "followersSource": "Public profile tiktok.com/@deendaily254 (page JSON stats), read 2026-10-28 03:41 Wien by Deen Growth TT: 45 Follower / 63 Following / 10.6K Likes; TikTok Studio not logged in. Vorher: 41 am 2026-10-19 10:20 Wien",
-   "followersAsOf": "2026-10-28T03:41:00+01:00"
+   "followersSource": "Public profile tiktok.com/@deendaily254 (page JSON stats), read 2026-10-28 03:41 Wien by Deen Growth TT: 45 Follower / 63 Following / 10.6K Likes; get_channel liefert keine Follower. 9.11. nicht neu geprüft.",
+   "followersAsOf": "2026-10-28T03:41:00+01:00",
+   "lastKnownWeek": {
+    "weekStart": "2026-11-02",
+    "weekEnd": "2026-11-08",
+    "metricsAsOf": "2026-11-09T02:42:38+01:00",
+    "followers": 45,
+    "viewsThisWeek": 3470,
+    "likesThisWeek": 223,
+    "commentsThisWeek": 14,
+    "sharesThisWeek": 9,
+    "postsThisWeek": 6,
+    "postsWithMetrics": 5,
+    "reachThisWeek": 2995,
+    "engagementRatePct": 7.09,
+    "watchTimeMinutes": 218.5,
+    "avgWatchTimeSec": 3.71,
+    "topPostTitle": "Dua gegen Sorge/Trauer – Bukhari 6369 (Sprich nach)",
+    "topPostViews": 836,
+    "topPostUrl": "https://tiktok.com/@deendaily254/video/7704039442574544160",
+    "source": "Deen Growth TT+YT Buffer get_aggregated_post_metrics + list_posts(includeMetrics) + get_post + get_channel, Org 6ab57b5c3c182524e1126b2f / Channel 6ab5b83dea19ca0bdeddf2ff, metricsUpdatedAt 2026-11-09T01:42:38Z (= 9.11. 02:42 Wien), abgerufen 2026-11-09T10:16+01:00. 6 gesendet / 5 mit Metriken; Chat-Dua 6369 TR (6aec8d89368462a0c0e6924a) weiter ohne Sync (alle 0, metricsUpdatedAt = Anlegezeit 5.11. 15:07 Wien)."
+   }
   },
   "youtube": {
    "handle": "@haric8814",
@@ -1138,6 +861,26 @@
    "metricsAsOf": "2026-10-19T10:20:00+02:00",
    "viewsSource": "Öffentliches TikTok-Profil @deendaily254, gelesen 2026-10-19 10:20 Wien",
    "viewsAsOf": "2026-10-19T10:20:00+02:00"
+  },
+  {
+   "id": "idea-034",
+   "title": "Aufwachen & Einschlafen – Sprich nach",
+   "platform": "all",
+   "pillar": "dua",
+   "status": "draft",
+   "ownerAgent": "clipper_akh",
+   "ownerAgentId": "b8f5286c-3168-4aad-ba62-b7f68617ba06",
+   "notes": "Growth Intel 9.11.: Hook 'Augen auf? Sag das zuerst.' (Frage, 5 W.) · Format Sprich nach (15–20 s) + Save-CTA · Quelle Sahih al-Bukhari 6312 (Hudhaifa), sahih (Sammlung), https://sunnah.com/bukhari:6312 · Warum: Sprich-nach-Duas zum Behalten; kurz statt 35–51 s (Haltequote 6–8 % bei langen Duas) · sunnah-safety-check PASS · wartet auf Hari-OK"
+  },
+  {
+   "id": "idea-035",
+   "title": "Wütend? Ein Satz – Chat-Dua",
+   "platform": "all",
+   "pillar": "dua",
+   "status": "draft",
+   "ownerAgent": "clipper_akh",
+   "ownerAgentId": "b8f5286c-3168-4aad-ba62-b7f68617ba06",
+   "notes": "Growth Intel 9.11.: Hook 'Wütend gerade? Ein Satz.' (Situation, 4 W.) · Format Chat-Dua (20 s) · Quelle Sahih al-Bukhari 6115 (Sulaiman bin Sarad), sahih (Sammlung), https://sunnah.com/bukhari:6115 · Warum: Chat = Reichweite (Nuh-Chat 764–780 V); Alltagsthema; Streit nicht dramatisieren · sunnah-safety-check PASS · wartet auf Hari-OK"
   }
  ],
  "plans": {
@@ -1168,203 +911,309 @@
    "agentId": "b8f5286c-3168-4aad-ba62-b7f68617ba06",
    "name": "CHEF AKHI",
    "responsibility": "Orchestrator: Freigaben weitergeben, Dashboard, Koordination. Postet nicht.",
-   "lastUpdated": "2026-11-05T15:28:02+01:00",
-   "status": "Dashboard-Update 5.11.: Teamliste + TT-Zahlen Buffer, IG-Woche ohne neue Insights"
+   "lastUpdated": "2026-11-09T10:15:10+01:00",
+   "status": "Wochen-Update 9.11.: Woche 9.–15.11. gesetzt; Vorwoche 2.–8.11. archiviert (IG VoT 09:10, TT Intel-Buffer 02:42). VoT + Deen um Refresh der neuen Woche gebeten. Keine Posts."
   },
   "video_creator": {
    "agentId": "45a0ccd3-3413-49c5-add4-da6db239e032",
    "name": "Video Creator",
    "responsibility": "Baut Videos (Baukasten/HyperFrames). Postet nie.",
-   "lastUpdated": "2026-11-05",
-   "status": "Chat-Dua Bukhari 6369 TR-slow fertig (Test, gepostet nach Hari-OK)"
+   "lastUpdated": "2026-11-05T19:40:00+01:00",
+   "status": "Chat-Dua Bukhari 6369 TR-slow live TT+IG nach Hari-OK; kein neuer Bauauftrag"
   },
   "deen_growth": {
    "agentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
    "name": "Deen Growth TT+YT",
    "responsibility": "TikTok @deendaily254 posten; YouTube pausiert",
-   "lastUpdated": "2026-11-05T15:28:02+01:00",
-   "status": "TT-Woche 2.–8.11.: 4 gesendet, 1 geplant 18:00 Wien (Chat-Dua 6369). Zahlen aus Buffer 5.11. 06:38."
+   "lastUpdated": "2026-11-09T10:17:00+01:00",
+   "status": "TT Vorwoche 2.–8.11. bestätigt (3.470 Views / 6 Posts / Top Dua Sorge 836). Neue Woche 9.–15.11.: 0 Posts, Queue leer. Chat-Dua Sync offen. Follower 45 (28.10.). YT pausiert."
   },
   "vot_growth": {
    "agentId": "44289084-0ba3-49ca-9cf8-eb04829a2288",
    "name": "VoT Growth",
    "responsibility": "Instagram @voicesoftawheed posten + IG-Metriken",
-   "lastUpdated": "2026-11-05",
-   "status": "Reel DfXNXisv0Pj live 5.11. (keine Insights). Letzte IG-Zahlen 2.11. 09:15."
+   "lastUpdated": "2026-11-09T10:16:09+01:00",
+   "status": "Neue Woche 9.–15.11.: Week-Metriken UPDATE_ME (keine neuen Insights). Profil 53 Follower (Stand 9.11. 09:10). Streak 0 seit 4.11. Nächster Pull Mo 16.11. 09:00."
   },
   "growth_intel": {
    "agentId": "da2682ad-04a5-4eeb-878c-1dc42d6307b3",
    "name": "Growth Intel",
    "responsibility": "Ideen, Muster, Analyse; nie posten",
-   "lastUpdated": "2026-11-02T08:50:00+01:00",
-   "status": "verified_2026-11-02_new_week",
+   "lastUpdated": "2026-11-09T08:55:00+01:00",
+   "status": "verified_2026-11-09_new_week",
    "weeklyBrief": {
-    "week": "2026-10-26 → 2026-11-01 (komplett, Vienna)",
-    "verifiedAt": "2026-11-02T08:50:00+01:00",
+    "week": "2026-11-02 → 2026-11-08 (komplett, Vienna)",
+    "verifiedAt": "2026-11-09T08:55:00+01:00",
     "verdict": "NEW",
-    "source": "Buffer list_posts(includeMetrics) metricsUpdatedAt 2026-11-01T09:34:47Z (= 1.11. 10:34 Wien)",
+    "comparedTo": "weeklyBrief 2.11. 08:50 (Buffer 1.11. 10:34) + Dashboard-Stand 5.11. 19:40 (CHEF AKHI)",
+    "source": "Buffer list_posts(includeMetrics)+get_aggregated_post_metrics+get_post+get_channel, Org 6ab57b5c3c182524e1126b2f / Channel 6ab5b83dea19ca0bdeddf2ff, metricsUpdatedAt 2026-11-09T01:42:38Z (= 9.11. 02:42 Wien), abgerufen 9.11. ~08:50 Wien von Growth Intel (read-only)",
+    "metricsAsOf": "2026-11-09T02:42:38+01:00",
     "tiktokWeek": {
-     "posts": 11,
-     "views": 4634,
-     "likes": 323,
-     "shares": 18,
+     "postsSent": 6,
+     "postsWithMetrics": 5,
+     "views": 3470,
+     "likes": 223,
+     "comments": 14,
+     "shares": 9,
+     "reach": 2995,
+     "engagementRatePct": 7.09,
+     "watchTimeMinutes": 218.5,
+     "avgWatchSec": 3.71,
+     "aggregateNote": "get_aggregated_post_metrics zählt 5 Posts (TR-Chat-Dua ohne Sync); Summe aus list_posts identisch",
      "perPost": [
       {
-       "bufferPostId": "6ae167d52785e53975d1d2f1",
-       "title": "Dua Yunus 21:87",
-       "sent": "2026-10-28T04:13+01:00",
-       "views": 347,
-       "likes": 39,
+       "bufferPostId": "6aea3efc5fa3d509fa3e63eb",
+       "title": "Sayyid al-Istighfar – Bukhari 6306 (Sprich nach)",
+       "format": "Sprich nach",
+       "sent": "2026-11-03T21:09+01:00",
+       "ageHAtAsOf": 125.5,
+       "durationSec": 50.98,
+       "views": 766,
+       "likes": 44,
+       "comments": 1,
+       "shares": 0,
+       "reach": 692,
+       "engagementRatePct": 5.87,
+       "avgWatchSec": 3.39,
+       "retentionPct": 6.6,
+       "shareRatePct": 0.0
+      },
+      {
+       "bufferPostId": "6aea3eff52391758e2e7cd9b",
+       "title": "Dua gegen Sorge/Trauer – Bukhari 6369 (Sprich nach)",
+       "format": "Sprich nach",
+       "sent": "2026-11-03T21:09+01:00",
+       "ageHAtAsOf": 125.5,
+       "durationSec": 34.73,
+       "views": 836,
+       "likes": 52,
+       "comments": 1,
+       "shares": 7,
+       "reach": 716,
+       "engagementRatePct": 7.18,
+       "avgWatchSec": 2.96,
+       "retentionPct": 8.5,
+       "shareRatePct": 0.84
+      },
+      {
+       "bufferPostId": "6aea3ef92128cca0a51faa58",
+       "title": "Dua Ehepartner & Kinder – 25:74 (Sprich nach)",
+       "format": "Sprich nach",
+       "sent": "2026-11-03T21:09+01:00",
+       "ageHAtAsOf": 125.5,
+       "durationSec": 49.5,
+       "views": 752,
+       "likes": 48,
+       "comments": 0,
+       "shares": 0,
+       "reach": 665,
+       "engagementRatePct": 6.38,
+       "avgWatchSec": 3.29,
+       "retentionPct": 6.6,
+       "shareRatePct": 0.0
+      },
+      {
+       "bufferPostId": "6aea7f9aff887f055cdca069",
+       "title": "Umfrage Gebetsplatz",
+       "format": "Umfrage/Interaktion",
+       "sent": "2026-11-04T01:44+01:00",
+       "ageHAtAsOf": 121.0,
+       "durationSec": 23.51,
+       "views": 827,
+       "likes": 58,
+       "comments": 12,
        "shares": 1,
-       "engagementRatePct": 11.53,
-       "avgWatchSec": 13.91
+       "reach": 706,
+       "engagementRatePct": 8.59,
+       "avgWatchSec": 4.95,
+       "retentionPct": 21.1,
+       "shareRatePct": 0.12
       },
       {
-       "bufferPostId": "6ae17dba1b33b85d1be2f743",
-       "title": "Dua Musa 20:25–28 (neu)",
-       "sent": "2026-10-28T05:46+01:00",
-       "views": 308,
-       "likes": 37,
-       "shares": 5,
-       "engagementRatePct": 13.96,
-       "avgWatchSec": 6.38
+       "bufferPostId": "6aec8d89368462a0c0e6924a",
+       "title": "Chat-Dua Bukhari 6369 TR-slow",
+       "format": "Chat-Dua",
+       "sent": "2026-11-05T18:03+01:00",
+       "url": "https://tiktok.com/@deendaily254/video/7704733640638467361",
+       "durationSec": 27.55,
+       "views": "UPDATE_ME",
+       "likes": "UPDATE_ME",
+       "shares": "UPDATE_ME",
+       "note": "Buffer-Sync-Lücke: alle Werte 0, metricsUpdatedAt 5.11. 15:07 Wien = Anlegezeit; KEIN echter 0-Wert. TikTok Studio/Profil prüfen."
       },
       {
-       "bufferPostId": "6ae17dbda48463c227546cf2",
-       "title": "Dua festes Herz 3:8",
-       "sent": "2026-10-28T08:16+01:00",
-       "views": 277,
-       "likes": 39,
+       "bufferPostId": "6aed403707f945cca938093d",
+       "title": "Dua gegen Sorgen – Bukhari 6369 (Sprich nach, Foto-Karussell 6 Bilder)",
+       "format": "Karussell",
+       "sent": "2026-11-06T18:05+01:00",
+       "url": "https://www.tiktok.com/@deendaily254/video/7705105335010282785",
+       "ageHAtAsOf": 56.6,
+       "jung": true,
+       "views": 289,
+       "likes": 21,
+       "comments": 0,
        "shares": 1,
-       "engagementRatePct": 14.8,
-       "avgWatchSec": 4.16
-      },
-      {
-       "bufferPostId": "6ae17dc01aac2b225f7b6da8",
-       "title": "Dua für die Eltern 17:24",
-       "sent": "2026-10-28T10:48+01:00",
-       "views": 263,
-       "likes": 35,
-       "shares": 8,
-       "engagementRatePct": 16.35,
-       "avgWatchSec": 2.86
-      },
-      {
-       "bufferPostId": "6ae17dc2a48463c227546dfa",
-       "title": "Rabbana atina 2:201",
-       "sent": "2026-10-28T13:21+01:00",
-       "views": 306,
-       "likes": 42,
-       "shares": 1,
-       "engagementRatePct": 14.05,
-       "avgWatchSec": 3.15
-      },
-      {
-       "bufferPostId": "6ae19821f94c111d6ebda64b",
-       "title": "Nuh 71:10–12 DE (Chat)",
-       "sent": "2026-10-29T18:08+01:00",
-       "views": 780,
-       "likes": 27,
-       "shares": 2,
-       "engagementRatePct": 3.72,
-       "avgWatchSec": 3.32
-      },
-      {
-       "bufferPostId": "6ae19824f2db54e878c749cc",
-       "title": "Nuh 71:10–12 EN (Chat)",
-       "sent": "2026-10-30T18:05+01:00",
-       "views": 764,
-       "likes": 51,
-       "shares": 0,
-       "engagementRatePct": 6.68,
-       "avgWatchSec": 2.59
-      },
-      {
-       "bufferPostId": "6ae198271d62943dedc94279",
-       "title": "Nuh 71:10–12 BS (Chat)",
-       "sent": "2026-10-31T18:04+01:00",
-       "views": 413,
-       "likes": 6,
-       "shares": 0,
-       "engagementRatePct": 1.45,
-       "avgWatchSec": 2.86
-      },
-      {
-       "bufferPostId": "6ae6e2c837c1acd2a0ef1ec2",
-       "title": "Ayah – Sorgen (Chat)",
-       "sent": "2026-11-01T08:29+01:00",
-       "views": 347,
-       "likes": 8,
-       "shares": 0,
-       "engagementRatePct": 2.31,
-       "avgWatchSec": 2.69
-      },
-      {
-       "bufferPostId": "6ae6e2cc21c807e9d5a5d1c0",
-       "title": "Ayah – Herz Ruhe (Chat)",
-       "sent": "2026-11-01T08:29+01:00",
-       "views": 456,
-       "likes": 30,
-       "shares": 0,
-       "engagementRatePct": 6.58,
-       "avgWatchSec": 3.8
-      },
-      {
-       "bufferPostId": "6ae6e2d021c807e9d5a5d253",
-       "title": "Ayah – Angst Zukunft (Chat)",
-       "sent": "2026-11-01T08:30+01:00",
-       "views": 373,
-       "likes": 9,
-       "shares": 0,
-       "engagementRatePct": 2.41,
-       "avgWatchSec": 2.9
+       "reach": 216,
+       "engagementRatePct": 7.61,
+       "avgWatchSec": 3.98,
+       "shareRatePct": 0.35,
+       "note": "Buffer isAiGenerated=false, Caption sagt 'KI-Hinweis aktiv' → bitte prüfen (Deen Growth)."
       }
-     ],
-     "wowVsPrevWeek": {
-      "views": {
-       "prev": 2120,
-       "now": 4634
-      },
-      "posts": {
-       "prev": 6,
-       "now": 11
-      }
-     },
-     "note": "Werte Stand 1.11. 10:34 Wien; die 3 Posts vom 1.11. waren erst ~2 h alt, Nuh BS ~17 h. Reach bei 4 Posts 0 (Buffer-Lücke)."
+     ]
     },
-    "postingGoal": {
-     "period": "2026-11-02 → 2026-11-08 Vienna",
-     "rule": "max 2 TikToks/Tag, 3–4 h Abstand",
-     "scheduled": 0,
-     "status": "Queue leer"
+    "previousWeekSameAsOf": {
+     "week": "2026-10-26 → 2026-11-01",
+     "posts": 11,
+     "views": 6092,
+     "likes": 403,
+     "comments": 2,
+     "shares": 21,
+     "reach": 5298,
+     "engagementRatePct": 6.99,
+     "avgWatchSec": 4.35,
+     "source": "Buffer get_aggregated_post_metrics, metricsUpdatedAt 9.11. 02:42 Wien"
+    },
+    "wow": {
+     "posts": {
+      "prev": 11,
+      "now": 6
+     },
+     "views": {
+      "prev": 6092,
+      "now": 3470
+     },
+     "viewsPerMeasuredPost": {
+      "prev": 554,
+      "now": 694
+     },
+     "likes": {
+      "prev": 403,
+      "now": 223
+     },
+     "shares": {
+      "prev": 21,
+      "now": 9
+     },
+     "comments": {
+      "prev": 2,
+      "now": 14
+     },
+     "avgWatchSec": {
+      "prev": 4.35,
+      "now": 3.71
+     }
     },
     "winnersWeek": {
-     "tiktok": "Reichweite: Nuh DE 780 / EN 764 Views. Watch-Zeit: Dua Yunus 13,9 s (Rekord). Shares: Dua Eltern 8 (16,35 % ER). Sprich-nach-Duas: 11–16 % ER vs. Chat-Videos 1,5–6,7 %.",
-     "instagram": "kein neuer Insights-Stand seit 26.10. (VoT Growth)",
-     "youtube": "pausiert"
+     "reach": "Dua Sorge 6369 Sprich nach 836 V / Reach 716; Umfrage 827 V / Reach 706",
+     "watchTime": "Umfrage Gebetsplatz Ø 4,95 s, Haltequote 21,1 % (23,5 s)",
+     "shares": "Dua Sorge 6369 Sprich nach 7 Shares (0,84 %)",
+     "comments": "Umfrage Gebetsplatz 12 Kommentare, beste ER 8,59 %"
     },
+    "patterns": [
+     "Sprich-nach diese Woche nur 5,87–7,18 % ER (Vorwoche 11–16 %). Konfounder: 35–51 s lang, 3 Posts in derselben Minute (3.11. 21:09). Hypothese 'Sprich nach = höhere ER' → OFFEN/geschwächt.",
+     "Lange Duas (35–51 s): Haltequote 6,6–8,5 %; Umfrage 23,5 s: 21,1 % → kürzer bauen (15–25 s). BESTÄTIGT (niedrig, n=4).",
+     "Interaktion (Umfrage, 1-Wort-Antwort) = Kommentare (12 vs 0–1) + beste ER. BESTÄTIGT (niedrig, n=1).",
+     "Thema Sorgen/6369 trägt Shares (7) – wie Eltern 17:24 letzte Woche (8): Duas zum Weiterschicken."
+    ],
+    "gaps": [
+     "Chat-Dua 6369 TR (5.11.) ohne Buffer-Sync (alles 0) → UPDATE_ME",
+     "Karussell 6.11. jung (~57 h)",
+     "TikTok-Follower nur Stand 28.10. (45)",
+     "IG: data.json letzter Insights-Stand 2.11. 09:15; VoT-Rohdatei ig_live_2026-11-08.json (8.11. ~11:09) noch nicht im Dashboard",
+     "Seit 6.11. 18:05 kein TikTok-Post mehr"
+    ],
+    "postingGoal": {
+     "period": "Buffer 8.11. 00:00 → 14.11. 23:59 Vienna",
+     "goal": 5,
+     "sent": 0,
+     "scheduled": 0,
+     "status": "AtRisk",
+     "queue": "leer (0 scheduled / 0 error / 0 draft)",
+     "source": "Buffer get_channel + list_posts 9.11. ~08:50 Wien"
+    },
+    "instagram": "Nur aus data.json gelesen (VoT Growth Scope): letzter Insights-Stand 2.11. 09:15 Wien, Woche 26.10.–1.11. 12 Posts / 1.912 Views / Follower 46; Woche 2.–8.11. UPDATE_ME.",
     "newIdeas": [
      {
-      "title": "Sayyid al-Istighfar – Sprich nach",
-      "source": "Sahih al-Bukhari 6306"
+      "rank": 1,
+      "title": "Aufwachen & Einschlafen – Sprich nach",
+      "format": "Sprich nach (15–20 s) + Save-CTA",
+      "hook": "Augen auf? Sag das zuerst.",
+      "hookType": "Frage",
+      "hookWords": 5,
+      "source": "Sahih al-Bukhari 6312 (Hudhaifa)",
+      "grade": "sahih (Sammlung)",
+      "link": "https://sunnah.com/bukhari:6312",
+      "arabic": "بِاسْمِكَ أَمُوتُ وَأَحْيَا / الْحَمْدُ لِلَّهِ الَّذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُورُ",
+      "why": "Sprich-nach-Duas zum Behalten; kurz statt 35–51 s (Haltequote 6–8 % bei langen Duas)",
+      "safety": "PASS",
+      "score": 4.6
      },
      {
-      "title": "Dua gegen Sorgen & Trauer (al-hamm wal-hazan) – Sprich nach",
-      "source": "Sahih al-Bukhari 6369"
+      "rank": 2,
+      "title": "Wütend? Ein Satz – Chat-Dua",
+      "format": "Chat-Dua (20 s)",
+      "hook": "Wütend gerade? Ein Satz.",
+      "hookType": "Situation",
+      "hookWords": 4,
+      "source": "Sahih al-Bukhari 6115 (Sulaiman bin Sarad)",
+      "grade": "sahih (Sammlung)",
+      "link": "https://sunnah.com/bukhari:6115",
+      "arabic": "أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ",
+      "why": "Chat = Reichweite (Nuh-Chat 764–780 V); Alltagsthema; Streit nicht dramatisieren",
+      "safety": "PASS",
+      "score": 4.4
      },
      {
-      "title": "Hasbunallahu wa ni'mal wakil – was Ibrahim (as) im Feuer sagte",
-      "source": "Qur'an 3:173; Sahih al-Bukhari 4563"
+      "rank": 3,
+      "title": "Zwei leichte Worte, schwer auf der Waage – Sprich nach",
+      "format": "Sprich nach (15 s) + Kommentar-Frage 'Gesagt? ✅'",
+      "hook": "Zwei Sätze. 10 Sekunden.",
+      "hookType": "Zahl",
+      "hookWords": 4,
+      "source": "Sahih al-Bukhari 6406 (Abu Huraira)",
+      "grade": "sahih (Sammlung)",
+      "link": "https://sunnah.com/bukhari:6406",
+      "arabic": "سُبْحَانَ اللَّهِ وَبِحَمْدِهِ، سُبْحَانَ اللَّهِ الْعَظِيمِ",
+      "why": "sehr kurz → Haltequote; Interaktion brachte 12 Kommentare (Umfrage)",
+      "safety": "PASS",
+      "score": 4.4
      },
      {
-      "title": "Dua für Ehepartner & Kinder – Sprich nach",
-      "source": "Qur'an 25:74"
+      "rank": 4,
+      "title": "Bevor du rausgehst – Sprich nach",
+      "format": "Sprich nach (15–20 s) + Save-CTA",
+      "hook": "Gehst du gleich raus?",
+      "hookType": "Frage",
+      "hookWords": 4,
+      "source": "Sunan Abi Dawud 5095 (Anas ibn Malik)",
+      "grade": "Sahih (Al-Albani)",
+      "link": "https://sunnah.com/abudawud:5095",
+      "arabic": "بِسْمِ اللَّهِ تَوَكَّلْتُ عَلَى اللَّهِ لاَ حَوْلَ وَلاَ قُوَّةَ إِلاَّ بِاللَّهِ",
+      "why": "Alltags-Dua zum Behalten; Lohn-Aussage nur wörtlich ('geleitet, versorgt, beschützt')",
+      "safety": "PASS",
+      "score": 4.2
+     },
+     {
+      "rank": 5,
+      "title": "Hasbunallahu wa ni'mal wakil – Chat-Dua",
+      "format": "Chat-Dua (20 s)",
+      "hook": "Alles zu viel? Sag das.",
+      "hookType": "Situation",
+      "hookWords": 5,
+      "source": "Qur'an 3:173; Sahih al-Bukhari 4563 (Ibn Abbas)",
+      "grade": "sahih (Sammlung); Aussage von Ibn Abbas",
+      "link": "https://sunnah.com/bukhari:4563",
+      "arabic": "حَسْبُنَا اللَّهُ وَنِعْمَ الْوَكِيلُ",
+      "why": "Chat-Format für Reichweite; Ibrahim-Bezug als Hintergrund",
+      "safety": "PASS mit Auflage: nur Alltagsformulierung, keine Armee-/Kampfszene",
+      "score": 4.0
      }
     ],
     "nextActions": [
-     "Buffer-Queue leer für 2.–8.11.",
-     "Mehr Sprich-nach-Duas (ER + Shares), Chat-Format nur als Reichweiten-Test",
-     "Nie 3 Posts in derselben Minute (1.11.)"
+     "Queue 9.–15.11. ist leer – Ideen freigeben, max 2/Tag, 3–4 h Abstand",
+     "Duas 15–25 s statt 35–51 s",
+     "Nicht 3 Posts in derselben Minute",
+     "Deen Growth: TR-Chat-Dua-Zahlen + AI-Label Karussell prüfen; VoT: IG-Woche 2.–8.11. ins Dashboard"
     ]
    },
    "dailyBrief": {
@@ -1539,7 +1388,176 @@
      "source": "Buffer list_posts(includeMetrics) metricsUpdatedAt 2026-10-26T15:28Z (= 26.10. 16:28 Wien)",
      "note": "Kein neuer TikTok-Post seit 24.10., keine geplanten Posts (Ziel 25.–31.10.: 0/5 AtRisk). Nur kleine Drift: Ayat al-Kursi 311 Views/43 Likes, Al-Mulk 282/47, 2 Rak'at vor Fajr 734/31."
     }
-   ]
+   ],
+   "previousWeeklyBrief": {
+    "week": "2026-10-26 → 2026-11-01 (komplett, Vienna)",
+    "verifiedAt": "2026-11-02T08:50:00+01:00",
+    "verdict": "NEW",
+    "source": "Buffer list_posts(includeMetrics) metricsUpdatedAt 2026-11-01T09:34:47Z (= 1.11. 10:34 Wien)",
+    "tiktokWeek": {
+     "posts": 11,
+     "views": 4634,
+     "likes": 323,
+     "shares": 18,
+     "perPost": [
+      {
+       "bufferPostId": "6ae167d52785e53975d1d2f1",
+       "title": "Dua Yunus 21:87",
+       "sent": "2026-10-28T04:13+01:00",
+       "views": 347,
+       "likes": 39,
+       "shares": 1,
+       "engagementRatePct": 11.53,
+       "avgWatchSec": 13.91
+      },
+      {
+       "bufferPostId": "6ae17dba1b33b85d1be2f743",
+       "title": "Dua Musa 20:25–28 (neu)",
+       "sent": "2026-10-28T05:46+01:00",
+       "views": 308,
+       "likes": 37,
+       "shares": 5,
+       "engagementRatePct": 13.96,
+       "avgWatchSec": 6.38
+      },
+      {
+       "bufferPostId": "6ae17dbda48463c227546cf2",
+       "title": "Dua festes Herz 3:8",
+       "sent": "2026-10-28T08:16+01:00",
+       "views": 277,
+       "likes": 39,
+       "shares": 1,
+       "engagementRatePct": 14.8,
+       "avgWatchSec": 4.16
+      },
+      {
+       "bufferPostId": "6ae17dc01aac2b225f7b6da8",
+       "title": "Dua für die Eltern 17:24",
+       "sent": "2026-10-28T10:48+01:00",
+       "views": 263,
+       "likes": 35,
+       "shares": 8,
+       "engagementRatePct": 16.35,
+       "avgWatchSec": 2.86
+      },
+      {
+       "bufferPostId": "6ae17dc2a48463c227546dfa",
+       "title": "Rabbana atina 2:201",
+       "sent": "2026-10-28T13:21+01:00",
+       "views": 306,
+       "likes": 42,
+       "shares": 1,
+       "engagementRatePct": 14.05,
+       "avgWatchSec": 3.15
+      },
+      {
+       "bufferPostId": "6ae19821f94c111d6ebda64b",
+       "title": "Nuh 71:10–12 DE (Chat)",
+       "sent": "2026-10-29T18:08+01:00",
+       "views": 780,
+       "likes": 27,
+       "shares": 2,
+       "engagementRatePct": 3.72,
+       "avgWatchSec": 3.32
+      },
+      {
+       "bufferPostId": "6ae19824f2db54e878c749cc",
+       "title": "Nuh 71:10–12 EN (Chat)",
+       "sent": "2026-10-30T18:05+01:00",
+       "views": 764,
+       "likes": 51,
+       "shares": 0,
+       "engagementRatePct": 6.68,
+       "avgWatchSec": 2.59
+      },
+      {
+       "bufferPostId": "6ae198271d62943dedc94279",
+       "title": "Nuh 71:10–12 BS (Chat)",
+       "sent": "2026-10-31T18:04+01:00",
+       "views": 413,
+       "likes": 6,
+       "shares": 0,
+       "engagementRatePct": 1.45,
+       "avgWatchSec": 2.86
+      },
+      {
+       "bufferPostId": "6ae6e2c837c1acd2a0ef1ec2",
+       "title": "Ayah – Sorgen (Chat)",
+       "sent": "2026-11-01T08:29+01:00",
+       "views": 347,
+       "likes": 8,
+       "shares": 0,
+       "engagementRatePct": 2.31,
+       "avgWatchSec": 2.69
+      },
+      {
+       "bufferPostId": "6ae6e2cc21c807e9d5a5d1c0",
+       "title": "Ayah – Herz Ruhe (Chat)",
+       "sent": "2026-11-01T08:29+01:00",
+       "views": 456,
+       "likes": 30,
+       "shares": 0,
+       "engagementRatePct": 6.58,
+       "avgWatchSec": 3.8
+      },
+      {
+       "bufferPostId": "6ae6e2d021c807e9d5a5d253",
+       "title": "Ayah – Angst Zukunft (Chat)",
+       "sent": "2026-11-01T08:30+01:00",
+       "views": 373,
+       "likes": 9,
+       "shares": 0,
+       "engagementRatePct": 2.41,
+       "avgWatchSec": 2.9
+      }
+     ],
+     "wowVsPrevWeek": {
+      "views": {
+       "prev": 2120,
+       "now": 4634
+      },
+      "posts": {
+       "prev": 6,
+       "now": 11
+      }
+     },
+     "note": "Werte Stand 1.11. 10:34 Wien; die 3 Posts vom 1.11. waren erst ~2 h alt, Nuh BS ~17 h. Reach bei 4 Posts 0 (Buffer-Lücke)."
+    },
+    "postingGoal": {
+     "period": "2026-11-02 → 2026-11-08 Vienna",
+     "rule": "max 2 TikToks/Tag, 3–4 h Abstand",
+     "scheduled": 0,
+     "status": "Queue leer"
+    },
+    "winnersWeek": {
+     "tiktok": "Reichweite: Nuh DE 780 / EN 764 Views. Watch-Zeit: Dua Yunus 13,9 s (Rekord). Shares: Dua Eltern 8 (16,35 % ER). Sprich-nach-Duas: 11–16 % ER vs. Chat-Videos 1,5–6,7 %.",
+     "instagram": "kein neuer Insights-Stand seit 26.10. (VoT Growth)",
+     "youtube": "pausiert"
+    },
+    "newIdeas": [
+     {
+      "title": "Sayyid al-Istighfar – Sprich nach",
+      "source": "Sahih al-Bukhari 6306"
+     },
+     {
+      "title": "Dua gegen Sorgen & Trauer (al-hamm wal-hazan) – Sprich nach",
+      "source": "Sahih al-Bukhari 6369"
+     },
+     {
+      "title": "Hasbunallahu wa ni'mal wakil – was Ibrahim (as) im Feuer sagte",
+      "source": "Qur'an 3:173; Sahih al-Bukhari 4563"
+     },
+     {
+      "title": "Dua für Ehepartner & Kinder – Sprich nach",
+      "source": "Qur'an 25:74"
+     }
+    ],
+    "nextActions": [
+     "Buffer-Queue leer für 2.–8.11.",
+     "Mehr Sprich-nach-Duas (ER + Shares), Chat-Format nur als Reichweiten-Test",
+     "Nie 3 Posts in derselben Minute (1.11.)"
+    ]
+   }
   },
   "video_analyst": {
    "agentId": null,
@@ -1808,6 +1826,35 @@
  },
  "recentHighlights": [
   {
+   "platform": "tiktok",
+   "title": "Dua gegen Sorgen – Bukhari 6369 (Foto-Karussell)",
+   "url": "https://www.tiktok.com/@deendaily254/video/7705105335010282785",
+   "bufferPostId": "6aed403707f945cca938093d",
+   "postedAt": "2026-11-06T18:05:15+01:00",
+   "views": 289,
+   "likes": 21,
+   "comments": 0,
+   "shares": 1,
+   "engagementRatePct": 7.61,
+   "avgWatchSec": 3.98,
+   "asOf": "2026-11-09T02:42:38+01:00",
+   "note": "isAiGenerated=false in Buffer; Caption enthält „KI-Hinweis aktiv“ (Foto-Karussell unterstützt AI-Flag via Buffer nicht)."
+  },
+  {
+   "platform": "tiktok",
+   "title": "Chat-Dua gegen Sorge/Trauer (Bukhari 6369, TR-slow)",
+   "url": "https://tiktok.com/@deendaily254/video/7704733640638467361",
+   "bufferPostId": "6aec8d89368462a0c0e6924a",
+   "postedAt": "2026-11-05T18:03:45+01:00",
+   "views": "UPDATE_ME",
+   "likes": "UPDATE_ME",
+   "shares": "UPDATE_ME",
+   "engagementRatePct": "UPDATE_ME",
+   "badge": "Sync-Lücke",
+   "asOf": "2026-11-09T10:17:00+01:00",
+   "note": "Buffer get_post 9.11. 10:16 Wien: weiter alle Metriken 0; metricsUpdatedAt 2026-11-05T14:07:05.810Z (= Anlegezeit) — kein echter 0-Wert."
+  },
+  {
    "platform": "instagram",
    "title": "Chat-Dua gegen Sorge/Trauer (Bukhari 6369, TR-slow)",
    "url": "https://www.instagram.com/reel/DfXNXisv0Pj/",
@@ -1823,31 +1870,31 @@
   {
    "platform": "tiktok",
    "title": "Dua gegen Sorge/Trauer – Bukhari 6369 (Sprich nach)",
-   "url": "UPDATE_ME",
+   "url": "https://tiktok.com/@deendaily254/video/7704039442574544160",
    "bufferPostId": "6aea3eff52391758e2e7cd9b",
    "postedAt": "2026-11-03T21:09:11+01:00",
-   "views": 830,
+   "views": 836,
    "likes": 52,
    "comments": 1,
    "shares": 7,
-   "engagementRatePct": 7.23,
-   "avgWatchSec": 2.93,
-   "asOf": "2026-11-05T06:38:47+01:00"
+   "engagementRatePct": 7.18,
+   "avgWatchSec": 2.96,
+   "asOf": "2026-11-09T02:42:38+01:00"
   },
   {
    "platform": "tiktok",
    "title": "Umfrage Gebetsplatz",
-   "url": "UPDATE_ME",
+   "url": "https://tiktok.com/@deendaily254/video/7704110397313322272",
    "bufferPostId": "6aea7f9aff887f055cdca069",
    "postedAt": "2026-11-04T01:44:49+01:00",
-   "views": 805,
-   "likes": 56,
-   "comments": 11,
+   "views": 827,
+   "likes": 58,
+   "comments": 12,
    "shares": 1,
-   "engagementRatePct": 8.45,
-   "avgWatchSec": 4.75,
-   "asOf": "2026-11-05T06:38:47+01:00",
-   "note": "Meiste Kommentare dieser Woche; Reach UPDATE_ME."
+   "engagementRatePct": 8.59,
+   "avgWatchSec": 4.95,
+   "asOf": "2026-11-09T02:42:38+01:00",
+   "note": "Vorwoche: meiste Kommentare (12); Reach 706."
   },
   {
    "platform": "tiktok",
