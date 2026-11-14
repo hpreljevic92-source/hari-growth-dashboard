@@ -3,11 +3,11 @@
   "meta": {
     "title": "Growth Dashboard",
     "timezone": "Europe/Vienna",
-    "lastUpdated": "2026-11-12T02:32:00+01:00",
+    "lastUpdated": "2026-11-14T20:42:30+01:00",
     "lastUpdatedBy": "Deen Growth TT+YT",
     "weekStart": "2026-11-09",
     "weekEnd": "2026-11-15",
-    "notes": "Deen Growth 12.11. 02:32 Wien: Woche 9.–15.11. TT teilweise aktualisiert. 6 gesendet / 5 mit Zahlen: 1.014 Views, 100 Likes, 3 Kommentare, 8 Shares, Reach 621 (nur 3 Posts mit Reach). Top bisher Hasbun 3:173 (268 Views). Zorn-Countdown (02:14 Wien) ohne Buffer-Sync. Sonne/Waage Reach-Lücke. Follower weiter 45 (28.10.). YT unberührt. Backup /tmp/data.json.bak-2026-11-12-deen-tt-week. | Deen Growth 9.11. 10:17 Wien: Vorwoche TT bestätigt (6 sent/5 mit Zahlen, 3.470 Views, Top Dua Sorge 836/7 Shares). platforms.tiktok + overview.TT auf Woche 9.–15.11. gesetzt (0 Posts, Queue leer). Chat-Dua Sync weiter offen. Follower TT weiter 45 (28.10.). YT pausiert. | Wochen-Update 9.11. ~10:15 Wien (CHEF AKHI): Woche auf 9.–15.11. gesetzt; 2.–8.11. nach meta.previousWeek archiviert. IG Vorwoche: 4 Posts, 2.607 Views, 53 Follower, Top „Bei Sorgen“ 1.252 Views (VoT Insights 9.11. 09:10). TT Vorwoche: 6 Posts / 3.470 Views / 223 Likes / 9 Shares (Growth Intel Buffer-Brief, Stand 9.11. 02:42; 1 Post ohne Sync). platforms.tiktok noch Datei-Stand 5.11. (3.140 Views / 4 Posts) — Deen Growth soll Vorwoche bestätigen und 9.–15.11. neu ziehen. YouTube pausiert / UPDATE_ME. research.md unverändert seit 1.11. → Pläne nicht angefasst. Ideen-Queue: 14 aktiv (12 draft + 2 approved), 7 posted (kein Trim). Buffer-Queue 9.–15.11. laut Intel leer. Niemals Zahlen schätzen. VoT Growth 9.11. ~10:16 Wien: platforms.instagram + overview IG für neue Woche auf UPDATE_ME gesetzt (keine neuen Insights); Profil-Follower 53 + Streak 0 behalten. previousWeek.instagram unberührt.",
+    "notes": "Deen Growth 14.11. 20:42 Wien: Woche 9.–15.11. TT Refresh. 8 gesendet / 7 mit Zahlen: 1.701 Views, 166 Likes, 4 Kommentare, 10 Shares, Reach 1.060 (nur 6 Posts mit Reach; Zorn Reach-Lücke). Top bisher Countdown-Story Zorn (293 Views / Ø-Watch 8,51 s). Sprich-nach 20:114 v2 (14.11. 17:07) ohne Buffer-Sync. Zusätzlicher Direkt-TikTok-Post via network 11.11. 19:15 (Al-Fatihah/Tawheed, 156 Views) in den Summen. Follower weiter 45 (28.10.). YT/IG-Felder unberührt. Backup /tmp/data.json.bak-2026-11-14-deen-tt-refresh. | Deen Growth 12.11. 02:32 Wien: Woche 9.–15.11. TT teilweise aktualisiert. 6 gesendet / 5 mit Zahlen: 1.014 Views, 100 Likes, 3 Kommentare, 8 Shares, Reach 621 (nur 3 Posts mit Reach). Top bisher Hasbun 3:173 (268 Views). Zorn-Countdown (02:14 Wien) ohne Buffer-Sync. Sonne/Waage Reach-Lücke. Follower weiter 45 (28.10.). YT unberührt. Backup /tmp/data.json.bak-2026-11-12-deen-tt-week. | Deen Growth 9.11. 10:17 Wien: Vorwoche TT bestätigt (6 sent/5 mit Zahlen, 3.470 Views, Top Dua Sorge 836/7 Shares). platforms.tiktok + overview.TT auf Woche 9.–15.11. gesetzt (0 Posts, Queue leer). Chat-Dua Sync weiter offen. Follower TT weiter 45 (28.10.). YT pausiert. | Wochen-Update 9.11. ~10:15 Wien (CHEF AKHI): Woche auf 9.–15.11. gesetzt; 2.–8.11. nach meta.previousWeek archiviert. IG Vorwoche: 4 Posts, 2.607 Views, 53 Follower, Top „Bei Sorgen“ 1.252 Views (VoT Insights 9.11. 09:10). TT Vorwoche: 6 Posts / 3.470 Views / 223 Likes / 9 Shares (Growth Intel Buffer-Brief, Stand 9.11. 02:42; 1 Post ohne Sync). platforms.tiktok noch Datei-Stand 5.11. (3.140 Views / 4 Posts) — Deen Growth soll Vorwoche bestätigen und 9.–15.11. neu ziehen. YouTube pausiert / UPDATE_ME. research.md unverändert seit 1.11. → Pläne nicht angefasst. Ideen-Queue: 14 aktiv (12 draft + 2 approved), 7 posted (kein Trim). Buffer-Queue 9.–15.11. laut Intel leer. Niemals Zahlen schätzen. VoT Growth 9.11. ~10:16 Wien: platforms.instagram + overview IG für neue Woche auf UPDATE_ME gesetzt (keine neuen Insights); Profil-Follower 53 + Streak 0 behalten. previousWeek.instagram unberührt.",
     "previousWeek": {
       "weekStart": "2026-11-02",
       "weekEnd": "2026-11-08",
@@ -190,9 +190,9 @@
   "overview": {
     "totalViewsThisWeek": {
       "value": null,
-      "note": "Woche 9.–15.11. teilweise, Stand 12.11. 02:32 Wien: TT 1.014 Views aus 5 von 6 Posts (Buffer aggregate + get_post, metricsUpdatedAt 11.11. 23:45 Wien; Countdown-Story Zorn noch ohne Sync, nicht als 0 gezählt). IG/YT unverändert (VoT bzw. pausiert).",
+      "note": "Woche 9.–15.11. teilweise, Stand 14.11. 20:42 Wien: TT 1.701 Views aus 7 von 8 Posts (Buffer aggregate + get_post, metricsUpdatedAt 13.11. 22:29 Wien; Sprich-nach 20:114 v2 noch ohne Sync, nicht als 0 gezählt). IG/YT unverändert (VoT bzw. pausiert).",
       "partial": {
-        "tiktok": 1014,
+        "tiktok": 1701,
         "instagram": "UPDATE_ME",
         "youtube": "UPDATE_ME"
       }
@@ -209,9 +209,9 @@
     },
     "totalPostsThisWeek": {
       "instagram": "UPDATE_ME",
-      "tiktok": 6,
+      "tiktok": 8,
       "youtube": "UPDATE_ME",
-      "note": "TT: 6 Posts Woche 9.–15.11. bisher (Buffer sent 10.–12.11., Stand 12.11. 02:32 Wien; 5 mit Metriken, 1 Sync ausstehend). IG: unverändert (VoT). YT pausiert."
+      "note": "TT: 8 Posts Woche 9.–15.11. bisher (Buffer sent 10.–14.11., inkl. 1 via-network Direkt-Post; Stand 14.11. 20:42 Wien; 7 mit Metriken, 1 Sync ausstehend). IG: unverändert (VoT). YT pausiert."
     }
   },
   "platforms": {
@@ -222,33 +222,134 @@
       "ownerAgentId": "44289084-0ba3-49ca-9cf8-eb04829a2288",
       "metrics": {
         "followers": 53,
-        "viewsThisWeek": "UPDATE_ME",
-        "likesThisWeek": "UPDATE_ME",
-        "commentsThisWeek": "UPDATE_ME",
-        "savesThisWeek": "UPDATE_ME",
-        "sharesThisWeek": "UPDATE_ME",
-        "postsThisWeek": "UPDATE_ME",
-        "reachThisWeek": "UPDATE_ME",
-        "postingStreakDays": 0
+        "viewsThisWeek": 1062,
+        "likesThisWeek": 38,
+        "commentsThisWeek": 0,
+        "savesThisWeek": 11,
+        "sharesThisWeek": 0,
+        "postsThisWeek": 7,
+        "reachThisWeek": null,
+        "postingStreakDays": 3
       },
       "topPost": {
-        "title": "UPDATE_ME",
-        "url": "UPDATE_ME",
-        "views": "UPDATE_ME",
-        "likes": "UPDATE_ME",
-        "saves": "UPDATE_ME",
-        "reach": "UPDATE_ME",
-        "comments": "UPDATE_ME",
-        "shares": "UPDATE_ME",
-        "follows": "UPDATE_ME",
+        "title": "Hasbunallah 3:173",
+        "url": "https://www.instagram.com/reel/DfjjFKKvsWL/",
+        "views": 260,
+        "likes": 13,
+        "saves": 4,
+        "reach": null,
+        "viewers": 233,
+        "comments": 0,
+        "shares": 0,
+        "follows": 0,
         "avgWatchSec": null,
-        "postedAt": "UPDATE_ME",
-        "note": "Neue Woche 09.–15.11., noch keine Insights; nächster Pull Mo 16.11. 09:00"
+        "postedAt": "2026-11-10",
+        "note": "Zwischenstand Woche 09.–15.11. (Stand 14.11. 20:41 Wien); knapp vor Sprich nach v2 (238 Views nach ~3,5 h)"
       },
-      "source": "Neue Woche 09.–15.11., noch keine Insights; nächster Pull Mo 16.11. 09:00. Profil-Stand 2026-11-09T09:10:00+01:00 aus /workspace/growth/ig_live_2026-11-09.json: 53 Follower / 28 Following / 85 Posts. Vorwoche 2.–8.11. in meta.previousWeek.instagram und platforms.instagram.lastKnownWeek. postingStreakDays=0 (letzter sichtbarer Post 2026-11-04).",
-      "metricsAsOf": "2026-11-09T09:10:00+01:00",
-      "isPlaceholder": true,
-      "weekReels": [],
+      "source": "Zwischenstand Woche 09.–15.11. (Woche läuft noch), IG Insights web read-only, VoT Growth 14.11. 20:41 Wien; Rohdaten /workspace/growth/ig_live_2026-11-14.json. Wochensummen = Summe der 7 Posts seit 9.11. reachThisWeek leer, da Viewers pro Post nicht addierbar; Account 'Last 7 days': 876 Views, 627 Viewers, 43 Interaktionen, 29 Accounts engaged, 25 Profilbesuche. Follower netto nicht angezeigt. Finaler Pull Mo 16.11. 09:00.",
+      "metricsAsOf": "2026-11-14T20:41:28+01:00",
+      "isPlaceholder": false,
+      "weekReels": [
+        {
+          "url": "https://www.instagram.com/reel/DfulxrSxOX7/",
+          "title": "Sprich nach v2 (20:114)",
+          "postedAt": "2026-11-14T17:03:00+01:00",
+          "type": "reel",
+          "ai_label": true,
+          "views": 238,
+          "viewers": 183,
+          "likes": 9,
+          "comments": 0,
+          "saves": 7,
+          "shares": 0,
+          "follows": 0,
+          "note": "~3,5 h alt beim Pull"
+        },
+        {
+          "url": "https://www.instagram.com/reel/Dfn2duqhg-e/",
+          "title": "Zorn Countdown-Story",
+          "postedAt": "2026-11-12T02:14:53+01:00",
+          "type": "reel",
+          "ai_label": true,
+          "views": 33,
+          "viewers": 30,
+          "likes": 1,
+          "comments": 0,
+          "saves": 0,
+          "shares": 0,
+          "follows": 0
+        },
+        {
+          "url": "https://www.instagram.com/reel/DfnicIQMgaZ/",
+          "title": "Waage v2 (101:6-11)",
+          "postedAt": "2026-11-11T23:19:40+01:00",
+          "type": "reel",
+          "ai_label": true,
+          "views": 212,
+          "viewers": 179,
+          "likes": 5,
+          "comments": 0,
+          "saves": 0,
+          "shares": 0,
+          "follows": 0
+        },
+        {
+          "url": "https://www.instagram.com/reel/DfnUKlzJTj7/",
+          "title": "Sonne im Westen v2",
+          "postedAt": "2026-11-11T21:14:47+01:00",
+          "type": "reel",
+          "ai_label": true,
+          "views": 113,
+          "viewers": 102,
+          "likes": 3,
+          "comments": 0,
+          "saves": 0,
+          "shares": 0,
+          "follows": 0
+        },
+        {
+          "url": "https://www.instagram.com/p/Dfj7XSpIY5w/",
+          "title": "Bukhari 6406 Karussell",
+          "postedAt": "2026-11-10T13:40:04+01:00",
+          "type": "carousel",
+          "ai_label": true,
+          "views": 44,
+          "viewers": 19,
+          "likes": 0,
+          "comments": 0,
+          "saves": 0,
+          "shares": 0,
+          "follows": 0
+        },
+        {
+          "url": "https://www.instagram.com/reel/DfjjFKKvsWL/",
+          "title": "Hasbunallah 3:173",
+          "postedAt": "2026-11-10T10:08:16+01:00",
+          "type": "reel",
+          "ai_label": true,
+          "views": 260,
+          "viewers": 233,
+          "likes": 13,
+          "comments": 0,
+          "saves": 4,
+          "shares": 0,
+          "follows": 0
+        },
+        {
+          "url": "https://www.instagram.com/reel/DfjIIWtBFvJ/",
+          "title": "Rabbana 2:201",
+          "postedAt": "2026-11-10T06:12:42+01:00",
+          "type": "reel",
+          "ai_label": true,
+          "views": 162,
+          "viewers": 147,
+          "likes": 7,
+          "comments": 0,
+          "saves": 0,
+          "shares": 0,
+          "follows": 0
+        }
+      ],
       "lastKnownWeek": {
         "weekStart": "2026-11-02",
         "weekEnd": "2026-11-08",
@@ -339,7 +440,15 @@
           "note": "Am 5.11. als live bestätigt; am 9.11. 09:10 Wien: Seite nicht verfügbar (nicht im Grid, direkte URL: This page isn't available). Keine Insights, nicht in den Wochensummen."
         }
       ],
-      "followersAsOf": "2026-11-09T09:10:00+01:00"
+      "followersAsOf": "2026-11-12T02:32:57+01:00",
+      "last7DaysAccount": {
+        "views": 876,
+        "viewers": 627,
+        "interactions": 43,
+        "accountsEngaged": 29,
+        "profileVisits": 25,
+        "followerChange": null
+      }
     },
     "tiktok": {
       "handle": "@deendaily254",
@@ -350,62 +459,62 @@
       "bufferOrgId": "6ab57b5c3c182524e1126b2f",
       "metrics": {
         "followers": 45,
-        "viewsThisWeek": 1014,
-        "likesThisWeek": 100,
-        "commentsThisWeek": 3,
+        "viewsThisWeek": 1701,
+        "likesThisWeek": 166,
+        "commentsThisWeek": 4,
         "savesThisWeek": "UPDATE_ME",
-        "sharesThisWeek": 8,
-        "postsThisWeek": 6,
-        "reachThisWeek": 621,
-        "engagementRatePct": 10.95,
-        "watchTimeMinutes": 55.8,
-        "avgWatchTimeSec": 3.27,
-        "postingStreakDays": 3,
+        "sharesThisWeek": 10,
+        "postsThisWeek": 8,
+        "reachThisWeek": 1060,
+        "engagementRatePct": 10.58,
+        "watchTimeMinutes": 127.17,
+        "avgWatchTimeSec": 4.38,
+        "postingStreakDays": 1,
         "postingGoalPerWeek": 5,
-        "postingGoalStatus": "Hit — Buffer-Periode 8.–14.11.: 6 sent / 0 scheduled (Ziel 5)",
-        "postingGoalSentThisPeriod": 6,
-        "postingGoalPeriod": "2026-11-08 → 2026-11-14 Vienna (Buffer postingGoal); Dashboard-Woche 9.–15.11. (teilweise, Stand 12.11. 02:32 Wien)",
+        "postingGoalStatus": "Hit — Buffer-Periode 8.–14.11.: 8 sent / 0 scheduled (Ziel 5)",
+        "postingGoalSentThisPeriod": 8,
+        "postingGoalPeriod": "2026-11-08 → 2026-11-14 Vienna (Buffer postingGoal); Dashboard-Woche 9.–15.11. (teilweise, Stand 14.11. 20:42 Wien)",
         "postingGoalScheduledThisPeriod": 0,
         "postingGoalPreviousPeriod": "2026-11-02 → 2026-11-08 Vienna: 6 Posts / 3.470 Views (5 mit Metriken; Buffer 9.11. 02:42 Wien)",
         "wow": {
           "views": {
             "prev": 3470,
-            "now": 1014
+            "now": 1701
           },
           "posts": {
             "prev": 6,
-            "now": 6
+            "now": 8
           },
           "likes": {
             "prev": 223,
-            "now": 100
+            "now": 166
           },
           "shares": {
             "prev": 9,
-            "now": 8
+            "now": 10
           },
           "avgWatchSec": {
             "prev": 3.71,
-            "now": 3.27
+            "now": 4.38
           }
         },
-        "derivedNote": "Woche 9.–15.11. teilweise (Stand 12.11. 02:32 Wien): 6 gesendet, 5 mit Buffer-Metriken (Stand 11.11. 23:45 Wien), 1 ohne Sync. Views/Likes/Comments/Shares 1014/100/3/8 nur aus den 5 Posts mit Zahlen; Zorn-Countdown nicht mit 0 Views gezählt. Reach 621 nur aus Rabbana/Hasbun/Karussell — Sonne und Waage haben Buffer-Reach-Lücke (0 bei 172 bzw. 85 Views). Top nach Views bisher Hasbun 3:173 (268 Views / 34 Likes, Alter beim Metrik-Stand ca. 30 h). Rabbana 2:201 hat die meisten Shares (5 / 245 Views = 2,0 %). Sonne (ca. 2,5 h alt beim Metrik-Stand) und Waage (ca. 25 min) sind zu jung für einen fairen Vergleich. Ø Watch 3,27 s, bei allen gemessenen Videos unter ca. 4 s (Hook eher schwach). Queue leer. Follower weiter 45 (28.10.).",
+        "derivedNote": "Woche 9.–15.11. teilweise (Stand 14.11. 20:42 Wien): 8 gesendet, 7 mit Buffer-Metriken (Stand 13.11. 22:29 Wien), 1 ohne Sync. Views/Likes/Comments/Shares 1701/166/4/10 nur aus den 7 Posts mit Zahlen; Sprich-nach 20:114 v2 (14.11. 17:07) nicht mit 0 Views gezählt. Reach 1060 nur aus 6 Posts — Zorn hat Buffer-Reach-Lücke (0 bei 293 Views), nicht als 0 Reach gewertet. Zusätzlich 1 Direkt-TikTok-Post (via network, 11.11. 19:15, Al-Fatihah/Tawheed, 156 Views) — nicht von Deen Growth über Buffer gesendet, aber in der Woche auf dem Kanal. Top nach Views: Countdown-Story Zorn (293 Views / 33 Likes / Ø-Watch 8,51 s, Alter beim Metrik-Stand ca. 44 h). Rabbana 2:201 hat die meisten Shares (5 / 250 Views = 2,0 %). Ø Watch 4,38 s (ungewichtetes Mittel der 7 Posts; view-gewichtet 127,17 min × 60 / 1701 ≈ 4,49 s) — der Anstieg kommt vor allem von Zorn (8,51 s) und dem Direkt-Post (5,52 s); die kurzen Dua-Videos bleiben unter ca. 4 s (Hook eher schwach). Posting-Streak 1 (13.11. ohne Post, Streak 10.–12.11. unterbrochen). Queue leer. Follower weiter 45 (28.10.). Wow vs. Vorwoche 3.470 Views unsicher: diese Woche noch nicht zu Ende, 1 Post ohne Sync, Posts unterschiedlich alt.",
         "following": 63,
         "profileTotalLikes": "10.3K"
       },
       "topPost": {
-        "title": "Hasbunallah 3:173 – Sprich nach",
-        "bufferPostId": "6af2aada05af22d7260ad17d",
-        "url": "https://tiktok.com/@deendaily254/video/7706581295228357921",
-        "views": 268,
-        "likes": 34,
-        "comments": 1,
-        "shares": 2,
-        "reach": 213,
-        "avgWatchSec": 2.31,
-        "engagementRatePct": 13.81,
-        "postedAt": "2026-11-10T17:32:40+01:00",
-        "note": "Höchste Views unter den 5 Posts mit Metriken (Buffer 11.11. 23:45 Wien; Post-Alter dabei ca. 30 h). Rabbana 2:201 liegt knapp darunter (245 Views) hat aber mehr Shares (5). Sonne/Waage deutlich jünger, nicht vergleichbar. Zorn-Countdown noch ohne Sync."
+        "title": "Countdown-Story Zorn v2 – Bukhari 6114",
+        "bufferPostId": "6af512a0cb4c7286fd057b40",
+        "url": "https://tiktok.com/@deendaily254/video/7707086808332373280",
+        "views": 293,
+        "likes": 33,
+        "comments": 0,
+        "shares": 1,
+        "reach": null,
+        "avgWatchSec": 8.51,
+        "engagementRatePct": 11.6,
+        "postedAt": "2026-11-12T02:14:48+01:00",
+        "note": "Höchste Views unter den 7 Posts mit Metriken (Buffer 13.11. 22:29 Wien; Post-Alter dabei ca. 44 h, vergleichbar mit Sonne/Waage). Beste Ø-Watch-Zeit der Woche (8,51 s). Reach fehlt (Buffer-Lücke). Sprich-nach 20:114 noch ohne Sync, nicht vergleichbar."
       },
       "scheduleVienna": {
         "mon": [
@@ -426,8 +535,8 @@
           "09:47"
         ]
       },
-      "source": "Deen Growth TT+YT Buffer get_aggregated_post_metrics + list_posts(includeMetrics, sent, dueAt 9.11. 00:00–12.11. 02:35 Wien) + get_post(includeMetrics) für 6 IDs + get_channel, Org 6ab57b5c3c182524e1126b2f / Channel 6ab5b83dea19ca0bdeddf2ff. Aggregate metricsUpdatedAt 2026-11-11T22:45:24.345Z (= 11.11. 23:45 Wien): postCount 5, Views 1014, Reactions/Likes 100, Comments 3, Shares 8, Reach 621, Watch 55.8 min, AvgWatch 3.27 s, EngRate 10.95 %. Abgerufen 2026-11-12T02:32+01:00 Europe/Vienna. Woche 9.–15.11. teilweise (Stand 12.11. 02:32 Wien). 6 gesendet / 5 mit Metriken; Countdown-Story Zorn v2 (6af512a0cb4c7286fd057b40) ohne Sync (alle 0, metricsUpdatedAt = Anlegezeit 12.11. 02:13 Wien). Reach bei Sonne Westen v2 und Waage v2 = 0 bei sonst nicht-null Zahlen → Buffer-Reach-Lücke, nicht als 0 gezählt; Reach-Summe 621 nur aus 3 Posts (Rabbana 209 + Hasbun 213 + Karussell 199). Follower nicht in get_channel → Stand 28.10. belassen (45).",
-      "metricsAsOf": "2026-11-12T02:32:00+01:00",
+      "source": "Deen Growth TT+YT Buffer get_aggregated_post_metrics + list_posts(includeMetrics, sent, dueAt 9.11. 00:00–15.11. 23:59 Wien) + get_post(includeMetrics) für 8 IDs + get_channel, Org 6ab57b5c3c182524e1126b2f / Channel 6ab5b83dea19ca0bdeddf2ff. Aggregate metricsUpdatedAt 2026-11-13T21:29:05.920Z (= 13.11. 22:29 Wien): postCount 7, Views 1701, Reactions/Likes 166, Comments 4, Shares 10, Reach 1060, Watch 127.17 min, AvgWatch 4.38 s, EngRate 10.58 %. Abgerufen 2026-11-14T20:42:30+01:00 Europe/Vienna. Woche 9.–15.11. teilweise (Stand 14.11. 20:42 Wien). 8 gesendet / 7 mit Metriken; Sprich nach 20:114 v2 (6af88677e5a113497a92b8ab) ohne Sync (alle 0, metricsUpdatedAt = Anlegezeit 14.11. 17:04 Wien). Reach bei Countdown-Story Zorn v2 = 0 bei 293 Views → Buffer-Reach-Lücke, nicht als 0 gezählt; Reach-Summe 1060 nur aus 6 Posts (Rabbana 212 + Hasbun 224 + Karussell 216 + Alfatihah-Direkt 80 + Sonne 206 + Waage 122). 1 zusätzlicher sent-Post via=network (6af781218c69ace002b11444, 11.11. 19:15 Wien, 156 Views) in den Summen enthalten. Follower nicht in get_channel → Stand 28.10. belassen (45).",
+      "metricsAsOf": "2026-11-14T20:42:30+01:00",
       "isPlaceholder": false,
       "weekPostLog": [
         {
@@ -436,18 +545,18 @@
           "postedAtVienna": "2026-11-10T08:19:37+01:00",
           "url": "https://tiktok.com/@deendaily254/video/7706438642763435296",
           "durationSec": 24.11,
-          "views": 245,
-          "likes": 27,
+          "views": 250,
+          "likes": 28,
           "comments": 0,
           "shares": 5,
-          "reach": 209,
-          "avgWatchSec": 2.79,
-          "watchTimeMinutes": 11.77,
-          "engagementRatePct": 13.06,
-          "metricsUpdatedAt": "2026-11-11T23:45:24+01:00",
+          "reach": 212,
+          "avgWatchSec": 2.95,
+          "watchTimeMinutes": 12.65,
+          "engagementRatePct": 13.2,
+          "metricsUpdatedAt": "2026-11-13T22:29:05+01:00",
           "metricsStatus": "ok",
-          "ageHoursAtMetrics": 39.4,
-          "note": "Share-Rate 5/245 = 2,0 % (höchste der Woche bisher)."
+          "ageHoursAtMetrics": 86.2,
+          "note": "Share-Rate 5/250 = 2,0 % (höchste der Woche bisher)."
         },
         {
           "bufferPostId": "6af2aada05af22d7260ad17d",
@@ -455,18 +564,18 @@
           "postedAtVienna": "2026-11-10T17:32:40+01:00",
           "url": "https://tiktok.com/@deendaily254/video/7706581295228357921",
           "durationSec": 24.34,
-          "views": 268,
+          "views": 269,
           "likes": 34,
           "comments": 1,
           "shares": 2,
-          "reach": 213,
-          "avgWatchSec": 2.31,
-          "watchTimeMinutes": 10.45,
-          "engagementRatePct": 13.81,
-          "metricsUpdatedAt": "2026-11-11T23:45:24+01:00",
+          "reach": 224,
+          "avgWatchSec": 2.3,
+          "watchTimeMinutes": 10.47,
+          "engagementRatePct": 13.75,
+          "metricsUpdatedAt": "2026-11-13T22:29:05+01:00",
           "metricsStatus": "ok",
-          "ageHoursAtMetrics": 30.2,
-          "note": "Bisher meiste Views der Woche (unter Posts mit vergleichbarem Alter)."
+          "ageHoursAtMetrics": 76.9,
+          "note": "Zweitmeiste Views unter den Posts mit Metriken. Ø-Watch 2,30 s / 24,34 s (Haltequote ca. 9,4 %) — Hook eher schwach."
         },
         {
           "bufferPostId": "6af2aadeb59b34913a5a23ff",
@@ -478,14 +587,33 @@
           "likes": 14,
           "comments": 0,
           "shares": 0,
-          "reach": 199,
+          "reach": 216,
           "avgWatchSec": 4.55,
           "watchTimeMinutes": 19.1,
           "engagementRatePct": 5.74,
-          "metricsUpdatedAt": "2026-11-11T23:45:24+01:00",
+          "metricsUpdatedAt": "2026-11-13T22:29:05+01:00",
           "metricsStatus": "ok",
-          "ageHoursAtMetrics": 26.7,
-          "note": "Foto-Karussell (6 Slides). Längste Ø-Watch-Zeit (4,55 s), niedrigste ER (5,74 %), 0 Shares."
+          "ageHoursAtMetrics": 73.4,
+          "note": "Foto-Karussell (6 Slides). Views seit 12.11.-Stand unverändert (244). Niedrigste ER (5,74 %), 0 Shares."
+        },
+        {
+          "bufferPostId": "6af781218c69ace002b11444",
+          "topic": "Al-Fatihah / Tawheed (direkt auf TikTok, via network)",
+          "postedAtVienna": "2026-11-11T19:15:56+01:00",
+          "url": "https://tiktok.com/@deendaily254/video/7706979294869998851",
+          "durationSec": 38.43,
+          "views": 156,
+          "likes": 8,
+          "comments": 0,
+          "shares": 0,
+          "reach": 80,
+          "avgWatchSec": 5.52,
+          "watchTimeMinutes": 14.88,
+          "engagementRatePct": 5.13,
+          "metricsUpdatedAt": "2026-11-13T22:29:05+01:00",
+          "metricsStatus": "ok",
+          "ageHoursAtMetrics": 51.2,
+          "note": "Nicht über Buffer von Deen Growth gepostet: via=network (Buffer hat einen direkten TikTok-Post importiert). Caption nur „#allah #alfatihah #tawheed #quran“. Dauer 38,4 s. isAiGenerated false. In den Wochensummen enthalten, weil es auf @deendaily254 in der Woche liegt."
         },
         {
           "bufferPostId": "6af4cc8dceae26a3a50f090f",
@@ -493,18 +621,18 @@
           "postedAtVienna": "2026-11-11T21:15:49+01:00",
           "url": "https://tiktok.com/@deendaily254/video/7707009838181551392",
           "durationSec": 30.0,
-          "views": 172,
-          "likes": 18,
+          "views": 240,
+          "likes": 25,
           "comments": 2,
           "shares": 0,
-          "reach": null,
-          "avgWatchSec": 3.61,
-          "watchTimeMinutes": 10.28,
-          "engagementRatePct": 11.63,
-          "metricsUpdatedAt": "2026-11-11T23:45:24+01:00",
-          "metricsStatus": "reach_gap",
-          "ageHoursAtMetrics": 2.5,
-          "note": "Views/Likes/Comments/Watch real, aber Reach 0 bei 172 Views = typische Buffer-Reach-Lücke bei jungen Posts, nicht als 0 Reach gewertet. Beim Metrik-Stand nur ca. 2,5 h alt — Vergleich unsicher."
+          "reach": 206,
+          "avgWatchSec": 3.25,
+          "watchTimeMinutes": 13.35,
+          "engagementRatePct": 11.25,
+          "metricsUpdatedAt": "2026-11-13T22:29:05+01:00",
+          "metricsStatus": "ok",
+          "ageHoursAtMetrics": 49.2,
+          "note": "Reach-Lücke vom 12.11. ist geschlossen (206 Reach bei 240 Views). Meiste Kommentare der Woche (2)."
         },
         {
           "bufferPostId": "6af4e9ce8a1a2f52b507a8b7",
@@ -512,18 +640,18 @@
           "postedAtVienna": "2026-11-11T23:20:38+01:00",
           "url": "https://tiktok.com/@deendaily254/video/7707041988008316192",
           "durationSec": 31.0,
-          "views": 85,
-          "likes": 7,
-          "comments": 0,
-          "shares": 1,
-          "reach": null,
-          "avgWatchSec": 3.11,
-          "watchTimeMinutes": 4.2,
-          "engagementRatePct": 9.41,
-          "metricsUpdatedAt": "2026-11-11T23:45:24+01:00",
-          "metricsStatus": "reach_gap",
-          "ageHoursAtMetrics": 0.4,
-          "note": "Frühe Momentaufnahme (Metriken ca. 25 min nach dem Senden). Views/Likes/Shares real und nicht-null, Reach 0 bei 85 Views = Lücke. Zu jung für Vergleich."
+          "views": 249,
+          "likes": 24,
+          "comments": 1,
+          "shares": 2,
+          "reach": 122,
+          "avgWatchSec": 3.61,
+          "watchTimeMinutes": 15.32,
+          "engagementRatePct": 10.84,
+          "metricsUpdatedAt": "2026-11-13T22:29:05+01:00",
+          "metricsStatus": "ok",
+          "ageHoursAtMetrics": 47.1,
+          "note": "Reach-Lücke vom 12.11. ist geschlossen, aber Reach/Views 122/249 = 49 % (niedriger als die anderen gemessenen Videos, typisch ca. 80–90 %). Dauer 31 s."
         },
         {
           "bufferPostId": "6af512a0cb4c7286fd057b40",
@@ -531,6 +659,25 @@
           "postedAtVienna": "2026-11-12T02:14:48+01:00",
           "url": "https://tiktok.com/@deendaily254/video/7707086808332373280",
           "durationSec": 41.0,
+          "views": 293,
+          "likes": 33,
+          "comments": 0,
+          "shares": 1,
+          "reach": null,
+          "avgWatchSec": 8.51,
+          "watchTimeMinutes": 41.4,
+          "engagementRatePct": 11.6,
+          "metricsUpdatedAt": "2026-11-13T22:29:05+01:00",
+          "metricsStatus": "reach_gap",
+          "ageHoursAtMetrics": 44.2,
+          "note": "Höchste Views der Woche (293) und deutlich beste Ø-Watch-Zeit (8,51 s / 41 s, Haltequote ca. 20,8 %). Buffer-Reach 0 bei 293 Views = Reach-Lücke, nicht als 0 Reach gezählt. Sync vom 12.11. ist da; nur Reach fehlt. Dauer über 30-s-Standard."
+        },
+        {
+          "bufferPostId": "6af88677e5a113497a92b8ab",
+          "topic": "Sprich nach 20:114 v2 – Rabbi zidnī ʿilmā",
+          "postedAtVienna": "2026-11-14T17:07:21+01:00",
+          "url": "https://tiktok.com/@deendaily254/video/7708058975173987617",
+          "durationSec": 16.63,
           "views": null,
           "likes": null,
           "comments": null,
@@ -539,13 +686,13 @@
           "avgWatchSec": null,
           "watchTimeMinutes": null,
           "engagementRatePct": null,
-          "metricsUpdatedAt": "2026-11-12T02:13:04+01:00",
+          "metricsUpdatedAt": "2026-11-14T17:04:07+01:00",
           "metricsStatus": "pending_sync",
           "ageHoursAtMetrics": null,
-          "note": "Alle Metriken 0, metricsUpdatedAt = Anlegezeit (vor sentAt). Noch nicht synchronisiert — nicht als 0 Views zählen."
+          "note": "Alle Metriken 0, metricsUpdatedAt = Anlegezeit 17:04 Wien (vor sentAt 17:07). Noch nicht synchronisiert — nicht als 0 Views zählen. Beim Abruf ca. 3,5 h alt."
         }
       ],
-      "metricsSourceUpdatedAt": "2026-11-11T23:45:24+01:00",
+      "metricsSourceUpdatedAt": "2026-11-13T22:29:05+01:00",
       "lifetimeHighlights": [
         {
           "bufferPostId": "6ac0c724713b7277a0b2e1f2",
@@ -565,9 +712,9 @@
       "upcoming": {
         "window": "2026-11-09 → 2026-11-15",
         "scheduledInBuffer": 0,
-        "note": "Queue leer (list_posts scheduled/draft/error/sending = 0). 6 Posts bereits gesendet (10.–12.11.). Buffer postingGoal 6/5 Hit (Periode 8.–14.11.)."
+        "note": "Queue leer (list_posts scheduled/draft/error/sending = 0). 8 Posts bereits gesendet (10.–14.11.), davon 1 via network und 1 (Sprich nach 20:114) ohne Metrik-Sync. Buffer postingGoal 8/5 Hit (Periode 8.–14.11.). Woche endet 15.11."
       },
-      "followersSource": "Public profile tiktok.com/@deendaily254 (page JSON stats), read 2026-10-28 03:41 Wien by Deen Growth TT: 45 Follower / 63 Following / 10.6K Likes; get_channel liefert keine Follower. 9.11. nicht neu geprüft.",
+      "followersSource": "Public profile tiktok.com/@deendaily254 (page JSON stats), read 2026-10-28 03:41 Wien by Deen Growth TT: 45 Follower / 63 Following / 10.6K Likes; get_channel liefert keine Follower. 14.11. nicht neu geprüft — letzter belegter Stand bleibt 45 (28.10.).",
       "followersAsOf": "2026-10-28T03:41:00+01:00",
       "lastKnownWeek": {
         "weekStart": "2026-11-02",
@@ -1041,8 +1188,8 @@
       "agentId": "ec09842b-ac9c-47b1-9124-453595664e4b",
       "name": "Deen Growth TT+YT",
       "responsibility": "TikTok @deendaily254 posten; YouTube pausiert",
-      "lastUpdated": "2026-11-12T02:32:00+01:00",
-      "status": "TT Woche 9.–15.11. teilweise (Stand 12.11. 02:32 Wien): 6 Posts, 5 mit Metriken, 1.014 Views / 100 Likes / 8 Shares / Reach 621. Top bisher Hasbun 3:173 (268 Views). Zorn-Countdown Sync offen. Follower 45 (28.10.). YT pausiert."
+      "lastUpdated": "2026-11-14T20:42:30+01:00",
+      "status": "TT Woche 9.–15.11. teilweise (Stand 14.11. 20:42 Wien): 8 Posts, 7 mit Metriken, 1.701 Views / 166 Likes / 10 Shares / Reach 1.060. Top bisher Zorn-Countdown (293 Views). Sprich-nach 20:114 Sync offen. 1 via-network Post 11.11. Follower 45 (28.10.). YT pausiert."
     },
     "vot_growth": {
       "agentId": "44289084-0ba3-49ca-9cf8-eb04829a2288",
